@@ -7,7 +7,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 
 const Header2 = () => {
   return (
-    <Grid xs={12} container spacing={1} sx={{ display: "flex" }}>
+    <Grid xs={12} container spacing={1}>
       <Grid
         item
         lg={8}
@@ -77,41 +77,3 @@ const Header2 = () => {
 };
 
 export default Header2;
-
-// import React from "react";
-// import Box from "@mui/material/Box";
-// import { Input } from "@mui/material";
-// const Header2 = () => {
-//   return (
-//     <div
-//       style={{
-//         width: "100%",
-//         alignItems: "center",
-//         justifyContent: "center",
-//         display: "flex",
-//         flexDirection: "row",
-//       }}
-//     >
-//       <Box
-//         sx={{
-//           width: "20%",
-//         }}
-//         component="img"
-//         alt="Cuircon International"
-//         src={require("../../assets/logo.jpg")}
-//       />
-//       <Box
-//         sx={{
-//           fontSize: "40px",
-//           color: "gray",
-//           ml: 25,
-//         }}
-//       >
-//         ECO + USA
-//       </Box>
-//       <Input sx={{ marginLeft: 30 }} placeholder="SEARCH" />
-//     </div>
-//   );
-// };
-
-// export default Header2;

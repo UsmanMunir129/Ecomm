@@ -49,25 +49,27 @@ const Social = () => {
           sx={{
             display: "flex",
             justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <Link href="#">
-            <SiPinterest color="#000" size={50} />
+            <SiPinterest color="#000" size={45} />
           </Link>
           <Link href="#">
             <RiInstagramFill color="#000" size={50} />
           </Link>
           <Link href="#">
-            <BsFacebook color="#000" size={50} />
+            <BsFacebook color="#000" size={45} />
           </Link>
+
           <Link href="#">
-            <AiFillTwitterCircle color="#000" size={50} />
-          </Link>
-          <Link href="#">
-            <TiSocialYoutubeCircular color="#000" size={50} />
+            <TiSocialYoutubeCircular color="#000" size={58} />
           </Link>
           <Link href="#">
             <TbBrandTiktokFilled color="#000" size={50} />
+          </Link>
+          <Link href="#">
+            <AiFillTwitterCircle color="#000" size={55} />
           </Link>
         </Box>
       </Box>
