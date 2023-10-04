@@ -7,7 +7,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 
 const Header2 = () => {
   return (
-    <Grid xs={12} container spacing={1}>
+    <Grid xs={12} container spacing={1} sx={{ display: "flex" }}>
       <Grid
         item
         lg={8}

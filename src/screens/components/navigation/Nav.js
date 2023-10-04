@@ -40,6 +40,14 @@ const Nav = () => {
   const handleClose3 = () => {
     setAnchorEl(null);
   };
+  const buttonStyles = {
+    fontSize: "20px",
+    fontWeight: 800,
+    letterSpacing: "-1px",
+    "&:hover": {
+      color: "red",
+    },
+  };
   return (
     <Grid container>
       <Grid item lg={6} sx={{ display: "flex", flexDirection: "row" }}>
@@ -47,7 +55,7 @@ const Nav = () => {
           <Button
             id="fade-button"
             color="inherit"
-            sx={{ fontSize: "20px", fontWeight: 800, letterSpacing: "-1px" }}
+            sx={buttonStyles}
             aria-controls={open ? "fade-menu" : undefined}
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
@@ -74,7 +82,7 @@ const Nav = () => {
           <Button
             id="fade-button"
             color="inherit"
-            sx={{ fontSize: "20px", fontWeight: 800, letterSpacing: "-1px" }}
+            sx={buttonStyles}
             aria-controls={open1 ? "fade-menu" : undefined}
             aria-haspopup="true"
             aria-expanded={open1 ? "true" : undefined}
@@ -101,7 +109,7 @@ const Nav = () => {
           <Button
             id="fade-button"
             color="inherit"
-            sx={{ fontSize: "20px", fontWeight: 800, letterSpacing: "-1px" }}
+            sx={buttonStyles}
             aria-controls={open2 ? "fade-menu" : undefined}
             aria-haspopup="true"
             aria-expanded={open2 ? "true" : undefined}
@@ -128,7 +136,7 @@ const Nav = () => {
           <Button
             id="fade-button"
             color="inherit"
-            sx={{ fontSize: "20px", fontWeight: 800, letterSpacing: "-1px" }}
+            sx={buttonStyles}
             aria-controls={open3 ? "fade-menu" : undefined}
             aria-haspopup="true"
             aria-expanded={open3 ? "true" : undefined}
