@@ -211,7 +211,7 @@ function Header(props) {
               sx={{
                 fontSize: "40px",
                 color: "gray",
-                ml: 4,
+                ml: 3.9,
               }}
             >
               ECO
