@@ -300,7 +300,7 @@ function Header(props) {
               aria-controls={open1 ? "fade-menu" : undefined}
               aria-haspopup="true"
               aria-expanded={open1 ? "true" : undefined}
-              onClick={handleClick11}
+              onClick={handleClick1}
             >
               Kart Race
             </Button>
