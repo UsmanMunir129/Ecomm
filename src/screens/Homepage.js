@@ -1,22 +1,16 @@
 import React from "react";
 import Header from "./components/navigation/Header";
-import Header2 from "./components/navigation/Header2";
-import Nav from "./components/navigation/Nav";
-import Dashboard from "./Dashboard/Dashboard";
-import Social from "./Dashboard/Social";
-import Footer from "./footer/Footer";
-import Endfooter from "./footer/Endfooter";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Footer from "./components/footer/Footer";
+import FirstStepper from "./components/Dashboard/FirstStepper";
 
 const Homepage = () => {
   return (
     <div>
       <Header />
-      <Header2 />
-      <Nav />
+      <FirstStepper />
       <Dashboard />
-      <Social />
       <Footer />
-      <Endfooter />
     </div>
   );
 };
