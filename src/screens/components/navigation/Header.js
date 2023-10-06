@@ -263,7 +263,6 @@ function Header(props) {
           sx={{
             display: "flex",
             flexDirection: "row",
-            margin: "0 -1px 0 -1px",
           }}
         >
           <Grid item lg={2.5} xs={2} sm={2} md={2.5}>
