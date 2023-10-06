@@ -257,7 +257,7 @@ function Header(props) {
         <Grid
           item
           lg={7}
-          xs={12}
+          xs={10}
           sm={12}
           md={10}
           sx={{
