@@ -22,7 +22,7 @@ import Menu from "@mui/material/Menu";
 import Fade from "@mui/material/Fade";
 import { MenuItem } from "@mui/material";
 
-const drawerWidth = 240;
+const drawerWidth = "100%";
 const navItems = [
   {
     id: 1,
@@ -51,6 +51,34 @@ const navItems = [
   },
 ];
 
+const menu = [
+  {
+    id: 1,
+    name: "Auto Race",
+    link: "/about",
+  },
+  {
+    id: 2,
+    name: "Kart Race",
+    link: "/about",
+  },
+  {
+    id: 3,
+    name: "Rental Race",
+    link: "/about",
+  },
+  {
+    id: 4,
+    name: "Mechanic",
+    link: "/about",
+  },
+  {
+    id: 5,
+    name: "Customize",
+    link: "/about",
+  },
+];
+
 function Header(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -60,10 +88,32 @@ function Header(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        WHOLESALE
-      </Typography>
+    <Box onClick={handleDrawerToggle} sx={{}}>
+      <Box
+        sx={{
+          backgroundColor: "red",
+          width: "80%",
+        }}
+      >
+        <TextField
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="end">
+                <SearchIcon sx={{ color: "#000" }} />
+              </InputAdornment>
+            ),
+          }}
+          placeholder="SEARCH"
+          id="search"
+          type="search"
+          size="small"
+          sx={{
+            backgroundColor: "#D3D3D3",
+            borderRadius: 1,
+          }}
+        />
+      </Box>
+      <Typography variant="h6">WHOLESALE</Typography>
       <Divider />
       <List>
         {navItems.map((item, index) => (
@@ -130,17 +180,45 @@ function Header(props) {
   return (
     <Box sx={{ display: "block" }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: "#000", px: 2 }}>
+      <AppBar component="nav" sx={{ backgroundColor: "#000" }}>
         <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+          <Grid
+            container
+            sx={{
+              display: { lg: "none", xlg: "block" },
+            }}
+            alignItems="center"
           >
-            <MenuIcon />
-          </IconButton>
+            <Grid item xs={6} sm={6}>
+              <Link href="https://www.royalapparel.net/index">
+                <Box
+                  sx={{ width: "100%" }}
+                  component="img"
+                  alt="Cuircon International"
+                  src={require("../../../assets/logo.jpg")}
+                />
+              </Link>
+            </Grid>
+            <Grid item xs={1.5} sm={1.5}></Grid>
+            <Grid item xs={3.5} sm={3.5}>
+              <Link href="/" color="inherit" underline="none">
+                <Typography component="div" sx={{ flexGrow: 1, mr: 2 }}>
+                  WHOLESALE
+                </Typography>
+              </Link>
+            </Grid>
+            <Grid item xs={1} sm={1}>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="start"
+                onClick={handleDrawerToggle}
+                sx={{ marginLeft: "auto", display: { sm: "none" } }}
+              >
+                <MenuIcon />
+              </IconButton>
+            </Grid>
+          </Grid>
           <Typography
             variant="h6"
             component="div"
@@ -167,7 +245,7 @@ function Header(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block ms-auto", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
@@ -177,232 +255,121 @@ function Header(props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 3 }}>
+      <Box component="main" sx={{ p: 1 }}>
         <Toolbar />
       </Box>
       {/* Image
       Header */}
       {/*  */}
       {/*  */}
-      <Grid xs={12} container spacing={1}>
+      <Grid container sx={{ display: { xs: "none", sm: "block" } }}>
         <Grid
+          spacing={1}
           item
-          lg={8}
-          sx={{ display: "flex", flexDirection: "row" }}
-          spacing={2}
-          xs={12}
+          lg={12}
+          sx={{ display: "flex", flexDirection: "row", alignItems: "center" }}
         >
-          <Grid item lg={5}>
-            <Box
-              sx={{
-                width: "100%",
-              }}
-              component="img"
-              alt="Cuircon International"
-              src={require("../../../assets/logo.jpg")}
-            />
+          <Grid item lg={4}>
+            <Link href="https://www.royalapparel.net/index">
+              <Box
+                sx={{
+                  width: "90%",
+                }}
+                component="img"
+                alt="Cuircon International"
+                src={require("../../../assets/logo.jpg")}
+              />
+            </Link>
           </Grid>
+
           <Grid
-            sx={{ backgroundColor: "gray", height: "70%", ml: 4 }}
-            lg={0.04}
-          ></Grid>
-          <Grid item lg={6.96} xs={0}>
-            <Box
+            item
+            lg={4}
+            sx={{
+              borderLeft: "2px solid gray",
+              // backgroundColor: "red",
+            }}
+          >
+            <Typography
+              variant="h3"
               sx={{
-                fontSize: "40px",
                 color: "gray",
                 ml: 4,
               }}
             >
               ECO
+            </Typography>
+          </Grid>
+          <Grid item lg={4}>
+            <Box>
+              <TextField
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="end">
+                      <SearchIcon sx={{ color: "#000" }} />
+                    </InputAdornment>
+                  ),
+                }}
+                placeholder="SEARCH"
+                id="search"
+                type="search"
+                size="small"
+                sx={{
+                  backgroundColor: "#D3D3D3",
+                  borderRadius: 1,
+                }}
+              />
             </Box>
           </Grid>
         </Grid>
-        <Grid
-          item
-          lg={4}
-          xs={12}
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "flex-end",
-          }}
-        >
-          <Box>
-            <TextField
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment position="end">
-                    <SearchIcon sx={{ color: "#000" }} />
-                  </InputAdornment>
-                ),
-              }}
-              placeholder="SEARCH"
-              id="search"
-              type="search"
-              size="small"
-              sx={{
-                backgroundColor: "#D3D3D3",
-                borderRadius: 2,
-                border: "0px",
-              }}
-            />
-          </Box>
-        </Grid>
       </Grid>
-      {/* Screens 
+      {/* Screens
       //Header
         Navigation */}
-      <Grid container>
+      {/* <Grid container>
         <Grid
           item
           lg={7}
           xs={10}
-          sm={12}
+          sm={10}
           md={10}
           sx={{
             display: "flex",
             flexDirection: "row",
           }}
         >
-          <Grid item lg={2.5} xs={2} sm={2} md={2.5}>
-            <Button
-              id="fade-button"
-              color="inherit"
-              sx={buttonStyles}
-              aria-controls={open ? "fade-menu" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open ? "true" : undefined}
-              onClick={handleClick}
-            >
-              Auto Race
-            </Button>
-            <Menu
-              id="fade-menu"
-              MenuListProps={{
-                "aria-labelledby": "fade-button",
-              }}
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              TransitionComponent={Fade}
-            >
-              <MenuItem onClick={handleClose}>Profile</MenuItem>
-              <MenuItem onClick={handleClose}>My account</MenuItem>
-              <MenuItem onClick={handleClose}>Logout</MenuItem>
-            </Menu>
-          </Grid>
-          <Grid item lg={2.5} xs={2} sm={2} md={2.5}>
-            <Button
-              id="fade-button"
-              color="inherit"
-              sx={buttonStyles}
-              aria-controls={open1 ? "fade-menu" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open1 ? "true" : undefined}
-              onClick={handleClick1}
-            >
-              Kart Race
-            </Button>
-            <Menu
-              id="fade-menu"
-              MenuListProps={{
-                "aria-labelledby": "fade-button",
-              }}
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose1}
-              TransitionComponent={Fade}
-            >
-              <MenuItem onClick={handleClose1}>Profile</MenuItem>
-              <MenuItem onClick={handleClose1}>My account</MenuItem>
-              <MenuItem onClick={handleClose1}>Logout</MenuItem>
-            </Menu>
-          </Grid>
-          <Grid item lg={2.5} xs={2} sm={2} md={2.5}>
-            <Button
-              id="fade-button"
-              color="inherit"
-              sx={buttonStyles}
-              aria-controls={open2 ? "fade-menu" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open2 ? "true" : undefined}
-              onClick={handleClick2}
-            >
-              Rental Race
-            </Button>
-            <Menu
-              id="fade-menu"
-              MenuListProps={{
-                "aria-labelledby": "fade-button",
-              }}
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose2}
-              TransitionComponent={Fade}
-            >
-              <MenuItem onClick={handleClose2}>Profile</MenuItem>
-              <MenuItem onClick={handleClose2}>My account</MenuItem>
-              <MenuItem onClick={handleClose2}>Logout</MenuItem>
-            </Menu>
-          </Grid>
-          <Grid item lg={2.5} xs={2} sm={2} md={2.5}>
-            <Button
-              id="fade-button"
-              color="inherit"
-              sx={buttonStyles}
-              aria-controls={open3 ? "fade-menu" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open3 ? "true" : undefined}
-              onClick={handleClick3}
-            >
-              Mechanic
-            </Button>
-            <Menu
-              id="fade-menu"
-              MenuListProps={{
-                "aria-labelledby": "fade-button",
-              }}
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose3}
-              TransitionComponent={Fade}
-            >
-              <MenuItem onClick={handleClose3}>Profile</MenuItem>
-              <MenuItem onClick={handleClose3}>My account</MenuItem>
-              <MenuItem onClick={handleClose3}>Logout</MenuItem>
-            </Menu>
-          </Grid>
-          <Grid item lg={2.5} xs={2} sm={2} md={2.5}>
-            <Button
-              id="fade-button"
-              color="inherit"
-              sx={buttonStyles}
-              aria-controls={open ? "fade-menu" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open ? "true" : undefined}
-              onClick={handleClick}
-            >
-              Customize
-            </Button>
-            <Menu
-              id="fade-menu"
-              MenuListProps={{
-                "aria-labelledby": "fade-button",
-              }}
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              TransitionComponent={Fade}
-            >
-              <MenuItem onClick={handleClose}>Profile</MenuItem>
-              <MenuItem onClick={handleClose}>My account</MenuItem>
-              <MenuItem onClick={handleClose}>Logout</MenuItem>
-            </Menu>
-          </Grid>
+          {menu.map((items, index) => (
+            <Grid item lg={2.5} xs={2} sm={2} md={2.5} key={items.id}>
+              <Button
+                id="fade-button"
+                color="inherit"
+                sx={buttonStyles}
+                aria-controls={open ? "fade-menu" : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? "true" : undefined}
+                onClick={handleClick}
+              >
+                {items.name}
+              </Button>
+              <Menu
+                id="fade-menu"
+                MenuListProps={{
+                  "aria-labelledby": "fade-button",
+                }}
+                anchorEl={anchorEl}
+                open={open}
+                onClose={handleClose}
+                TransitionComponent={Fade}
+                sx={{ width: "100%" }}
+              >
+                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                <MenuItem onClick={handleClose}>My account</MenuItem>
+                <MenuItem onClick={handleClose}>Logout</MenuItem>
+              </Menu>
+            </Grid>
+          ))}
         </Grid>
-        {/* <Grid item lg={5} xs={0}></Grid> */}
-      </Grid>
+      </Grid> */}
     </Box>
   );
 }

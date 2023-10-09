@@ -7,22 +7,6 @@ import { makeStyles } from "@mui/styles";
 import Social from "./Social";
 import Endstepper from "./Endstepper";
 
-const useStyles = makeStyles({
-  mainCont: {
-    width: "85%",
-    borderRadius: 4,
-    height: "85%",
-    mx: 5,
-    mt: 5,
-  },
-  imgCont: {
-    display: "flex",
-    flexDirection: "row",
-    width: "80%",
-    margin: "auto",
-  },
-});
-
 const images = [
   {
     link: "San Francisco – Oakland Bay Bridge, United States",
@@ -45,40 +29,54 @@ const images = [
       "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
   },
 ];
+const useStyles = makeStyles({
+  mainCont: {
+    // width: "70% !important",
+    // backgroundColor: "red",
+    padding: 50,
+  },
+  imgCont: {
+    // backgroundColor: "black",
+    // margin: "0 30px 0 30px",
+    paddingBottom: 10,
+    width: "80%",
+  },
+  imgbox: {
+    borderRadius: 8,
+    width: "100%",
+    height: "100%",
+    objectFit: "contain",
+  },
+});
 
 const Dashboard = () => {
-  const linkStyles = {
-    width: "85%",
-    borderRadius: 4,
-    height: "85%",
-    mx: 5,
-    mt: 5,
-  };
-  const mainCont = {
-    display: "flex",
-    flexDirection: "row",
-    width: "80%",
-    margin: "auto",
-  };
-
+  const classes = useStyles();
   return (
     <>
-      <Grid container sx={mainCont}>
+      <Grid
+        container
+        spacing={1}
+        className={classes.mainCont}
+        // direction="column"
+        // justify="center"
+      >
         {images.map((step, index) => (
-          <Grid item lg={6} md={6} xs={12} sm={12}>
-            <Link href="#">
-              <Box
-                sx={linkStyles}
-                component="img"
-                alt="Cuircon International"
-                src={step.imgPath}
-              />
-            </Link>
+          <Grid item lg={6} md={6} xs={12} sm={12} align="center">
+            <Box className={classes.imgCont}>
+              <Link href="#">
+                <img
+                  component="img"
+                  alt="Cuircon International"
+                  src={step.imgPath}
+                  className={classes.imgbox}
+                />
+              </Link>
+            </Box>
           </Grid>
         ))}
       </Grid>
       {/* //Screens  */}
-      <Social />
+      {/* <Social /> */}
       <Endstepper />
     </>
   );

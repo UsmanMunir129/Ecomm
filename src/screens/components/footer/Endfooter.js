@@ -15,6 +15,7 @@ export default function Endfooter() {
   return (
     <Grid
       container
+      item
       lg={12}
       xs={12}
       sx={{
