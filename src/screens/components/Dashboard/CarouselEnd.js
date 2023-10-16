@@ -1,3 +1,21 @@
+// import Carousel from "react-bootstrap/Carousel";
+// import "./CarouselTop.css";
+
+// const images = [
+//   {
+//     imgPath: "../images/C1.jpg",
+//   },
+//   {
+//     imgPath: "../images/C2.jpg",
+//   },
+//   {
+//     imgPath: "../images/C3.jpg",
+//   },
+//   {
+//     imgPath: "../images/C4.jpg",
+//   },
+// ];
+
 import * as React from "react";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -31,7 +49,7 @@ const images = [
   },
 ];
 
-function Endstepper() {
+function CarouselEnd() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -152,4 +170,4 @@ function Endstepper() {
   );
 }
 
-export default Endstepper;
+export default CarouselEnd;

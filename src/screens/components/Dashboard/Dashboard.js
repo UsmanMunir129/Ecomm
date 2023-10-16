@@ -5,7 +5,8 @@ import { makeStyles } from "@mui/styles";
 
 //Importing Screens
 import Social from "./Social";
-import Endstepper from "./Endstepper";
+import CarouselTop from "./CarouselTop";
+import CarouselEnd from "./CarouselEnd";
 
 const images = [
   {
@@ -31,21 +32,19 @@ const images = [
 ];
 const useStyles = makeStyles({
   mainCont: {
-    // width: "70% !important",
-    // backgroundColor: "red",
-    padding: 50,
+    height: "50%",
+    margin: "30px 0px 30px 0px",
+    // backgroundColor: "black",
   },
   imgCont: {
-    // backgroundColor: "black",
-    // margin: "0 30px 0 30px",
-    paddingBottom: 10,
-    width: "80%",
+    padding: 10,
+    // backgroundColor: "red",
+    height: "100%",
   },
   imgbox: {
     borderRadius: 8,
-    width: "100%",
-    height: "100%",
-    objectFit: "contain",
+    width: 300,
+    height: 300,
   },
 });
 
@@ -53,15 +52,11 @@ const Dashboard = () => {
   const classes = useStyles();
   return (
     <>
-      <Grid
-        container
-        spacing={1}
-        className={classes.mainCont}
-        // direction="column"
-        // justify="center"
-      >
+      {/* //Screen */}
+      <CarouselTop />
+      <Grid container className={classes.mainCont}>
         {images.map((step, index) => (
-          <Grid item lg={6} md={6} xs={12} sm={12} align="center">
+          <Grid item lg={3} md={3} xs={12} sm={6} align="center">
             <Box className={classes.imgCont}>
               <Link href="#">
                 <img
@@ -75,9 +70,14 @@ const Dashboard = () => {
           </Grid>
         ))}
       </Grid>
-      {/* //Screens  */}
-      {/* <Social /> */}
-      <Endstepper />
+      {/* //Screens  
+      ..
+      ...
+      ....
+      .....
+       */}
+      <Social />
+      <CarouselEnd />
     </>
   );
 };

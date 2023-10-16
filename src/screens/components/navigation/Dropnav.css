@@ -1,0 +1,39 @@
+/* .input-group{
+    height: 5,  
+} */
+
+.Headcont{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+}
+.dropdown-menu{
+    width: 100%;
+
+}
+.heading{
+    color: black;
+    font-family: Helvetica,'quicksand',"Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    width: fit-content;
+    margin-left: 2%;
+     
+}
+.heading:hover{
+    color: #dc3545;
+   
+}
+.catecont{
+    width: fit-content;
+}
+.catecont a:active {
+	color: #777;
+}
+.catetext{
+    color: black;
+    text-transform: uppercase;
+}
+.catetext:hover{
+    color: #337ab7;
+    text-decoration: underline;
+}
