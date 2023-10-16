@@ -150,7 +150,7 @@ const TopNavigation = () => {
               </div>
             </div>
             {/* DropNavigation For Mobile Screen */}
-            <div class="d-md-nones">
+            <div class="d-md-none">
               <a
                 class="nav-link "
                 href="#"
@@ -159,7 +159,7 @@ const TopNavigation = () => {
               >
                 <h3 class="text-white">Race</h3>
               </a>
-              <div class="dropdown-menu  border-0 ">
+              <div clacllss="dropdown-menu  border-0 ">
                 <div class="row justify-content-between py-3 px-5">
                   <div class="catecont col-12 col-sm-4 col-md-2 ">
                     {navCate.map((items, index) => (
