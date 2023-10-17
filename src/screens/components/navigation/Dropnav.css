@@ -1,19 +1,22 @@
 /* .input-group{
     height: 5,  
 } */
-
+.nav-link tt:hover{
+    border-bottom: #dc3545;
+}
 .Headcont{
     display: flex;
     flex-direction: row;
-    margin-left: 2%;
+    margin-left: 1%;
+    margin-bottom: 1%;
 }
-.dropdown-menu{
+#dropnav{
     width: 100%;
-
 }
 .heading{
     color: black;
-    font-family: Helvetica,'quicksand',"Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    font-family:  'Roboto',sans-serif;
     text-transform: uppercase;
     width: fit-content;
     margin-left: 2%;
@@ -31,9 +34,9 @@
 }
 .catetext{
     color: black;
-    text-transform: uppercase;
-}
+    font-family:  'Roboto',sans-serif;
+    text-transform: uppercase;}
 .catetext:hover{
-    color: #337ab7;
+    color: #23527C;
     text-decoration: underline;
 }

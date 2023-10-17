@@ -1,21 +1,21 @@
-.carousel-indicators{
+.carousel1 .carousel-indicators{
     height: 10px;
    width: 7%;
 
    right: 100;
    left: auto;
    }
-   .carousel-control-next, .carousel-control-prev{
+   .carousel1 .carousel-control-next, .carousel1 .carousel-control-prev{
     background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
     
     width: 5%;
    }
-   .carousel-control-prev{
+   .carousel1 .carousel-control-prev{
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
    }
    
    @media only screen and (max-width: 768px) {
-  #catalogueCarousel {
+  #catalogueCarousel1 {
     height: 300px;
   }
   #image{

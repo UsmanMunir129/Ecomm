@@ -21,8 +21,8 @@ const images = [
 ];
 function CarouselTop() {
   return (
-    <div>
-      <Carousel id="catalogueCarousel" data-bs-theme="dark">
+    <div class="carousel1">
+      <Carousel id="catalogueCarousel1" data-bs-theme="light">
         {images.map((step, index) => (
           <Carousel.Item interval={3000}>
             <a href={step.link}>

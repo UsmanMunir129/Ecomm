@@ -7,9 +7,9 @@ export default function Endfooter() {
   const buttonStyles = {
     color: "#fff",
     px: 1,
-    lineHeight: 1.1,
+
     borderLeft: "2px solid white",
-    fontSize: { xs: "10px", sm: "12px", md: "14px" },
+    fontSize: { xs: "8px", sm: "12px", md: "14px", lg: "16px" },
     textDecoration: "none",
     "&:hover": {
       textDecoration: "underline",
@@ -17,9 +17,8 @@ export default function Endfooter() {
   };
   const text = {
     color: "white",
-    fontSize: { xs: "10px", sm: "12px", md: "14px" },
+    fontSize: { xs: "8px", sm: "12px", md: "14px", lg: "16px" },
     px: 1,
-    lineHeight: 1.1,
   };
   return (
     <Grid

@@ -145,27 +145,6 @@ function CarouselEnd() {
           />
         </Box>
       </AutoPlaySwipeableViews>
-
-      {/* <AutoPlaySwipeableViews
-        axis={theme.direction === "rtl" ? "x-reverse" : "x"}
-        index={activeStep}
-        onChangeIndex={handleStepChange}
-        enableMouseEvents
-      >
-        {images.map((step, index) => (
-          <Box
-            component="img"
-            sx={{
-              height: 270,
-              width: "100%",
-              overflow: "hidden",
-            }}
-            src={step.imgPath}
-            alt={step.label}
-            square
-          />
-        ))}
-      </AutoPlaySwipeableViews> */}
     </Box>
   );
 }

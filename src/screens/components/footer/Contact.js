@@ -93,9 +93,11 @@ export default function Contact() {
   };
   const titleStyles = {
     color: "#000",
-    fontFamily: '"Helvetica "',
     fontSize: "20px",
     fontWeight: "bold",
+    // typography: {
+    //   fontFamily: ["Roboto", '"Helvetica Neue"', "sans-serif"],
+    // },
     lineHeight: 2,
   };
   const submitStyles = {
@@ -109,16 +111,15 @@ export default function Contact() {
   };
   const textStyles = {
     color: "black",
-    fontFamily: "unset",
     fontSize: "16px",
-    fontWeight: 400,
+    fontWeight: "600",
     "&:hover": {
       textDecoration: "underline",
       color: "gray",
       fontWeight: "bold",
     },
   };
-  const textboxStyles = { py: 0.5, width: "40%" };
+  const textboxStyles = { py: 0.5, width: "fit-content" };
   return (
     <>
       <ThemeProvider theme={theme}>

@@ -2,6 +2,7 @@ import React from "react";
 
 // Importing Screen
 import DropNavigation from "./DropNavigation";
+import "./topnav.css";
 
 const navCate = [
   {
@@ -94,6 +95,7 @@ const TopNavigation = () => {
               </span>
             </a>
           </div>
+          {/* Drawer Button */}
           <button
             class="navbar-toggler"
             type="button"
@@ -150,43 +152,16 @@ const TopNavigation = () => {
               </div>
             </div>
             {/* DropNavigation For Mobile Screen */}
-            <div class="d-md-none">
-              <a
-                class="nav-link "
-                href="#"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
-              >
-                <h3 class="text-white">Race</h3>
-              </a>
-              <div clacllss="dropdown-menu  border-0 ">
-                <div class="row justify-content-between py-3 px-5">
-                  <div class="catecont col-12 col-sm-4 col-md-2 ">
-                    {navCate.map((items, index) => (
-                      <a href={items.link} style={{ textDecoration: "none" }}>
-                        <h4 class="catetext">{items.name}</h4>
-                      </a>
-                    ))}
-                  </div>
 
-                  <div class="col-12 col-sm-12 col-md-4  align-self-center">
-                    <img
-                      src="https://www.royalapparel.net/img//1-KidsApparel.jpg"
-                      class="img-fluid"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <div>
+            <div class="maindropcont d-md-none  d-flex">
+              {/* First Link */}
               <a
                 class="nav-link "
                 href="#"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
-                <h3 class="text-white">Race</h3>
+                <h3 class="title text-white">Race</h3>
               </a>
               <div class="dropdown-menu  border-0 ">
                 <div class="row justify-content-between py-3 px-5">
@@ -207,7 +182,119 @@ const TopNavigation = () => {
                   </div>
                 </div>
               </div>
-            </div> */}
+              {/* Second Link */}
+              <a
+                class="nav-link "
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+              >
+                <h3 class="title text-white">Race</h3>
+              </a>
+              <div class="dropdown-menu  border-0 ">
+                <div class="row justify-content-between py-3 px-5">
+                  <div class="catecont col-12 col-sm-4 col-md-2 ">
+                    {navCate.map((items, index) => (
+                      <a href={items.link} style={{ textDecoration: "none" }}>
+                        <h4 class="catetext">{items.name}</h4>
+                      </a>
+                    ))}
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-4  align-self-center">
+                    <img
+                      src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
+                      class="img-fluid"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+              </div>
+              {/* Third Link */}
+              <a
+                class="nav-link "
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+              >
+                <h3 class="title text-white">Race</h3>
+              </a>
+              <div class="dropdown-menu  border-0 ">
+                <div class="row justify-content-between py-3 px-5">
+                  <div class="catecont col-12 col-sm-4 col-md-2 ">
+                    {navCate.map((items, index) => (
+                      <a href={items.link} style={{ textDecoration: "none" }}>
+                        <h4 class="catetext">{items.name}</h4>
+                      </a>
+                    ))}
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-4  align-self-center">
+                    <img
+                      src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
+                      class="img-fluid"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+              </div>
+              {/* Forth Link */}
+              <a
+                class="nav-link "
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+              >
+                <h3 class="title text-white">Race</h3>
+              </a>
+              <div class="dropdown-menu  border-0 ">
+                <div class="row justify-content-between py-3 px-5">
+                  <div class="catecont col-12 col-sm-4 col-md-2 ">
+                    {navCate.map((items, index) => (
+                      <a href={items.link} style={{ textDecoration: "none" }}>
+                        <h4 class="catetext">{items.name}</h4>
+                      </a>
+                    ))}
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-4  align-self-center">
+                    <img
+                      src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
+                      class="img-fluid"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+              </div>
+              {/* Fifth Link */}
+              <a
+                class="nav-link "
+                href="#"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="outside"
+              >
+                <h3 class="title text-white">Race</h3>
+              </a>
+              <div class="dropdown-menu  border-0 ">
+                <div class="row justify-content-between py-3 px-5">
+                  <div class="catecont col-12 col-sm-4 col-md-2 ">
+                    {navCate.map((items, index) => (
+                      <a href={items.link} style={{ textDecoration: "none" }}>
+                        <h4 class="catetext">{items.name}</h4>
+                      </a>
+                    ))}
+                  </div>
+
+                  <div class="col-12 col-sm-12 col-md-4  align-self-center">
+                    <img
+                      src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
+                      class="img-fluid"
+                      alt="image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </nav>

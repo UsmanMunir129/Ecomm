@@ -38,11 +38,12 @@ const Social = () => {
         }}
       >
         <Typography
-          variant="h6"
+          variant="h2"
           sx={{
-            fontWeight: "bold",
-            fontSize: { xs: "9px", sm: "16px", md: "18px" },
+            fontSize: { xs: "13px", sm: "20px", md: "24px" },
             fontFamily: " Garamond",
+            fontWeight: "bold",
+            textAlign: "center",
           }}
         >
           CONNECT WITH US ON SOCIAL MEDIA
@@ -56,23 +57,23 @@ const Social = () => {
         }}
       >
         <Link href="#">
-          <SiPinterest color="#000" size={xs ? 25 : 45} />
+          <SiPinterest color="#000" size={xs ? 28 : 48} />
         </Link>
         <Link href="#">
-          <TiSocialInstagramCircular color="#000" size={xs ? 38 : 58} />
+          <TiSocialInstagramCircular color="#000" size={xs ? 38 : 61} />
         </Link>
         <Link href="#">
-          <BsFacebook color="#000" size={xs ? 25 : 45} />
+          <BsFacebook color="#000" size={xs ? 28 : 48} />
         </Link>
 
         <Link href="#">
-          <TiSocialYoutubeCircular color="#000" size={xs ? 38 : 58} />
+          <TiSocialYoutubeCircular color="#000" size={xs ? 38 : 61} />
         </Link>
         <Link href="#">
-          <TbBrandTiktokFilled color="#000" size={xs ? 30 : 50} />
+          <TbBrandTiktokFilled color="#000" size={xs ? 30 : 53} />
         </Link>
         <Link href="#">
-          <AiFillTwitterCircle color="#000" size={xs ? 33 : 53} />
+          <AiFillTwitterCircle color="#000" size={xs ? 33 : 56} />
         </Link>
       </Box>
     </Box>

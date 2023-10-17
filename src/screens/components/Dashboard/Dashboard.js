@@ -32,7 +32,6 @@ const images = [
 ];
 const useStyles = makeStyles({
   mainCont: {
-    height: "50%",
     margin: "30px 0px 30px 0px",
     // backgroundColor: "black",
   },
@@ -77,7 +76,7 @@ const Dashboard = () => {
       .....
        */}
       <Social />
-      <CarouselEnd />
+      {/* <CarouselEnd /> */}
     </>
   );
 };

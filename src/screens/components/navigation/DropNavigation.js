@@ -42,7 +42,7 @@ const DropNavigation = () => {
           >
             <h3 class="heading">Race</h3>
           </a>
-          <div class="dropdown-menu  border-0 ">
+          <div id="dropnav" class="dropdown-menu  border-0 ">
             <div class="row justify-content-between py-3 px-5">
               <div class="catecont col-12 col-sm-4 col-md-2 ">
                 {navCate.map((items, index) => (
@@ -70,7 +70,7 @@ const DropNavigation = () => {
           >
             <h3 class="heading">Race</h3>
           </a>
-          <div class="dropdown-menu  border-0 ">
+          <div id="dropnav" class="dropdown-menu  border-0 ">
             <div class="row justify-content-between py-3 px-5">
               <div class="catecont col-12 col-sm-4 col-md-2 ">
                 {navCate.map((items, index) => (
@@ -98,7 +98,7 @@ const DropNavigation = () => {
           >
             <h3 class="heading">Race</h3>
           </a>
-          <div class="dropdown-menu  border-0 ">
+          <div id="dropnav" class="dropdown-menu  border-0 ">
             <div class="row justify-content-between py-3 px-5">
               <div class="catecont col-12 col-sm-4 col-md-2 ">
                 {navCate.map((items, index) => (
@@ -126,7 +126,7 @@ const DropNavigation = () => {
           >
             <h3 class="heading">Race</h3>
           </a>
-          <div class="dropdown-menu  border-0 ">
+          <div id="dropnav" class="dropdown-menu  border-0 ">
             <div class="row justify-content-between py-3 px-5">
               <div class="catecont col-12 col-sm-4 col-md-2 ">
                 {navCate.map((items, index) => (
@@ -147,14 +147,14 @@ const DropNavigation = () => {
           </div>
           {/* Fifth Link */}
           <a
-            class="nav-link "
+            class="nav-link tt "
             href="#"
             data-bs-toggle="dropdown"
             data-bs-auto-close="outside"
           >
             <h3 class="heading">Race</h3>
           </a>
-          <div class="dropdown-menu  border-0 ">
+          <div id="dropnav" class="dropdown-menu  border-0 ">
             <div class="row justify-content-between py-3 px-5">
               <div class="catecont col-12 col-sm-4 col-md-2 ">
                 {navCate.map((items, index) => (
