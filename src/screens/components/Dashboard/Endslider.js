@@ -46,6 +46,7 @@ const images = [
   },
 ];
 
+//Owl Carousel Package Styling Properties
 const options = {
   margin: 25,
 
@@ -53,6 +54,7 @@ const options = {
   dots: false,
   autoplay: true,
   smartSpeed: 1000,
+
   responsive: {
     0: {
       items: 1,
@@ -71,10 +73,16 @@ const options = {
     },
   },
 };
+
 const Endslider = () => {
   return (
     <div class="headcont">
-      <OwlCarousel className="owl-theme" loop {...options}>
+      <OwlCarousel
+        className="owl-theme"
+        loop
+        {...options}
+        autoplayHoverPause="true"
+      >
         {images.map((step, index) => (
           <div class="item">
             <a href={step.link}>

@@ -1,11 +1,12 @@
 import React from "react";
 import "./Dropnav.css";
+import Kartrace from "../Kartrace";
 
 const navCate = [
   {
     id: 1,
     name: "First",
-    link: "/about",
+    link: "/Kartrace",
   },
   {
     id: 2,

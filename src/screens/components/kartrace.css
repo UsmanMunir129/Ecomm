@@ -1,0 +1,71 @@
+/* Banner img Styling */
+@media only screen and (max-width: 768px) {
+    .kartbanner {
+      height: 220px;
+      background-color: aqua;
+      
+    }
+   .kartbannerimg {
+     height: 220px;
+      object-fit: cover;
+    }
+  }
+  .kartprodcards{
+    width: 280px;
+     height: 530px;
+     background-color: #fff;
+   
+       -webkit-transition: all .2s ease-out;
+      
+   }
+  .kartprodcards:hover{
+    /* -webkit-box-shadow: 0 20px 40px rgba(152, 93, 136, 0.6); */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.16), 0 4px 10px rgba(0,0,0,0.23); 
+       -webkit-transform: translateY(-2px);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+  
+  }
+
+
+.kartproimg{
+  justify-content: center;
+  object-fit: cover;
+
+}
+.kartlink{
+text-decoration: none;
+}
+.kartlink:hover{
+  text-decoration: underline;
+  color: #000;
+  }
+ .kartbodytext{
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #000;
+  margin-top: 3px;
+ }
+.protext{
+  font-size: 18px;
+  font-weight: 800;
+}
+/* .protext:hover{
+  text-decoration: underline;
+} */
+.katelastbtn{
+  background-color: #000;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 15px;
+  border-radius: 20px;
+  width: 122px;
+  left: 22px;
+}
+.katelastbtn:hover{
+  background-color: #808080;
+  color: white;
+}
+
+
+

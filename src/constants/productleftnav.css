@@ -1,0 +1,24 @@
+
+.categoryhead{
+font-family: 'Roboto Condensed', sans-serif;
+}
+.catecont{
+    margin-left: 10px;
+}
+
+.catglinkbtn{
+    text-decoration: none;
+
+    
+}
+.categorylinktext{
+color: black;
+font-family: 'Roboto Condensed', sans-serif;
+text-transform: uppercase;
+width: fit-content;
+
+
+}
+.categorylinktext:hover{
+    text-decoration: underline;
+}

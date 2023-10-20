@@ -55,11 +55,11 @@ const Dashboard = () => {
       <CarouselTop />
       <Grid container className={classes.mainCont}>
         {images.map((step, index) => (
-          <Grid item lg={3} md={3} xs={12} sm={6} align="center">
+          <Grid item lg={3} md={6} xs={12} sm={6} align="center">
             <Box className={classes.imgCont}>
               <Link href="#">
                 <img
-                  component="img"
+                  component="img-fluid"
                   alt="Cuircon International"
                   src={step.imgPath}
                   className={classes.imgbox}

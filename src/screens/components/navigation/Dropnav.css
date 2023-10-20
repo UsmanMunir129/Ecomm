@@ -12,6 +12,7 @@
 }
 #dropnav{
     width: 100%;
+    overflow: hidden;
 }
 .heading{
     color: black;

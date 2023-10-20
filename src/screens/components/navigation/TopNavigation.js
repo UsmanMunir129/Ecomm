@@ -89,7 +89,11 @@ const TopNavigation = () => {
             </a>
             <a href="#">
               <span
-                style={{ color: "white", float: "right", fontSize: "15px" }}
+                style={{
+                  color: "white",
+                  float: "right",
+                  fontSize: "13px",
+                }}
               >
                 WHOLESALE
               </span>
@@ -137,7 +141,10 @@ const TopNavigation = () => {
               ))}
             </div>
             {/* Search Bar For Mobile Screen */}
-            <div class="align-self-center d-flex justify-content-center d-md-none   ">
+            <div
+              class="align-self-center d-flex justify-content-center d-md-none  "
+              style={{ overflow: "hidden" }}
+            >
               <div class="input-group w-40 ">
                 <input
                   type="search"
@@ -152,7 +159,6 @@ const TopNavigation = () => {
               </div>
             </div>
             {/* DropNavigation For Mobile Screen */}
-
             <div class="maindropcont d-md-none  d-flex">
               {/* First Link */}
               <a
