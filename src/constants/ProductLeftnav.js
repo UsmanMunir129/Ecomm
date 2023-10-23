@@ -29,7 +29,7 @@ const navCate = [
 ];
 const ProductLeftnav = () => {
   return (
-    <div class=" col-md-3 col-lg-3 col-xl-3   d-none d-md-block">
+    <div class=" col-md-3 col-lg-3 col-xl-3 px-5  d-none d-md-block">
       <div class="catecont">
         <h2 class="categoryhead">Category</h2>
         {navCate.map((items, index) => (

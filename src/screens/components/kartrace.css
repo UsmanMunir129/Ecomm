@@ -2,19 +2,18 @@
 @media only screen and (max-width: 768px) {
     .kartbanner {
       height: 220px;
-      background-color: aqua;
       
     }
    .kartbannerimg {
      height: 220px;
       object-fit: cover;
     }
+  
   }
   .kartprodcards{
     width: 280px;
      height: 530px;
      background-color: #fff;
-   
        -webkit-transition: all .2s ease-out;
       
    }
@@ -57,14 +56,13 @@ text-decoration: none;
   background-color: #000;
   color: white;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 15px;
   border-radius: 20px;
   width: 122px;
-  left: 22px;
 }
 .katelastbtn:hover{
   background-color: #808080;
-  color: white;
+  color: #fff;
+  
 }
 
 

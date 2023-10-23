@@ -125,7 +125,7 @@ export default function Contact() {
       <ThemeProvider theme={theme}>
         <Box sx={{ flexGrow: 1, px: 3, py: 3, borderTop: "3px solid gray" }}>
           <Grid container spacing={1}>
-            <Grid item xs={6} lg={3} sx={buttonStyles}>
+            <Grid item xs={6} sm={6} md={3} lg={3} xl={3} sx={buttonStyles}>
               <Typography sx={titleStyles}>Company</Typography>
               <Box>
                 {contactSec.map((items, index) => (
@@ -137,7 +137,7 @@ export default function Contact() {
                 ))}
               </Box>
             </Grid>
-            <Grid item xs={6} lg={3} sx={buttonStyles}>
+            <Grid item xs={6} sm={6} md={3} lg={3} xl={3} sx={buttonStyles}>
               <Typography sx={titleStyles}>Product Info</Typography>
               {contactSec1.map((items, index) => (
                 <Box sx={textboxStyles}>
@@ -147,7 +147,7 @@ export default function Contact() {
                 </Box>
               ))}
             </Grid>
-            <Grid item xs={6} lg={3} sx={buttonStyles}>
+            <Grid item xs={6} sm={6} md={3} lg={3} xl={3} sx={buttonStyles}>
               <Typography sx={titleStyles}>Work With Us</Typography>
               {contactSec2.map((items, index) => (
                 <Box sx={textboxStyles}>
@@ -157,7 +157,7 @@ export default function Contact() {
                 </Box>
               ))}
             </Grid>
-            <Grid item lg={3} xs={6} sx={buttonStyles}>
+            <Grid item lg={3} sm={6} md={3} xs={6} xl={3} sx={buttonStyles}>
               <Typography sx={titleStyles}>Subscribe</Typography>
               <Box sx={{ my: 1, width: "60%", height: "5%" }}>
                 <TextField

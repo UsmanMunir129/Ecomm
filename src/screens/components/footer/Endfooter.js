@@ -25,7 +25,10 @@ export default function Endfooter() {
       container
       item
       lg={12}
+      md={12}
+      sm={12}
       xs={12}
+      xl={12}
       sx={{
         flexGrow: 1,
         mt: 3,

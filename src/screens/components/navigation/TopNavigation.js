@@ -67,7 +67,7 @@ const TopNavigation = () => {
       >
         <div class="container-fluid">
           {/* For Large Screen */}
-          <a class="navbar-brand d-none d-md-block" href="#">
+          <a class="navbar-brand d-none d-md-block" href="./">
             WHOLESALE
           </a>
           {/* For Mobile Screen Image and Wholesale */}
@@ -78,7 +78,7 @@ const TopNavigation = () => {
               justifyContent: "center",
             }}
           >
-            <a href="#">
+            <a href="./">
               <img
                 src="https://images.crunchbase.com/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nipimluadtvolo3jvrlr"
                 alt="fdm4"
@@ -87,7 +87,7 @@ const TopNavigation = () => {
                 }}
               />
             </a>
-            <a href="#">
+            <a href="./">
               <span
                 style={{
                   color: "white",
@@ -167,7 +167,7 @@ const TopNavigation = () => {
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
-                <h3 class="title text-white">Race</h3>
+                <h6 class="dropnavtitle text-white">Race</h6>
               </a>
               <div class="dropdown-menu  border-0 ">
                 <div class="row justify-content-between py-3 px-5">
@@ -195,7 +195,7 @@ const TopNavigation = () => {
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
-                <h3 class="title text-white">Race</h3>
+                <h6 class="dropnavtitle text-white">Race</h6>
               </a>
               <div class="dropdown-menu  border-0 ">
                 <div class="row justify-content-between py-3 px-5">
@@ -223,7 +223,7 @@ const TopNavigation = () => {
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
-                <h3 class="title text-white">Race</h3>
+                <h6 class="dropnavtitle text-white">Race</h6>
               </a>
               <div class="dropdown-menu  border-0 ">
                 <div class="row justify-content-between py-3 px-5">
@@ -251,7 +251,7 @@ const TopNavigation = () => {
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
-                <h3 class="title text-white">Race</h3>
+                <h6 class="dropnavtitle text-white">Race</h6>
               </a>
               <div class="dropdown-menu  border-0 ">
                 <div class="row justify-content-between py-3 px-5">
@@ -279,7 +279,7 @@ const TopNavigation = () => {
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
-                <h3 class="title text-white">Race</h3>
+                {/* <h3 class="title text-white">Race</h3> */}
               </a>
               <div class="dropdown-menu  border-0 ">
                 <div class="row justify-content-between py-3 px-5">
@@ -308,7 +308,7 @@ const TopNavigation = () => {
       <div class="container-fluid d-none d-md-block my-3 ">
         <div class="row">
           <div class="col-3 col-lg-4 col-xl-3 col-md-6">
-            <a href="#">
+            <a href="./">
               <img
                 src="https://images.crunchbase.com/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nipimluadtvolo3jvrlr"
                 alt="fdm4"

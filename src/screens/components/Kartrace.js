@@ -90,11 +90,11 @@ const images = [
     imgPath:
       "https://images.unsplash.com/photo-1617113930975-f9c7243ae527?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
   },
-  {
-    link: "Bali, Indonesia",
-    imgPath:
-      "https://images.unsplash.com/photo-1622497170185-5d668f816a56?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
-  },
+  // {
+  //   link: "Bali, Indonesia",
+  //   imgPath:
+  //     "https://images.unsplash.com/photo-1622497170185-5d668f816a56?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
+  // },
 ];
 const Kartrace = () => {
   return (
@@ -102,22 +102,19 @@ const Kartrace = () => {
       <div>
         <TopNavigation />
         {/* Top Banner img */}
-        <div class=" container-fluid kartrace">
+        <div class=" container-fluid kartbanner">
           <img
-            class=" img-fluid bannerimg"
+            class=" img-fluid kartbannerimg"
             src={require("../../assets/C2.jpg")}
           />
         </div>
         {/* Left Bar nd Product Section */}
-        <div class="container-fluid kartprodcont row my-5">
+        <div class=" kartprodcont row my-5">
           <ProductLeftnav />
 
-          <div
-            class=" row col-sm-12 col-md-9 col-lg-9 col-xl-9  col-xxl-9 "
-            style={{ padding: "0px 55px " }}
-          >
+          <div class=" row col-sm-12 col-md-9 col-lg-9 col-xl-9 d-flex justify-content-center ">
             {images.map((items, index) => (
-              <div class=" kartprodcards align-items-center mt-2">
+              <div class=" kartprodcards col col-sm-6  mt-2">
                 <a href="#" class="kartlink">
                   <div class="kartproimg ">
                     <img src={items.imgPath} class="img-fluid" alt="Suits" />

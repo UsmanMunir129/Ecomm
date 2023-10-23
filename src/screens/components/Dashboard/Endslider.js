@@ -2,7 +2,7 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import "./end.css";
+import "./endslider.css";
 const images = [
   {
     link: "San Francisco – Oakland Bay Bridge, United States",

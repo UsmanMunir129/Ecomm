@@ -27,16 +27,21 @@
     color: #dc3545;
    
 }
-.catecont{
+.dropnavimgs{
+    height: 318px;
+    object-fit: cover;
+
+}
+/* .catecont{
     width: fit-content;
-}
-.catecont a:active {
-	color: #777;
-}
+} */
+
 .catetext{
     color: black;
     font-family:  'Roboto',sans-serif;
-    text-transform: uppercase;}
+    text-transform: uppercase;
+    width: max-content;
+}
 .catetext:hover{
     color: #23527C;
     text-decoration: underline;
