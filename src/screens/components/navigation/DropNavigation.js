@@ -22,8 +22,8 @@ const navCate = [
   },
   {
     id: 2,
-    name: "Lorem",
-    link: "/about",
+    name: "Second",
+    link: "/About",
   },
   {
     id: 3,
