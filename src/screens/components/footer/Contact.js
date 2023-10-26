@@ -174,6 +174,7 @@ export default function Contact() {
           </Grid>
         </Box>
       </ThemeProvider>
+      {/* Footer Comp */}
       <Endfooter />
     </>
   );

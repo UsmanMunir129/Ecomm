@@ -321,11 +321,11 @@ const TopNavigation = () => {
             style={{ borderLeft: "2px solid gray" }}
           >
             <span>
-              <h1
+              <h2
                 style={{ color: "gray", marginLeft: 15, alignItems: "center" }}
               >
                 ECO
-              </h1>
+              </h2>
             </span>
           </div>
           <div class="col col-lg-4 col-xl-4 col-md-6 align-self-center d-flex justify-content-center ">

@@ -1,67 +1,35 @@
-import { createTheme, CssBaseline, ThemeProvider } from "@material-ui/core";
+import { ThemeProvider } from "styled-components";
 import Routees from "./Routes/Routees";
 
 function App() {
-  let theme = createTheme({
-    palette: {
-      primary: {
-        main: "#6251FE",
-      },
-      secondary: {
-        main: "#B9B6B6",
-      },
-      subSecondary: {
-        main: "#008000",
-      },
-    },
-    typography: {
-      fontFamily: ["Poppins"].join(","),
-      fontSize: 14,
-      fontWeightLight: 300,
-      fontWeightRegular: 400,
-      fontWeightMedium: 500,
-    },
-  });
+  const theme = {
+    colors: {
+      heading: "rgb(24 24 29)",
+      text: "rgba(29 ,29, 29, .8)",
+      white: "#fff",
+      black: " #212529",
+      helper: "#8490ff",
 
-  theme.typography.h6 = {
-    [theme.breakpoints.up("xs")]: {
-      fontSize: "1.17rem",
+      bg: "#F6F8FA",
+      footer_bg: "#0a1435",
+      btn: "rgb(98 84 243)",
+      border: "rgba(98, 84, 243, 0.5)",
+      hr: "#ffffff",
+      gradient:
+        "linear-gradient(0deg, rgb(132 144 255) 0%, rgb(98 189 252) 100%)",
+      shadow:
+        "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;",
+      shadowSupport: " rgba(0, 0, 0, 0.16) 0px 1px 4px",
     },
-    [theme.breakpoints.up("sm")]: {
-      fontSize: "1.17rem",
-    },
-    [theme.breakpoints.up("md")]: {
-      fontSize: "1.5rem",
-    },
-    [theme.breakpoints.up("lg")]: {
-      fontSize: "2.25rem",
-    },
-    [theme.breakpoints.up("xl")]: {
-      fontSize: "2.25rem",
-    },
-  };
-  theme.typography.caption = {
-    [theme.breakpoints.up("xs")]: {
-      fontSize: "0.83rem",
-    },
-    [theme.breakpoints.up("sm")]: {
-      fontSize: "1rem",
-    },
-    [theme.breakpoints.up("md")]: {
-      fontSize: "1.17rem",
-    },
-    [theme.breakpoints.up("lg")]: {
-      fontSize: "1.37rem",
-    },
-    [theme.breakpoints.up("xl")]: {
-      fontSize: "1.37rem",
+    media: {
+      mobile: "768px",
+      tab: "998px",
     },
   };
 
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <CssBaseline />
         <Routees />
       </ThemeProvider>
     </div>

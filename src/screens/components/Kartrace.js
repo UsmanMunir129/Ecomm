@@ -100,7 +100,7 @@ const Kartrace = () => {
   return (
     <>
       <div>
-        <TopNavigation />
+        {/* <TopNavigation /> */}
         {/* Top Banner img */}
         <div class=" container-fluid kartbanner">
           <img
@@ -132,7 +132,6 @@ const Kartrace = () => {
           </div>
         </div>
       </div>
-      <Contact />
     </>
   );
 };

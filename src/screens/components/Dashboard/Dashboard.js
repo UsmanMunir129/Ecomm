@@ -6,7 +6,9 @@ import { makeStyles } from "@mui/styles";
 //Importing Screens
 import Social from "./Social";
 import CarouselTop from "./CarouselTop";
-import CarouselEnd from "./CarouselEnd";
+import Endslider from "./Endslider";
+import Trusted from "../Trusted";
+import Services from "../Services";
 
 const images = [
   {
@@ -76,6 +78,10 @@ const Dashboard = () => {
       .....
        */}
       <Social />
+      <Trusted />
+      <Endslider />
+
+      <Services />
       {/* <CarouselEnd /> */}
     </>
   );

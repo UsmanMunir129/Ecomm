@@ -54,14 +54,14 @@ const DropNavigation = () => {
             data-bs-toggle="dropdown"
             data-bs-auto-close="outside"
           >
-            <h3 class="heading">Race</h3>
+            <h2 class="heading">Race</h2>
           </a>
           <div id="dropnav" class="dropdown-menu  border-0 ">
             <div class="row px-5">
               <div class="col col-md-3 col-lg-2 col-xl-2 p-3  fit-content">
                 {navCate.map((items, index) => (
                   <a href={items.link} style={{ textDecoration: "none" }}>
-                    <h4 class="catetext">{items.name}</h4>
+                    <h3 class="catetext">{items.name}</h3>
                   </a>
                 ))}
               </div>
@@ -88,14 +88,14 @@ const DropNavigation = () => {
             data-bs-toggle="dropdown"
             data-bs-auto-close="outside"
           >
-            <h3 class="heading">Race</h3>
+            <h2 class="heading">Race</h2>
           </a>
           <div id="dropnav" class="dropdown-menu  border-0 ">
             <div class="row px-5">
               <div class="col col-md-3 col-lg-2 col-xl-2 p-3  fit-content">
                 {navCate.map((items, index) => (
                   <a href={items.link} style={{ textDecoration: "none" }}>
-                    <h4 class="catetext">{items.name}</h4>
+                    <h3 class="catetext">{items.name}</h3>
                   </a>
                 ))}
               </div>
@@ -122,14 +122,14 @@ const DropNavigation = () => {
             data-bs-toggle="dropdown"
             data-bs-auto-close="outside"
           >
-            <h3 class="heading">Race</h3>
+            <h2 class="heading">Race</h2>
           </a>
           <div id="dropnav" class="dropdown-menu  border-0 ">
             <div class="row px-5">
               <div class="col col-md-3 col-lg-2 col-xl-2 p-3  fit-content">
                 {navCate.map((items, index) => (
                   <a href={items.link} style={{ textDecoration: "none" }}>
-                    <h4 class="catetext">{items.name}</h4>
+                    <h3 class="catetext">{items.name}</h3>
                   </a>
                 ))}
               </div>
@@ -156,14 +156,14 @@ const DropNavigation = () => {
             data-bs-toggle="dropdown"
             data-bs-auto-close="outside"
           >
-            <h3 class="heading">Race</h3>
+            <h2 class="heading">Race</h2>
           </a>
           <div id="dropnav" class="dropdown-menu  border-0 ">
             <div class="row px-5">
               <div class="col col-md-3 col-lg-2 col-xl-2 p-3  fit-content">
                 {navCate.map((items, index) => (
                   <a href={items.link} style={{ textDecoration: "none" }}>
-                    <h4 class="catetext">{items.name}</h4>
+                    <h3 class="catetext">{items.name}</h3>
                   </a>
                 ))}
               </div>
@@ -190,14 +190,14 @@ const DropNavigation = () => {
             data-bs-toggle="dropdown"
             data-bs-auto-close="outside"
           >
-            <h3 class="heading">Race</h3>
+            <h2 class="heading">Race</h2>
           </a>
           <div id="dropnav" class="dropdown-menu  border-0 ">
             <div class="row px-5">
               <div class="col col-md-3 col-lg-2 col-xl-2 p-3  fit-content">
                 {navCate.map((items, index) => (
                   <a href={items.link} style={{ textDecoration: "none" }}>
-                    <h4 class="catetext">{items.name}</h4>
+                    <h3 class="catetext">{items.name}</h3>
                   </a>
                 ))}
               </div>
