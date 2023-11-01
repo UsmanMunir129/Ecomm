@@ -30,11 +30,11 @@ const navCate = [
 const ProductLeftnav = () => {
   return (
     <div class=" col-md-3 col-lg-3 col-xl-3 px-5  d-none d-md-block">
-      <div class="catecont">
+      <div class="catecont ">
         <h2 class="categoryhead">Category</h2>
         {navCate.map((items, index) => (
           <a href={items.link} class="catglinkbtn">
-            <h5 class="categorylinktext">{items.name}</h5>
+            <h3 class="categorylinktext">{items.name}</h3>
           </a>
         ))}
       </div>

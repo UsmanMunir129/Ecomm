@@ -1,9 +1,13 @@
 
 .categoryhead{
 font-family: 'Roboto Condensed', sans-serif;
+color: #000;
+font-size: 33px;
 }
 .catecont{
-    margin-left: 10px;
+    margin-left: 20px;
+    width: fit-content;
+
 }
 
 .catglinkbtn{
@@ -14,7 +18,7 @@ font-family: 'Roboto Condensed', sans-serif;
 color: black;
 font-family: 'Roboto Condensed', sans-serif;
 text-transform: uppercase;
-width: fit-content;
+font-size: 23px;
 
 
 }

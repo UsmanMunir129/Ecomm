@@ -10,66 +10,66 @@ const contactSec = [
   {
     id: 1,
     name: "About Us",
-    link: "/about",
+    link: "/About",
   },
   {
     id: 2,
     name: "Our Team",
-    link: "/about",
+    link: "/Team",
   },
   {
     id: 3,
     name: "Social",
-    link: "/about",
+    link: "/Social",
   },
   {
     id: 4,
     name: "Go Green",
-    link: "/about",
+    link: "/Go",
   },
 ];
 const contactSec1 = [
   {
     id: 1,
     name: "View Catalog",
-    link: "/about",
+    link: "/View",
   },
   {
     id: 2,
     name: "Fabric Info",
-    link: "/about",
+    link: "/Fabric",
   },
   {
     id: 3,
     name: "Colors",
-    link: "/about",
+    link: "/Colors",
   },
   {
     id: 4,
     name: "Made in USA",
-    link: "/about",
+    link: "/Made",
   },
 ];
 const contactSec2 = [
   {
     id: 1,
     name: "Create Account",
-    link: "/about",
+    link: "/Create",
   },
   {
     id: 2,
     name: "Contact Us",
-    link: "/about",
+    link: "/Contactus",
   },
   {
     id: 3,
     name: "Track Orders",
-    link: "/about",
+    link: "/Track",
   },
   {
     id: 4,
     name: "Help Center",
-    link: "/about",
+    link: "/Help",
   },
 ];
 
@@ -129,7 +129,7 @@ export default function Contact() {
               <Typography sx={titleStyles}>Company</Typography>
               <Box>
                 {contactSec.map((items, index) => (
-                  <Box sx={textboxStyles}>
+                  <Box key={items.id} sx={textboxStyles}>
                     <Link href={items.link} underline="none">
                       <Typography sx={textStyles}>{items.name}</Typography>
                     </Link>
@@ -140,7 +140,7 @@ export default function Contact() {
             <Grid item xs={6} sm={6} md={3} lg={3} xl={3} sx={buttonStyles}>
               <Typography sx={titleStyles}>Product Info</Typography>
               {contactSec1.map((items, index) => (
-                <Box sx={textboxStyles}>
+                <Box key={items.id} sx={textboxStyles}>
                   <Link href={items.link} underline="none">
                     <Typography sx={textStyles}>{items.name}</Typography>
                   </Link>
@@ -150,7 +150,7 @@ export default function Contact() {
             <Grid item xs={6} sm={6} md={3} lg={3} xl={3} sx={buttonStyles}>
               <Typography sx={titleStyles}>Work With Us</Typography>
               {contactSec2.map((items, index) => (
-                <Box sx={textboxStyles}>
+                <Box key={items.id} sx={textboxStyles}>
                   <Link href={items.link} underline="none">
                     <Typography sx={textStyles}>{items.name}</Typography>
                   </Link>

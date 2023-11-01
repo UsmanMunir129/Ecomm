@@ -17,6 +17,7 @@ const useStyles = makeStyles({
     borderBottom: "4px solid black",
     width: "90%",
     margin: "auto",
+    marginTop: "90px",
     padding: 80,
   },
 });
@@ -56,23 +57,23 @@ const Social = () => {
           alignItems: "center",
         }}
       >
-        <Link href="#">
+        <Link href="https://www.pinterest.com/">
           <SiPinterest color="#000" size={xs ? 28 : 48} />
         </Link>
-        <Link href="#">
+        <Link href="https://www.instagram.com/">
           <TiSocialInstagramCircular color="#000" size={xs ? 38 : 61} />
         </Link>
-        <Link href="#">
+        <Link href="https://www.facebook.com/">
           <BsFacebook color="#000" size={xs ? 28 : 48} />
         </Link>
 
-        <Link href="#">
+        <Link href="https://www.youtube.com/">
           <TiSocialYoutubeCircular color="#000" size={xs ? 38 : 61} />
         </Link>
-        <Link href="#">
+        <Link href="https://www.tiktok.com/">
           <TbBrandTiktokFilled color="#000" size={xs ? 30 : 53} />
         </Link>
-        <Link href="#">
+        <Link href="https://twitter.com/">
           <AiFillTwitterCircle color="#000" size={xs ? 33 : 56} />
         </Link>
       </Box>

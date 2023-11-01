@@ -5,41 +5,49 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./endslider.css";
 const images = [
   {
+    id: 1,
     link: "San Francisco – Oakland Bay Bridge, United States",
     imgPath:
       "https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
   },
   {
+    id: 2,
     link: "Bird",
     imgPath:
       "https://images.unsplash.com/photo-1617113930975-f9c7243ae527?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
   },
   {
+    id: 3,
     link: "Bali, Indonesia",
     imgPath:
       "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
   },
   {
+    id: 4,
     link: "Goč, Serbia",
     imgPath:
       "https://images.unsplash.com/photo-1619533394727-57d522857f89?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
   },
   {
+    id: 5,
     link: "San Francisco – Oakland Bay Bridge, United States",
     imgPath:
       "https://images.unsplash.com/photo-1618886614638-80e3c103d31a?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1570",
   },
   {
+    id: 6,
     link: "Bird",
     imgPath:
       "https://images.unsplash.com/photo-1609840170480-4c440bcd5d8f?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
   },
   {
+    id: 7,
     link: "Bali, Indonesia",
     imgPath:
       "https://images.unsplash.com/photo-1622497170185-5d668f816a56?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
   },
   {
+    id: 8,
     link: "Goč, Serbia",
     imgPath:
       "https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
@@ -84,7 +92,7 @@ const Endslider = () => {
         autoplayHoverPause="true"
       >
         {images.map((step, index) => (
-          <div class="item">
+          <div key={step.id} class="item">
             <a href={step.link}>
               <img class="img" src={step.imgPath} alt="" />
             </a>

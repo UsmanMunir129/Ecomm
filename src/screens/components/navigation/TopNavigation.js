@@ -20,16 +20,16 @@ const navCate = [
     name: "Lorem",
     link: "/about",
   },
-  {
-    id: 4,
-    name: "Lorem",
-    link: "/about",
-  },
-  {
-    id: 5,
-    name: "Lorem",
-    link: "/about",
-  },
+  // {
+  //   id: 4,
+  //   name: "Lorem",
+  //   link: "/about",
+  // },
+  // {
+  //   id: 5,
+  //   name: "Lorem",
+  //   link: "/about",
+  // },
 ];
 const navbarTop = [
   {
@@ -43,17 +43,17 @@ const navbarTop = [
     link: "/",
   },
   {
-    id: 2,
+    id: 3,
     itemname: "Sign in",
     link: "/",
   },
   {
-    id: 2,
+    id: 4,
     itemname: "Help",
     link: "/",
   },
   {
-    id: 2,
+    id: 5,
     itemname: "Chat",
     link: "/",
   },
@@ -67,35 +67,37 @@ const TopNavigation = () => {
       >
         <div class="container-fluid">
           {/* For Large Screen */}
-          <a class="navbar-brand d-none d-md-block" href="./">
-            WHOLESALE
+          <a class="navbar-brand d-none d-md-block" href="/">
+            <h3>MANUFACTURE</h3>
           </a>
-          {/* For Mobile Screen Image and Wholesale */}
+          {/* For Mobile Screen (Image and Heading) */}
           <div
             class="  d-md-none "
             style={{
-              width: "75%",
+              width: "80%",
               justifyContent: "center",
+              alignItems: "center",
             }}
           >
             <a href="./">
               <img
                 src="https://images.crunchbase.com/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nipimluadtvolo3jvrlr"
-                alt="fdm4"
+                alt="Cuircon Intl"
                 style={{
                   maxWidth: "90px",
                 }}
               />
             </a>
-            <a href="./">
+            <a href="/">
               <span
                 style={{
                   color: "white",
                   float: "right",
-                  fontSize: "13px",
+                  fontSize: "12px",
+                  fontWeight: "bold",
                 }}
               >
-                WHOLESALE
+                MANUFACTURE
               </span>
             </a>
           </div>
@@ -145,7 +147,7 @@ const TopNavigation = () => {
               class="align-self-center d-flex justify-content-center d-md-none  "
               style={{ overflow: "hidden" }}
             >
-              <div class="input-group w-40 ">
+              <div class="input-group">
                 <input
                   type="search"
                   class="form-control rounded"
@@ -153,7 +155,7 @@ const TopNavigation = () => {
                   aria-label="Search"
                   aria-describedby="search-addon"
                 />
-                <button type="button" class="btn btn-danger" aria-setsize={11}>
+                <button type="button" class="btn btn-danger">
                   Search
                 </button>
               </div>
@@ -163,7 +165,7 @@ const TopNavigation = () => {
               {/* First Link */}
               <a
                 class="nav-link "
-                href="#"
+                href="/"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
@@ -183,7 +185,7 @@ const TopNavigation = () => {
                     <img
                       src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
                       class="img-fluid"
-                      alt="image"
+                      alt="Cuircon intl"
                     />
                   </div>
                 </div>
@@ -191,7 +193,7 @@ const TopNavigation = () => {
               {/* Second Link */}
               <a
                 class="nav-link "
-                href="#"
+                href="/"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
@@ -211,7 +213,7 @@ const TopNavigation = () => {
                     <img
                       src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
                       class="img-fluid"
-                      alt="image"
+                      alt="Cuircon"
                     />
                   </div>
                 </div>
@@ -219,7 +221,7 @@ const TopNavigation = () => {
               {/* Third Link */}
               <a
                 class="nav-link "
-                href="#"
+                href="/"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
@@ -239,7 +241,7 @@ const TopNavigation = () => {
                     <img
                       src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
                       class="img-fluid"
-                      alt="image"
+                      alt="Cuircon"
                     />
                   </div>
                 </div>
@@ -247,7 +249,7 @@ const TopNavigation = () => {
               {/* Forth Link */}
               <a
                 class="nav-link "
-                href="#"
+                href="/"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
@@ -267,35 +269,7 @@ const TopNavigation = () => {
                     <img
                       src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
                       class="img-fluid"
-                      alt="image"
-                    />
-                  </div>
-                </div>
-              </div>
-              {/* Fifth Link */}
-              <a
-                class="nav-link "
-                href="#"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
-              >
-                {/* <h3 class="title text-white">Race</h3> */}
-              </a>
-              <div class="dropdown-menu  border-0 ">
-                <div class="row justify-content-between py-3 px-5">
-                  <div class="catecont col-12 col-sm-4 col-md-2 ">
-                    {navCate.map((items, index) => (
-                      <a href={items.link} style={{ textDecoration: "none" }}>
-                        <h4 class="catetext">{items.name}</h4>
-                      </a>
-                    ))}
-                  </div>
-
-                  <div class="col-12 col-sm-12 col-md-4  align-self-center">
-                    <img
-                      src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
-                      class="img-fluid"
-                      alt="image"
+                      alt="Cuircon"
                     />
                   </div>
                 </div>
@@ -329,7 +303,10 @@ const TopNavigation = () => {
             </span>
           </div>
           <div class="col col-lg-4 col-xl-4 col-md-6 align-self-center d-flex justify-content-center ">
-            <div class="input-group w-50 ">
+            <div
+              class="input-group w-50 "
+              style={{ height: "38px", fontSize: "20px" }}
+            >
               <input
                 type="search"
                 class="form-control rounded"
@@ -337,7 +314,7 @@ const TopNavigation = () => {
                 aria-label="Search"
                 aria-describedby="search-addon"
               />
-              <button type="button" class="btn btn-dark" aria-setsize={11}>
+              <button type="button" class="btn btn-dark">
                 Search
               </button>
             </div>

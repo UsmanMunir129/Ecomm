@@ -141,8 +141,15 @@ input, textarea{
     max-height: 50rem;
     color: ${({ theme }) => theme.colors.black};
     padding: 1.6rem 2.4rem;
-    border: 1px solid ${({ theme }) => theme.colors.border};
-   box-shadow: ${({ theme }) => theme.colors.shadowSupport};
+    border: 1px solid gray;
+    border-radius:5px;
+    font-size:15px
+}
+
+
+::-webkit-input-placeholder{
+  font-size: 15px !important;
+ 
 }
     input[type="submit"]{
     max-width: 16rem;
@@ -155,6 +162,7 @@ input, textarea{
     text-transform: uppercase;
     font-size: 1.8rem;
     cursor: pointer;
+    border-radius:30px
     }
 
 @media (max-width: ${({ theme }) => theme.media.tab}) {
