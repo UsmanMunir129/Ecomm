@@ -7,6 +7,7 @@ import Contact from "../screens/components/footer/Contact";
 import { GlobalStyle } from "../screens/GlobalStyle";
 import About from "../screens/components/About";
 import ContactUs from "../screens/components/ContactUs";
+import ProductDetail from "../screens/components/ProductDetail";
 
 const Routees = () => {
   return (
@@ -19,6 +20,7 @@ const Routees = () => {
         <Route path="/Kartrace" element={<Kartrace />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contactus" element={<ContactUs />} />
+        <Route path="/ProductDetail" element={<ProductDetail />} />
       </Routes>
       <Contact />
     </BrowserRouter>

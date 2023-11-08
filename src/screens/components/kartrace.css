@@ -8,8 +8,33 @@
      height: 220px;
       object-fit: cover;
     }
-  
   }
+  .categoryhead{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000;
+    font-size: 33px;
+    }
+    .catecontainer{
+        margin-left: 20px;
+        width: fit-content;
+    
+    }
+    
+    .catglinkbtn{
+        text-decoration: none; 
+    }
+    
+    .categorylinktext{
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 23px;
+    
+    
+    }
+    .categorylinktext:hover{
+        text-decoration: underline;
+    }
   .kartprodcards{
     width: 280px;
      height: 530px;
@@ -18,7 +43,6 @@
       
    }
   .kartprodcards:hover{
-    /* -webkit-box-shadow: 0 20px 40px rgba(152, 93, 136, 0.6); */
     box-shadow: 0 4px 10px rgba(0,0,0,0.16), 0 4px 10px rgba(0,0,0,0.23); 
        -webkit-transform: translateY(-2px);
     border-top-right-radius: 5px;
@@ -49,9 +73,7 @@ text-decoration: none;
   font-size: 18px;
   font-weight: 800;
 }
-/* .protext:hover{
-  text-decoration: underline;
-} */
+
 .katelastbtn{
   background-color: #000;
   color: white;

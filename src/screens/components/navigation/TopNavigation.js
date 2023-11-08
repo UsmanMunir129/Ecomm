@@ -169,7 +169,7 @@ const TopNavigation = () => {
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
-                <h6 class="dropnavtitle text-white">Race</h6>
+                <h6 class="dropnavtitle text-white">Auto</h6>
               </a>
               <div class="dropdown-menu  border-0 ">
                 <div class="row justify-content-between py-3 px-5">
@@ -197,7 +197,7 @@ const TopNavigation = () => {
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
-                <h6 class="dropnavtitle text-white">Race</h6>
+                <h6 class="dropnavtitle text-white">Kart</h6>
               </a>
               <div class="dropdown-menu  border-0 ">
                 <div class="row justify-content-between py-3 px-5">
@@ -225,7 +225,7 @@ const TopNavigation = () => {
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
-                <h6 class="dropnavtitle text-white">Race</h6>
+                <h6 class="dropnavtitle text-white">Rental</h6>
               </a>
               <div class="dropdown-menu  border-0 ">
                 <div class="row justify-content-between py-3 px-5">
@@ -253,7 +253,7 @@ const TopNavigation = () => {
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
-                <h6 class="dropnavtitle text-white">Race</h6>
+                <h6 class="dropnavtitle text-white">Mechanic</h6>
               </a>
               <div class="dropdown-menu  border-0 ">
                 <div class="row justify-content-between py-3 px-5">

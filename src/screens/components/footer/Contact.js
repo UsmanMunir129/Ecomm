@@ -75,17 +75,6 @@ const contactSec2 = [
 
 const theme = createTheme();
 
-// theme.typography.h6 = {
-//   fontSize: "16px",
-//   "@media (min-width:600px)": {
-//     fontSize: "1.1rem",
-//   },
-//   [theme.breakpoints.up("md")]: {
-//     fontSize: "1.3rem",
-//   },
-//   fontFamily: "Helvetica",
-// };
-
 export default function Contact() {
   const buttonStyles = {
     display: "flex",
@@ -123,7 +112,15 @@ export default function Contact() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Box sx={{ flexGrow: 1, px: 3, py: 3, borderTop: "3px solid gray" }}>
+        <Box
+          sx={{
+            flexGrow: 1,
+            px: 3,
+            py: 3,
+            borderTop: "3px solid gray",
+            marginTop: 10,
+          }}
+        >
           <Grid container spacing={1}>
             <Grid item xs={6} sm={6} md={3} lg={3} xl={3} sx={buttonStyles}>
               <Typography sx={titleStyles}>Company</Typography>
