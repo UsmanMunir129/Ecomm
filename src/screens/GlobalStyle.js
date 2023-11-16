@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+  font-family:  'Roboto',sans-serif;
 }
 
 
@@ -43,7 +43,7 @@ h1,
 h2,
 h3,
 h4 {
-   font-family: "Work Sans", sans-serif;
+  font-family:  'Roboto',sans-serif;
 
 }
 
@@ -164,17 +164,31 @@ input, textarea{
     cursor: pointer;
     border-radius:30px
     }
-
+    
 @media (max-width: ${({ theme }) => theme.media.tab}) {
     .container {
     max-width: 130rem;
     padding: 0 3.2rem;
   }
+  h2{
+    font-size:2.3rem;
   }
+  p{
+    font-size:1.2rem !important;
 
+  }
+  }
+  
    @media (max-width: ${({ theme }) => theme.media.mobile}) {
        html {
       font-size: 50%;
+    }
+    h2{
+      font-size:1.8rem;
+    }
+    p{
+      font-size:1.2rem !important;
+  
     }
 
 .grid{

@@ -1,6 +1,8 @@
 import { ThemeProvider } from "styled-components";
 import Routees from "./Routes/Routees";
 
+import "animate.css";
+
 function App() {
   const theme = {
     colors: {

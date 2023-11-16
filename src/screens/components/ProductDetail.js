@@ -1,20 +1,28 @@
-import React from "react";
+// import React from "react";
 import "./productdetail.css";
+import React, { useState } from "react";
+import { Button } from "reactstrap";
+import OrderModal from "./OrderModal";
 const ProductDetail = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const toggleModal = () => {
+    setModalOpen(!isModalOpen);
+  };
   return (
-    <div className="container  my-5">
-      <div className="row ">
-        <div className="col col-xs-12 col-md-5 col-sm-12  col-lg-5 text-center">
+    <div className="container p-0  my-5">
+      <div className="row m-0 px-3">
+        <div className="col-12  col-md-5 col-sm-12  col-lg-5 text-center">
           <div id="contimagdetail">
             <img
-              className="img-fluid  imagedetail"
+              className="  imagedetail"
               src={require("../../assets/Product1.jpeg")}
               alt="suits"
             />
           </div>
         </div>
-        <div className="col col-xs-12 col-md-7 col-sm-12 col-lg-7   mt-3">
-          <h2>Lorem ipsum dolor sit amet.</h2>
+        <div className="col-12 col-md-7 col-sm-12 col-lg-7   mt-3">
+          <h2 className="table-title">Lorem ipsum dolor sit amet.</h2>
           <div className="table-responsive rounded mt-5 ">
             <table className="table table-striped table-hover table-lg  table-bordered ">
               <tbody>
@@ -77,6 +85,12 @@ const ProductDetail = () => {
                 </tr>
               </tbody>
             </table>
+          </div>
+          <div className="mt-5">
+            <Button color="dark" size="lg" onClick={toggleModal}>
+              Open Order Form
+            </Button>
+            <OrderModal isOpen={isModalOpen} toggleModal={toggleModal} />
           </div>
         </div>
       </div>

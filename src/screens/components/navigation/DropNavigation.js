@@ -33,11 +33,6 @@ const navCate = [
     name: "Under Garments",
     link: "/about",
   },
-  // {
-  //   id: 5,
-  //   name: "Lorem",
-  //   link: "/about",
-  // },
 ];
 
 const manCate = [

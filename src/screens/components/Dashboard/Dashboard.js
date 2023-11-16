@@ -9,6 +9,7 @@ import CarouselTop from "./CarouselTop";
 import Endslider from "./Endslider";
 import Trusted from "../Trusted";
 import Services from "../Services";
+import Motorsport from "./Motorsport";
 
 const images = [
   {
@@ -55,7 +56,8 @@ const Dashboard = () => {
     <>
       {/* //Screen */}
       <CarouselTop />
-      <Grid container className={classes.mainCont}>
+      <Motorsport />
+      {/* <Grid container className={classes.mainCont}>
         {images.map((step, index) => (
           <Grid item lg={3} md={6} xs={12} sm={6} align="center">
             <Box className={classes.imgCont}>
@@ -70,11 +72,12 @@ const Dashboard = () => {
             </Box>
           </Grid>
         ))}
-      </Grid>
+      </Grid> */}
       {/* //Screens  
       ..
       ...
        */}
+
       <Social />
       <Trusted />
       <Endslider />

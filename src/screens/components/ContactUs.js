@@ -55,6 +55,7 @@ const ContactUs = () => {
           <form
             action="https://formspree.io/f/moqorygv"
             method="POST"
+            enctype="multipart/form-data"
             className="contact-inputs"
           >
             <input
@@ -71,6 +72,11 @@ const ContactUs = () => {
               placeholder="Email"
               autoComplete="off"
               required
+            />
+            <input
+              type="file"
+              name="attachment"
+              accept="image/png, image/jpeg"
             />
 
             <textarea
