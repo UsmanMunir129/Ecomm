@@ -9,11 +9,10 @@ import CarouselTop from "./CarouselTop";
 import Endslider from "./Endslider";
 import Trusted from "../Trusted";
 import Services from "../Services";
-import Motorsport from "./Motorsport";
 
 const images = [
   {
-    link: "San Francisco – Oakland Bay Bridge, United States",
+    link: "/motorsport",
     imgPath:
       "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
   },
@@ -56,12 +55,11 @@ const Dashboard = () => {
     <>
       {/* //Screen */}
       <CarouselTop />
-      <Motorsport />
-      {/* <Grid container className={classes.mainCont}>
+      <Grid container className={classes.mainCont}>
         {images.map((step, index) => (
           <Grid item lg={3} md={6} xs={12} sm={6} align="center">
             <Box className={classes.imgCont}>
-              <Link href="#">
+              <Link href={step.link}>
                 <img
                   component="img-fluid"
                   alt="Cuircon International"
@@ -72,7 +70,7 @@ const Dashboard = () => {
             </Box>
           </Grid>
         ))}
-      </Grid> */}
+      </Grid>
       {/* //Screens  
       ..
       ...
