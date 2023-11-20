@@ -49,7 +49,7 @@ h4 {
 
 h1 {
   color: ${({ theme }) => theme.colors.heading};
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 900;
 }
 
@@ -187,7 +187,7 @@ input, textarea{
       font-size:1.8rem;
     }
     p{
-      font-size:1.2rem !important;
+      font-size:1.5rem !important;
   
     }
 

@@ -4,7 +4,7 @@ import "./CarouselTop.css";
 const images = [
   {
     link: "/ll",
-    imgPath: "../images/C1.jpg",
+    imgPath: "../images/design.jpg",
   },
   {
     link: "/s",
@@ -28,7 +28,7 @@ function CarouselTop() {
             <a href={step.link}>
               <img
                 id="image"
-                className=" w-100  "
+                className="img-fluid w-100  "
                 src={step.imgPath}
                 alt="Curicon"
               />

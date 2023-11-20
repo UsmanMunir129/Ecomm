@@ -9,6 +9,7 @@ import About from "../screens/components/About";
 import ContactUs from "../screens/components/ContactUs";
 import ProductDetail from "../screens/components/ProductDetail";
 import Motorsport from "../screens/components/Motorsport";
+import Motorsp from "../screens/components/Motorsp";
 
 const Routees = () => {
   return (
@@ -22,6 +23,7 @@ const Routees = () => {
         <Route path="//About" element={<About />} />
         <Route path="/Contactus" element={<ContactUs />} />
         <Route path="/motorsport" element={<Motorsport />} />
+        <Route path="/motorsp" element={<Motorsp />} />
 
         <Route path="/ProductDetail" element={<ProductDetail />} />
       </Routes>
