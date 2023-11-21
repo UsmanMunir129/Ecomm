@@ -3,27 +3,27 @@ import { Parallax } from "react-parallax";
 import AOS from "aos";
 
 import "./motorsp.css";
+import Owlcarousel from "./Owlcarousel";
 
 const images = [
   {
     id: 1,
-    imgPath: "../assets/factory.png",
+    image: [require("../../assets/research.png")],
     heading: "Research & Development",
     Description:
       "Get seasoned experts to develop, run, supply, and market your ecommerce store",
   },
   {
     id: 2,
-    imgPath:
-      "https://images.unsplash.com/photo-1617113930975-f9c7243ae527?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
+
+    image: [require("../../assets/factory.png")],
     heading: "Global ecommerce focus",
     Description:
       "Offer a faster expansion to international fans thanks to production facilities worldwide",
   },
   {
     id: 3,
-    imgPath:
-      "https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
+    image: [require("../../assets/shipment.png")],
     heading: "Unrivaled quality and solutions      ",
     Description:
       "Have your business boosted by premium merch, data-driven strategies, and creative services",
@@ -31,11 +31,12 @@ const images = [
 ];
 const Motorsp = () => {
   useEffect(() => {
-    AOS.init({ duration: 1500 });
+    AOS.init({ duration: 2000 });
   }, []);
   return (
     <>
       <div>
+        {/* banner image section */}
         <div>
           <Parallax
             className="parallax"
@@ -52,7 +53,7 @@ const Motorsp = () => {
                 <p
                   className="headingscndcontent text-white"
                   data-aos="fade-right"
-                  data-aos-duration="2000"
+                  data-aos-duration="3000"
                 >
                   Scale your business with a trusted on-demand manufacturer
                 </p>
@@ -60,85 +61,44 @@ const Motorsp = () => {
             </div>
           </Parallax>
         </div>
+        {/* Text heading section */}
+        <div className="px-3  m-5">
+          <h2>Get new unique ecommerce solutions for your brand</h2>
+          <p className=" mt-4">
+            With Snow Commerce as part of our team, we’re making ecommerce
+            management and fandom engagement even easier and more powerful for
+            our largest customers
+          </p>
+        </div>
         {/* card section */}
-        <div className="mt-5">
-          <div class="row px-5 ">
-            {/* <div class="col-md-4">
-              <div class="card p-3 mb-2">
-                <div class="d-flex justify-content-between">
-                  <div class="d-flex flex-row align-items-center">
-                    <div class="icon">
-                      <img
-                        src={require("../../assets/research.png")}
-                        className="img-fluid"
-                        width="40px"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-5">
-                  <h3 class="headingresearch fw-bold">
-                    Research & Development
-                  </h3>
-                  <p>
-                    Get seasoned experts to develop, run, supply, and market
-                    your ecommerce store
-                  </p>
-                </div>
-              </div>
-            </div> */}
+        <div>
+          <div className="row mx-5">
             {images.map((step, index) => (
-              <div class="col-md-4">
-                <div class="card p-3 mb-2">
-                  <div class="d-flex justify-content-between">
-                    <div class="d-flex flex-row align-items-center">
-                      <div key={step.id} class="icon">
+              <div key={step.id} className="col-12 col-sm-4 col-md-4 col-lg-4">
+                <div className="card p-3 mb-2">
+                  <div className="d-flex justify-content-between">
+                    <div className="d-flex flex-row align-items-center">
+                      <div className="iconimg">
                         <img
-                          src={step.imgPath}
-                          // src={require("../../assets/factory.png")}
+                          src={step.image}
                           className="img-fluid"
                           width="40px"
-                          alt=""
+                          alt="Cuircon International"
                         />
                       </div>
                     </div>
                   </div>
-                  <div class="mt-5">
-                    <h3 class="headingresearch fw-bold">{step.heading}</h3>
+                  <div className="mt-5">
+                    <h3 className="headingresearch fw-bold">{step.heading}</h3>
                     <p>{step.Description}</p>
                   </div>
                 </div>
               </div>
             ))}
-            {/* <div class="col-md-4">
-              <div class="card p-3 mb-2">
-                <div class="d-flex justify-content-between">
-                  <div class="d-flex flex-row align-items-center">
-                    <div class="icon">
-                      <img
-                        src={require("../../assets/shipment.png")}
-                        className="img-fluid"
-                        width="40px"
-                        alt=""
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-5">
-                  <h3 class="headingresearch fw-bold">
-                    Research & Development
-                  </h3>
-                  <p>
-                    Get seasoned experts to develop, run, supply, and market
-                    your ecommerce store
-                  </p>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
+      <Owlcarousel />
     </>
   );
 };

@@ -1,0 +1,35 @@
+.cardsmaincont{
+    background-color: #2B2F36;
+}
+.cards{
+    background-color: #53575C;
+    border-radius: 10px;
+}
+h2{
+    font-size: 14px;
+}
+
+    .owl-prev {
+        left: 0;
+        display: flex;
+        background: black;
+        border-radius: 50%;
+      }
+      
+      .owl-next {
+        right: 0;
+        display: flex;
+        background: #fff;
+      }
+      
+      .owl-prev i,
+      .owl-next i {
+        margin: auto;
+        font-size: 50px;
+        height: 50px;
+        width: 50px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 50%;
+        align-self: center;
+      }
