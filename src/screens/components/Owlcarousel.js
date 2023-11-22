@@ -6,47 +6,67 @@ import "./owlcarousel.css";
 const images = [
   {
     id: 1,
-    image: [require("../../assets/research.png")],
-    heading: "Research & Development",
+    image: [require("../../assets/color-selection.png")],
+    heading: "Custom Design and Manufacturing",
     Description:
-      "Get seasoned experts to develop, run, supply, and market your ecommerce store",
+      "Collaborate with racewear brands to create custom designs for racing suits, gloves, boots, and other gear. Utilize advanced materials and technologies to ensure the highest level of performance and safety",
   },
   {
     id: 2,
-
-    image: [require("../../assets/factory.png")],
-    heading: "Global ecommerce focus",
+    image: [require("../../assets/sample.png")],
+    heading: "Prototyping and Sampling",
     Description:
-      "Offer a faster expansion to international fans thanks to production facilities worldwide",
+      "Develop prototypes and samples for racewear products to allow brands to evaluate and test the designs before full-scale production.",
   },
   {
     id: 3,
-    image: [require("../../assets/shipment.png")],
-    heading: "Unrivaled quality and solutions      ",
+    image: [require("../../assets/onlin.png")],
+    heading: "Technical Consultation",
     Description:
-      "Have your business boosted by premium merch, data-driven strategies, and creative services",
+      "Provide technical expertise in materials, construction techniques, and safety standards to ensure that racewear meets industry regulations and standards.",
   },
   {
     id: 4,
-    image: [require("../../assets/research.png")],
-    heading: "Research & Development",
+    image: [require("../../assets/supply.png")],
+    heading: "Supply Chain Management",
     Description:
-      "Get seasoned experts to develop, run, supply, and market your ecommerce store",
+      "Manage the supply chain efficiently to ensure timely production and delivery of racewear products.",
   },
   {
     id: 5,
 
-    image: [require("../../assets/factory.png")],
-    heading: "Global ecommerce focus",
+    image: [require("../../assets/earth.png")],
+    heading: "Sustainability Practices",
     Description:
-      "Offer a faster expansion to international fans thanks to production facilities worldwide",
+      "Integrate sustainable and eco-friendly practices in manufacturing processes and materials to appeal to environmentally conscious racewear brands",
   },
   {
     id: 6,
-    image: [require("../../assets/shipment.png")],
-    heading: "Unrivaled quality and solutions      ",
+    image: [require("../../assets/container.png")],
+    heading: "Logistics and Distribution",
     Description:
-      "Have your business boosted by premium merch, data-driven strategies, and creative services",
+      "Assist in logistics and distribution to ensure that racewear products reach their destinations in a timely and cost-effective manner.",
+  },
+  {
+    id: 7,
+    image: [require("../../assets/compliant.png")],
+    heading: "Compliance and Certification",
+    Description:
+      "Ensure that racewear products meet industry regulations and obtain necessary certifications for safety and quality.",
+  },
+  {
+    id: 8,
+    image: [require("../../assets/analytics.png")],
+    heading: "Research and Development",
+    Description:
+      "Invest in ongoing research and development to stay ahead of industry trends, technological advancements, and innovations in racewear design and materials",
+  },
+  {
+    id: 9,
+    image: [require("../../assets/online-training.png")],
+    heading: "Education and Training",
+    Description:
+      "Provide training sessions or educational resources for racewear brands to keep them informed about the latest developments in materials, safety standards, and design techniques.",
   },
 ];
 
@@ -84,43 +104,33 @@ const options = {
 
 const Owlcarousel = () => {
   return (
-    <div className="cardsmaincont my-5 p-5">
+    <div className="cardsmaincont my-5 py-5">
+      <div>
+        <h2 className="text-center text-white fst-italic">SERVICES</h2>
+      </div>
       <OwlCarousel
-        className="owl-theme"
+        className="owl-theme my-3"
         {...options}
         loop
         items={4}
-        margin={10}
+        margin={1}
         nav
       >
-        <div className=" item cards ">
-          <div className="">
-            <div className="mx-5">
-              <h2 className="text-white fs-1 fw-bold ">
-                No inventry risk or invesment{" "}
-              </h2>
-              <p className="text-white fs-4 ">
-                With Snow Commerce as part of our team, we’re making ecommerce
-              </p>
+        {images.map((step, index) => (
+          <div className="container item cards">
+            <div className="cont1">
+              <h3 className="heading1">{step.heading}</h3>
+              <p className="desc1">{step.Description}</p>
             </div>
-            <img
-              src={require("../../assets/Think (1).png")}
-              className=" bg-danger"
-            />
+            <div className="cont2 d-flex align-items-center justify-content-center">
+              <img
+                src={step.image}
+                className="img-fluid cardbotmimg object-fit-cover"
+                alt="Cuircon International"
+              />
+            </div>
           </div>
-        </div>
-        <div className="item bg-danger align-items-center ">
-          <img src={require("../../assets/offer.png")} />
-        </div>
-        <div className="item">
-          <img src={require("../../assets/call.png")} />
-        </div>
-        <div className="item">
-          <img src={require("../../assets/Think (5).png")} />
-        </div>
-        <div className="item">
-          <img src={require("../../assets/Mail.png")} />
-        </div>
+        ))}
       </OwlCarousel>
     </div>
   );

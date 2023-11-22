@@ -61,14 +61,14 @@ h1 {
   }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 400;
 }
 
 p, button {
   color: ${({ theme }) => theme.colors.text};
   font-size: 1.81rem;
-  font-weight:500;
+  font-weight:300;
 }
 
 a {
@@ -171,6 +171,9 @@ input, textarea{
   h2{
     font-size:2.3rem;
   }
+  h3{
+    font-size:1.9rem;
+  }
   p{
     font-size:1.2rem !important;
 
@@ -182,6 +185,9 @@ input, textarea{
       font-size: 50%;
     }
     h2{
+      font-size:1.8rem;
+    }
+    h3{
       font-size:1.8rem;
     }
     p{

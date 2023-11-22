@@ -4,19 +4,19 @@ import "./CarouselTop.css";
 const images = [
   {
     link: "/ll",
-    imgPath: "../images/design.jpg",
+    imgPath: [require("../../../assets/carsl1.jpg")],
   },
   {
     link: "/s",
-    imgPath: "../images/C2.jpg",
+    imgPath: [require("../../../assets/carsl2.jpg")],
   },
   {
     link: "/e",
-    imgPath: "../images/C3.jpg",
+    imgPath: [require("../../../assets/carsl3.jpg")],
   },
   {
     link: "/w",
-    imgPath: "../images/C4.jpg",
+    imgPath: [require("../../../assets/carsl4.jpg")],
   },
 ];
 function CarouselTop() {
@@ -28,7 +28,7 @@ function CarouselTop() {
             <a href={step.link}>
               <img
                 id="image"
-                className="img-fluid w-100  "
+                className="img-fluid w-100"
                 src={step.imgPath}
                 alt="Curicon"
               />

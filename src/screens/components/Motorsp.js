@@ -11,7 +11,7 @@ const images = [
     image: [require("../../assets/research.png")],
     heading: "Research & Development",
     Description:
-      "Get seasoned experts to develop, run, supply, and market your ecommerce store",
+      "Revolutionizing racewear through cutting-edge R&D services, we use innovation with performance, crafting bespoke solutions that push the boundaries of speed and safety for the ultimate racing experience",
   },
   {
     id: 2,
@@ -19,14 +19,14 @@ const images = [
     image: [require("../../assets/factory.png")],
     heading: "Global ecommerce focus",
     Description:
-      "Offer a faster expansion to international fans thanks to production facilities worldwide",
+      "Experience precision and passion in our racewear manufacturing services. Elevate your brand with expert craftsmanship, delivering top-notch performance gear for track champions",
   },
   {
     id: 3,
     image: [require("../../assets/shipment.png")],
     heading: "Unrivaled quality and solutions      ",
     Description:
-      "Have your business boosted by premium merch, data-driven strategies, and creative services",
+      "Seamless global delivery for every brands, our shipping service ensures your gear reaches the finish line faster. From track to doorstep, trust us to accelerate your products worldwide with unparalleled efficiency and reliability.",
   },
 ];
 const Motorsp = () => {

@@ -58,7 +58,7 @@ const Kartrace = () => {
         <div class=" container-fluid kartbanner">
           <img
             class=" img-fluid kartbannerimg"
-            src={require("../../assets/C2.jpg")}
+            src={require("../../assets/carsl1.jpg")}
             alt="Bannerimage"
           />
         </div>
