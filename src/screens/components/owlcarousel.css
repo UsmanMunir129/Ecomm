@@ -5,8 +5,8 @@
 .cards{
   background-color: #53575C;
   border-radius: 10px;
-  width: 75%;
-  height: 450px;
+  width: 85%;
+  height: 420px;
 }
 .cont1{
   height: 60%;
@@ -60,7 +60,7 @@ height: 40%;
           max-width: 50%;
         }
         .cont1{
-          height: 200px;
+          height: 170px;
           padding-top: 20px;
           font-size: 24px;
         }
@@ -68,10 +68,10 @@ height: 40%;
           font-size: 20px;
         }
         .cont2{
-        height: 140px;
+        height: 130px;
         }
         .cards{
-          height: 340px;
+          height: 300px;
         }
 
       }

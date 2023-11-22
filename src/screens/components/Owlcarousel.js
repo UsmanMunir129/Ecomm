@@ -104,16 +104,16 @@ const options = {
 
 const Owlcarousel = () => {
   return (
-    <div className="cardsmaincont my-5 py-5">
+    <div className="cardsmaincont my-5 py-3">
       <div>
-        <h2 className="text-center text-white fst-italic">SERVICES</h2>
+        <h2 className="text-center text-white fst-italic my-5">SERVICES</h2>
       </div>
       <OwlCarousel
         className="owl-theme my-3"
         {...options}
         loop
         items={4}
-        margin={1}
+        margin={10}
         nav
       >
         {images.map((step, index) => (
