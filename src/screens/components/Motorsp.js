@@ -19,7 +19,7 @@ const images = [
     image: [require("../../assets/factory.png")],
     heading: "Global ecommerce focus",
     Description:
-      "Experience precision and passion in our racewear manufacturing services. Elevate your brand with expert craftsmanship, delivering top-notch performance gear for track champions",
+      "Experience precision and passion in our racewear manufacturing services. Elevate your brand with expert craftsmanship, delivering the top-notch performance gear for the track champions",
   },
   {
     id: 3,
@@ -71,33 +71,29 @@ const Motorsp = () => {
           </p>
         </div>
         {/* card section */}
-        <div>
-          <div className="row mx-5">
-            {images.map((step, index) => (
-              <div key={step.id} className="col-12 col-sm-4 col-md-4 col-lg-4">
-                <div className="card p-3 mb-2">
-                  <div className="d-flex justify-content-between">
-                    <div className="d-flex flex-row align-items-center">
-                      <div className="iconimg">
-                        <img
-                          src={step.image}
-                          className="img-fluid"
-                          width="40px"
-                          alt="Cuircon International"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mt-5">
-                    <h3 className="headingresearch fw-bold">{step.heading}</h3>
-                    <p>{step.Description}</p>
-                  </div>
+
+        <div className="row mx-5">
+          {images.map((step, index) => (
+            <div key={step.id} className="col-12 col-sm-4 col-md-4 col-lg-4">
+              <div className="card p-3 mb-2">
+                <div className="iconimg">
+                  <img
+                    src={step.image}
+                    className="img-fluid"
+                    width="40px"
+                    alt="Cuircon International"
+                  />
+                </div>
+                <div className="mt-5">
+                  <h3 className="headingresearch fw-bold">{step.heading}</h3>
+                  <p>{step.Description}</p>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
+
       <Owlcarousel />
     </>
   );

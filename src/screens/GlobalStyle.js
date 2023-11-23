@@ -62,7 +62,7 @@ h1 {
 
 h3 {
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 p, button {

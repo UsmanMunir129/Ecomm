@@ -3,6 +3,8 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./owlcarousel.css";
+import Scalemap from "./Scalemap";
+import Customercarsl from "./Customercarsl";
 const images = [
   {
     id: 1,
@@ -72,8 +74,8 @@ const images = [
 
 //Owl Carousel Package Styling Properties
 const options = {
-  margin: 25,
-
+  // center: true,
+  // margin: 25,
   responsiveClass: true,
   dots: false,
   autoplay: false,
@@ -104,35 +106,39 @@ const options = {
 
 const Owlcarousel = () => {
   return (
-    <div className="cardsmaincont my-5 py-3">
-      <div>
-        <h2 className="text-center text-white fst-italic my-5">SERVICES</h2>
+    <>
+      <div className="cardsmaincont my-5 py-3">
+        <div>
+          <h2 className="text-center text-white my-5">SERVICES</h2>
+        </div>
+        <OwlCarousel
+          className="owl-theme my-3"
+          {...options}
+          loop
+          items={4}
+          margin={10}
+          nav
+        >
+          {images.map((step, index) => (
+            <div key={step.id} className="container item cards py-4 my-5">
+              <div className="cont1 mt-3">
+                <h3 className="heading1">{step.heading}</h3>
+                <p className="desc1">{step.Description}</p>
+              </div>
+              <div className="cont2 d-flex align-items-center justify-content-center">
+                <img
+                  src={step.image}
+                  className="img-fluid cardbotmimg object-fit-cover"
+                  alt="Cuircon International"
+                />
+              </div>
+            </div>
+          ))}
+        </OwlCarousel>
       </div>
-      <OwlCarousel
-        className="owl-theme my-3"
-        {...options}
-        loop
-        items={4}
-        margin={10}
-        nav
-      >
-        {images.map((step, index) => (
-          <div className="container item cards">
-            <div className="cont1">
-              <h3 className="heading1">{step.heading}</h3>
-              <p className="desc1">{step.Description}</p>
-            </div>
-            <div className="cont2 d-flex align-items-center justify-content-center">
-              <img
-                src={step.image}
-                className="img-fluid cardbotmimg object-fit-cover"
-                alt="Cuircon International"
-              />
-            </div>
-          </div>
-        ))}
-      </OwlCarousel>
-    </div>
+      <Scalemap />
+      <Customercarsl />
+    </>
   );
 };
 

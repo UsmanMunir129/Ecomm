@@ -21,11 +21,11 @@
 .card {
     border: none;
     border-radius: 10px;
-    background-color: #F1F9FA
+    background-color: #e8f9fb;
 }
 .iconimg {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: #eee;
     border-radius: 15px;
     display: flex;
