@@ -13,15 +13,11 @@
    .carousel1 .carousel-control-prev{
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
    }
+  
+ 
    
    @media only screen and (max-width: 768px) {
-  #catalogueCarousel1 {
-    height: 250px;
-  }
-  #image{
-   height: 250px;
-    object-fit: cover;
-  }
+  
 }
    
    

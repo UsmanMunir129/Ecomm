@@ -24,7 +24,6 @@ const Routees = () => {
         <Route path="/Contactus" element={<ContactUs />} />
         <Route path="/motorsport" element={<Motorsport />} />
         <Route path="/motorsp" element={<Motorsp />} />
-
         <Route path="/ProductDetail" element={<ProductDetail />} />
       </Routes>
       <Contact />

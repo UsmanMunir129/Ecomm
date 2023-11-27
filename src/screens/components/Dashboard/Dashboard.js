@@ -1,90 +1,100 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
-import { Box, Link } from "@mui/material";
-import { makeStyles } from "@mui/styles";
-
-//Importing Screens
-import Social from "./Social";
 import CarouselTop from "./CarouselTop";
-import Endslider from "./Endslider";
-import Trusted from "../Trusted";
-import Services from "../Services";
-
-const images = [
+import "./dashboard.css";
+const images1 = [
   {
-    link: "/motorsport",
-    imgPath:
-      "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
+    link: "/ll",
+    imgPath: [require("../../../assets/Think (5).png")],
   },
   {
-    link: "/motorsp",
-    imgPath:
-      "https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60",
+    link: "/s",
+    imgPath: [require("../../../assets/factory.png")],
   },
   {
-    link: "Bali, Indonesia",
-    imgPath:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250",
+    link: "/e",
+    imgPath: [require("../../../assets/shipment.png")],
   },
   {
-    link: "Goč, Serbia",
-    imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+    link: "/w",
+    imgPath: [require("../../../assets/supply.png")],
   },
 ];
-const useStyles = makeStyles({
-  mainCont: {
-    margin: "30px 0px 30px 0px",
-    // backgroundColor: "black",
+const images2 = [
+  {
+    link: "/ll",
+    imgPath: [require("../../../assets/Think (5).png")],
   },
-  imgCont: {
-    padding: 10,
-    // backgroundColor: "red",
-    height: "100%",
+  {
+    link: "/s",
+    imgPath: [require("../../../assets/factory.png")],
   },
-  imgbox: {
-    borderRadius: 8,
-    width: 300,
-    height: 300,
-  },
-});
-
+];
 const Dashboard = () => {
-  const classes = useStyles();
   return (
     <>
-      {/* //Screen */}
       <CarouselTop />
-      <Grid container className={classes.mainCont}>
-        {images.map((step, index) => (
-          <Grid item lg={3} md={6} xs={12} sm={6} align="center">
-            <Box className={classes.imgCont}>
-              <Link href={step.link}>
+      <div className="container my-5">
+        <div className="row mb-3 ">
+          {images1.map((step, index) => (
+            <div className="col-6 col-sm-6 col-md-3 col-lg-3 ">
+              <a href="/">
+                <div className="imgcont">
+                  <img
+                    className="img-fluid image1"
+                    src={step.imgPath}
+                    alt="Cuircon"
+                  />
+                </div>
+              </a>
+            </div>
+          ))}
+        </div>
+        <div class="row">
+          <div class="col">
+            <a href="/">
+              <div className="imgcont">
                 <img
-                  component="img-fluid"
-                  alt="Cuircon International"
-                  src={step.imgPath}
-                  className={classes.imgbox}
+                  className="img-fluid image1"
+                  src={require("../../../assets/sample.png")}
+                  alt="Cuircon"
                 />
-              </Link>
-            </Box>
-          </Grid>
-        ))}
-      </Grid>
+              </div>
+            </a>
+          </div>
 
-      {/* //Screens  
-      ..
-      ...
-       */}
+          <div class="col">
+            <a href="/">
+              <div className="imgcont">
+                <img
+                  className="img-fluid image1"
+                  src={require("../../../assets/sample.png")}
+                  alt="Cuircon"
+                />
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <div className="imgcont px-5">
+              <h2 className="bg-danger">
+                Choose from 341+ premium merchandise pieces
+              </h2>
 
-      <Social />
-      <Trusted />
-      <Endslider />
-
-      <Services />
-      {/* <CarouselEnd /> */}
+              {/* <a href="/">
+                <p>Browse for catalog</p>
+              </a> */}
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
 
 export default Dashboard;
+
+{
+  /* <Social />
+<Trusted />
+<Endslider />
+<Services /> */
+}
