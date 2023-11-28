@@ -1,13 +1,18 @@
 import React from "react";
 import CarouselTop from "./CarouselTop";
 import "./dashboard.css";
+import Social from "./Social";
+import Trusted from "./Trusted";
+import Endslider from "./Endslider";
+import Services from "./Services";
+import { NavLink } from "react-router-dom";
 const images1 = [
   {
-    link: "/ll",
+    link: "/motorsport",
     imgPath: [require("../../../assets/Think (5).png")],
   },
   {
-    link: "/s",
+    link: "/motorsp",
     imgPath: [require("../../../assets/factory.png")],
   },
   {
@@ -19,16 +24,7 @@ const images1 = [
     imgPath: [require("../../../assets/supply.png")],
   },
 ];
-const images2 = [
-  {
-    link: "/ll",
-    imgPath: [require("../../../assets/Think (5).png")],
-  },
-  {
-    link: "/s",
-    imgPath: [require("../../../assets/factory.png")],
-  },
-];
+
 const Dashboard = () => {
   return (
     <>
@@ -36,8 +32,8 @@ const Dashboard = () => {
       <div className="container my-5">
         <div className="row mb-3 ">
           {images1.map((step, index) => (
-            <div className="col-6 col-sm-6 col-md-3 col-lg-3 ">
-              <a href="/">
+            <div key={index} className="col-6 col-sm-6 col-md-3 col-lg-3 mb-3">
+              <NavLink to={step.link}>
                 <div className="imgcont">
                   <img
                     className="img-fluid image1"
@@ -45,47 +41,48 @@ const Dashboard = () => {
                     alt="Cuircon"
                   />
                 </div>
-              </a>
+              </NavLink>
             </div>
           ))}
         </div>
-        <div class="row">
-          <div class="col">
-            <a href="/">
-              <div className="imgcont">
-                <img
-                  className="img-fluid image1"
-                  src={require("../../../assets/sample.png")}
-                  alt="Cuircon"
-                />
+        <div className="row">
+          <div className="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
+            <div className="row">
+              <div className="col-6 col-sm-6 col-md-6 col-lg-6">
+                <a href="/">
+                  <div className="imgcont">
+                    <img
+                      className="img-fluid image1"
+                      src={require("../../../assets/sample.png")}
+                      alt="Cuircon"
+                    />
+                  </div>
+                </a>
               </div>
-            </a>
-          </div>
-
-          <div class="col">
-            <a href="/">
-              <div className="imgcont">
-                <img
-                  className="img-fluid image1"
-                  src={require("../../../assets/sample.png")}
-                  alt="Cuircon"
-                />
+              <div className="col-6 col-sm-6 col-md-6 col-lg-6">
+                <a href="/">
+                  <div className="imgcont">
+                    <img
+                      className="img-fluid image1"
+                      src={require("../../../assets/sample.png")}
+                      alt="Cuircon"
+                    />
+                  </div>
+                </a>
               </div>
-            </a>
+            </div>
           </div>
-          <div class="col-6">
+          <div className="col-12 col-sm-12 col-md-6 col-lg-6">
             <div className="imgcont px-5">
-              <h2 className="bg-danger">
-                Choose from 341+ premium merchandise pieces
-              </h2>
-
-              {/* <a href="/">
-                <p>Browse for catalog</p>
-              </a> */}
+              <h2 className="">Choose from 341+ premium merchandise pieces</h2>
             </div>
           </div>
         </div>
       </div>
+      <Social />
+      <Trusted />
+      <Endslider />
+      <Services />
     </>
   );
 };

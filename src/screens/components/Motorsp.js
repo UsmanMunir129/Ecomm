@@ -74,7 +74,7 @@ const Motorsp = () => {
 
         <div className="row mx-5">
           {images.map((step, index) => (
-            <div key={step.id} className="col-12 col-sm-4 col-md-4 col-lg-4">
+            <div key={index} className="col-12 col-sm-4 col-md-4 col-lg-4">
               <div className="card p-3 mb-2">
                 <div className="iconimg">
                   <img

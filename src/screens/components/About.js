@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "./style/Button";
-import Trusted from "./Trusted";
-import Services from "./Services";
+import Trusted from "./Dashboard/Trusted";
+import Services from "./Dashboard/Services";
 
 const About = () => {
   return (

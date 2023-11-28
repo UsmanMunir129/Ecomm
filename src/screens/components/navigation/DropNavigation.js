@@ -94,43 +94,51 @@ const DropNavigation = () => {
   return (
     <>
       {/* For Wider Screen  */}
-      <div class="d-none d-md-block">
-        <div class="Headcont ">
+      <div className="d-none d-md-block">
+        <div className="Headcont ">
           <a
-            class="nav-link "
+            className="nav-link "
             href="race"
             data-bs-toggle="dropdown"
             data-bs-auto-close="outside"
           >
-            <h3 class="heading">Auto</h3>
+            <h3 className="heading">Auto</h3>
           </a>
-          <div id="dropnav" class="dropdown-menu  border-0 ">
-            <div class="row px-5 ">
-              <div class="row col-md-6 col-lg-6 p-2 col-xl-5 ">
-                <div class="col col-md-6 col-lg-6 col-xl-6 px-5 ">
+          <div id="dropnav" className="dropdown-menu  border-0 ">
+            <div className="row px-5 ">
+              <div className="row col-md-6 col-lg-6 p-2 col-xl-5 ">
+                <div className="col col-md-6 col-lg-6 col-xl-6 px-5 ">
                   <h2>Men</h2>
                   {manCate.map((items, index) => (
-                    <a href={items.link} style={{ textDecoration: "none" }}>
-                      <h3 class="catetext ">{items.name}</h3>
+                    <a
+                      key={index}
+                      href={items.link}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <h3 className="catetext ">{items.name}</h3>
                     </a>
                   ))}
                 </div>
-                <div class="col col-md-6 col-lg-6 col-xl-6 px-5 ">
+                <div className="col col-md-6 col-lg-6 col-xl-6 px-5 ">
                   <h2>Women</h2>
                   {womenCate.map((items, index) => (
-                    <a href={items.link} style={{ textDecoration: "none" }}>
-                      <h3 class="catetext">{items.name}</h3>
+                    <a
+                      key={index}
+                      href={items.link}
+                      style={{ textDecoration: "none" }}
+                    >
+                      <h3 className="catetext">{items.name}</h3>
                     </a>
                   ))}
                 </div>
               </div>
-              <div class="col col-md-6 col-lg-6 p-2 col-xl-6 ">
-                <div class="d-flex justify-content-between  ">
+              <div className="col col-md-6 col-lg-6 p-2 col-xl-6 ">
+                <div className="d-flex justify-content-between  ">
                   {images.map((items, index) => (
-                    <a href={items.link}>
+                    <a key={index} href={items.link}>
                       <img
                         src={items.imgPath}
-                        class=" img-fluid dropnavimgs"
+                        className=" img-fluid dropnavimgs"
                         alt="Items"
                       />
                     </a>
@@ -141,104 +149,116 @@ const DropNavigation = () => {
           </div>
           {/* second link */}
           <a
-            class="nav-link "
+            className="nav-link "
             href="race"
             data-bs-toggle="dropdown"
             data-bs-auto-close="outside"
           >
-            <h3 class="heading">Kart </h3>
+            <h3 className="heading">Kart </h3>
           </a>
-          <div id="dropnav" class="dropdown-menu  border-0  ">
-            <div class="row px-5">
-              <div class="col col-md-3 col-lg-2 col-xl-2 p-3  fit-content">
+          <div id="dropnav" className="dropdown-menu  border-0  ">
+            <div className="row px-5">
+              <div className="col col-md-3 col-lg-2 col-xl-2 p-3  fit-content">
                 {navCate.map((items, index) => (
-                  <a href={items.link} style={{ textDecoration: "none" }}>
-                    <h3 class="catetext">{items.name}</h3>
+                  <a
+                    key={index}
+                    href={items.link}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <h3 className="catetext">{items.name}</h3>
                   </a>
                 ))}
               </div>
-              <div class="col col-md-9 col-lg-7 p-2 col-xl-6  ">
-                <div class="d-flex justify-content-between col-md-12 col-lg-12 col-xl-12  ">
+              <div className="col col-md-9 col-lg-7 p-2 col-xl-6  ">
+                <div className="d-flex justify-content-between col-md-12 col-lg-12 col-xl-12  ">
                   {images.map((items, index) => (
-                    <a href={items.link}>
+                    <a key={index} href={items.link}>
                       <img
                         src={items.imgPath}
-                        class=" img-fluid dropnavimgs"
+                        className=" img-fluid dropnavimgs"
                         alt="Items"
                       />
                     </a>
                   ))}
                 </div>
               </div>
-              <div class="col  col-lg-3 col-xl-5 bg-primary "></div>
+              <div className="col  col-lg-3 col-xl-5 bg-primary "></div>
             </div>
           </div>
           {/* Third Link */}
           <a
-            class="nav-link "
+            className="nav-link "
             href="race"
             data-bs-toggle="dropdown"
             data-bs-auto-close="outside"
           >
-            <h3 class="heading">Rental </h3>
+            <h3 className="heading">Rental </h3>
           </a>
-          <div id="dropnav" class="dropdown-menu  border-0  ">
-            <div class="row px-5">
-              <div class="col col-md-3 col-lg-2 col-xl-2 p-3  fit-content">
+          <div id="dropnav" className="dropdown-menu  border-0  ">
+            <div className="row px-5">
+              <div className="col col-md-3 col-lg-2 col-xl-2 p-3  fit-content">
                 {navCate.map((items, index) => (
-                  <a href={items.link} style={{ textDecoration: "none" }}>
-                    <h3 class="catetext">{items.name}</h3>
+                  <a
+                    key={index}
+                    href={items.link}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <h3 className="catetext">{items.name}</h3>
                   </a>
                 ))}
               </div>
-              <div class="col col-md-9 col-lg-7 p-2 col-xl-6  ">
-                <div class="d-flex justify-content-between col-md-12 col-lg-12 col-xl-12  ">
+              <div className="col col-md-9 col-lg-7 p-2 col-xl-6  ">
+                <div className="d-flex justify-content-between col-md-12 col-lg-12 col-xl-12  ">
                   {images.map((items, index) => (
-                    <a href={items.link}>
+                    <a key={index} href={items.link}>
                       <img
                         src={items.imgPath}
-                        class=" img-fluid dropnavimgs"
+                        className=" img-fluid dropnavimgs"
                         alt="Items"
                       />
                     </a>
                   ))}
                 </div>
               </div>
-              <div class="col  col-lg-3 col-xl-5 bg-primary "></div>
+              <div className="col  col-lg-3 col-xl-5 bg-primary "></div>
             </div>
           </div>
           {/* Fourth Link */}
           <a
-            class="nav-link "
+            className="nav-link "
             href="race"
             data-bs-toggle="dropdown"
             data-bs-auto-close="outside"
           >
-            <h3 class="heading">Mechanic</h3>
+            <h3 className="heading">Mechanic</h3>
           </a>
-          <div id="dropnav" class="dropdown-menu  border-0  ">
-            <div class="row px-5">
-              <div class="col col-md-3 col-lg-2 col-xl-2 p-3  fit-content">
+          <div id="dropnav" className="dropdown-menu  border-0  ">
+            <div className="row px-5">
+              <div className="col col-md-3 col-lg-2 col-xl-2 p-3  fit-content">
                 {navCate.map((items, index) => (
-                  <a href={items.link} style={{ textDecoration: "none" }}>
-                    <h3 class="catetext">{items.name}</h3>
+                  <a
+                    key={index}
+                    href={items.link}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <h3 className="catetext">{items.name}</h3>
                   </a>
                 ))}
               </div>
-              <div class="col col-md-9 col-lg-7 p-2 col-xl-6  ">
-                <div class="d-flex justify-content-between col-md-12 col-lg-12 col-xl-12  ">
+              <div className="col col-md-9 col-lg-7 p-2 col-xl-6  ">
+                <div className="d-flex justify-content-between col-md-12 col-lg-12 col-xl-12  ">
                   {images.map((items, index) => (
-                    <a href={items.link}>
+                    <a key={index} href={items.link}>
                       <img
                         src={items.imgPath}
-                        class=" img-fluid dropnavimgs"
+                        className=" img-fluid dropnavimgs"
                         alt="Items"
                       />
                     </a>
                   ))}
                 </div>
               </div>
-              <div class="col  col-lg-3 col-xl-5 bg-primary "></div>
+              <div className="col  col-lg-3 col-xl-5 bg-primary "></div>
             </div>
           </div>
         </div>

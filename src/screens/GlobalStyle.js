@@ -188,7 +188,7 @@ input, textarea{
       font-size: 50%;
     }
     h2{
-      font-size:1.8rem;
+      font-size:2.1rem;
     }
     h3{
       font-size:1.8rem;

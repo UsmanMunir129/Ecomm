@@ -2,8 +2,8 @@ import React from "react";
 
 const Scalemap = () => {
   return (
-    <div className="container">
-      <div className="row ">
+    <div className="container  my-5">
+      <div className="container row">
         <div className="container my-5 col-12 col-sm-6 col-md-6 col-lg-6">
           <h2 className="">Scale Your Can Trust</h2>
           <div className="mt-5">
@@ -25,7 +25,7 @@ const Scalemap = () => {
           <img
             src="https://static.cdn.printful.com/static/v864/images/site/global-fulfillment-widget/map-new.svg?v=4"
             alt="Cuircon Intl"
-            className="img-fluid object-fit-cover"
+            className="img-fluid object-fit-cover my-4 h-100"
           />
         </div>
       </div>

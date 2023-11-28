@@ -84,7 +84,7 @@ const options = {
 
 const Endslider = () => {
   return (
-    <div class="headcont">
+    <div className="headcont">
       <OwlCarousel
         className="owl-theme"
         loop
@@ -92,9 +92,9 @@ const Endslider = () => {
         autoplayHoverPause="true"
       >
         {images.map((step, index) => (
-          <div key={step.id} class="item">
+          <div key={index} className="item">
             <a href={step.link}>
-              <img class="img" src={step.imgPath} alt="" />
+              <img className="img" src={step.imgPath} alt="Cuircon" />
             </a>
           </div>
         ))}
