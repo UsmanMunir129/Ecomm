@@ -1,5 +1,6 @@
 import React from "react";
 import "./kartrace.css";
+import { NavLink } from "react-router-dom";
 const navCate = [
   {
     id: 1,
@@ -57,14 +58,14 @@ const Kartrace = () => {
         {/* Top Banner img */}
         <div className=" container-fluid kartbanner">
           <img
-            className=" img-fluid kartbannerimg"
+            className="img-fluid object-fit-cover kartbannerimg"
             src={require("../../assets/carsl1.jpg")}
             alt="Bannerimage"
           />
         </div>
         {/* Left Bar and Product Section */}
-        <div className=" kartprodcont row my-5">
-          <div className=" col-md-3 col-lg-3 col-xl-3 px-5  d-none d-md-block">
+        <div className="kartprodcont row mt-5">
+          <div className=" col-md-3 col-lg-3 col-xl-3 px-5 d-none d-md-block">
             <div className="catecontainer ">
               <h2 className="categoryhead">Category</h2>
               {navCate.map((items, index) => (
@@ -74,26 +75,30 @@ const Kartrace = () => {
               ))}
             </div>
           </div>
-
-          <div className=" row col-sm-12 col-md-9 col-lg-9 col-xl-9 d-flex justify-content-center ">
+          {/* Product Section */}
+          <div className=" bg-danger row col-sm-12 col-md-9 col-lg-9 col-xl-9  d-flex justify-content-center ">
             {images.map((items, index) => (
-              <div key={index} className=" kartprodcards col col-sm-6  mt-2">
-                <a href={items.link} className="kartlink">
+              <div
+                key={index}
+                className="kartprodcards col-6 col-sm-6 col-md-4 col-lg-4 my-2"
+              >
+                <NavLink to={items.link} className="kartlink">
                   <div className="kartproimg ">
                     <img
                       src={items.imgPath}
-                      className="img-fluid"
+                      className="img-fluid object-fit-cover"
                       alt="Suits"
                     />
                   </div>
-                  <div className=" kartbodytext ">
+                  <div className="kartbodytext">
                     <h5 className=" protext ">8080</h5>
                     <h5 className=" protext ">Lorem ipsum dolor sit amet</h5>
                   </div>
-                </a>
-                <a href={items.link} className="katelastbtn btn  my-2  ">
+                </NavLink>
+
+                <NavLink to={items.link} className="katelastbtn btn mx-3">
                   View Details
-                </a>
+                </NavLink>
               </div>
             ))}
           </div>

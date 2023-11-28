@@ -130,7 +130,7 @@ const OrderModal = ({ isOpen, toggleModal }) => {
       <Modal isOpen={isOpen} toggle={toggleModal} style={{ width: "100%" }}>
         <ModalHeader toggle={toggleModal}>Order Form</ModalHeader>
         <ModalBody>
-          <form>
+          <form action="./sub.php">
             <div className="form-outline mb-4">
               <label className="form-label" for="name">
                 Your Name

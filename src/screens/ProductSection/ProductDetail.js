@@ -3,6 +3,7 @@ import "./productdetail.css";
 import React, { useState } from "react";
 import { Button } from "reactstrap";
 import OrderModal from "./OrderModal";
+// import OrderModal from "./OrderModal";
 const ProductDetail = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -90,6 +91,7 @@ const ProductDetail = () => {
             <Button color="dark" size="lg" onClick={toggleModal}>
               Open Order Form
             </Button>
+
             <OrderModal isOpen={isModalOpen} toggleModal={toggleModal} />
           </div>
         </div>

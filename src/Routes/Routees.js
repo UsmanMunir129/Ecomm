@@ -1,7 +1,6 @@
 import React from "react";
 import Homepage from "../screens/components/Dashboard/Homepage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Kartrace from "../screens/components/Kartrace";
 import TopNavigation from "../screens/components/navigation/TopNavigation";
 import Contact from "../screens/components/footer/Contact";
 import { GlobalStyle } from "../screens/GlobalStyle";
@@ -11,6 +10,7 @@ import ContactUs from "../screens/components/ContactUs";
 import Motorsport from "../screens/components/Motorsport";
 import Motorsp from "../screens/components/Motorsp";
 import ProductDetail from "../screens/ProductSection/ProductDetail";
+import Kartrace from "../screens/ProductSection/Kartrace";
 
 const Routees = () => {
   return (
