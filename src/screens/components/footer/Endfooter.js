@@ -9,7 +9,7 @@ export default function Endfooter() {
     px: 1,
 
     borderLeft: "2px solid white",
-    fontSize: { xs: "8px", sm: "12px", md: "14px", lg: "16px" },
+    fontSize: { xs: "2px", sm: "12px", md: "14px", lg: "16px" },
     textDecoration: "none",
     "&:hover": {
       textDecoration: "underline",
@@ -17,7 +17,7 @@ export default function Endfooter() {
   };
   const text = {
     color: "white",
-    fontSize: { xs: "8px", sm: "12px", md: "14px", lg: "16px" },
+    fontSize: { xs: "2px", sm: "12px", md: "14px", lg: "16px" },
     px: 1,
   };
   return (

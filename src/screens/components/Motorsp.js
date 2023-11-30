@@ -42,7 +42,7 @@ const Motorsp = () => {
             className="parallax"
             blur={{ min: -5, max: 5 }}
             strength={100}
-            bgImage={require("../../assets/About.jpg")}
+            bgImage={require("../../assets/bannermotorsp.jpg")}
             bgImageAlt="Banner image"
           >
             <div className="content1 ">

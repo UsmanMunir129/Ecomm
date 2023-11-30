@@ -151,28 +151,28 @@ const testiMonials = [
   {
     name: "Rekob Ramya",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+      "We want to express our gratitude for the outstanding partnership with Cuircon in supplying premium race wear to our brand. The quality, innovation, and timely delivery of your products have significantly enhanced our offerings. Your commitment to excellence aligns seamlessly with our brand ethos, making Cuircon International a pivotal contributor to our success in the competitive market. We look forward to continuing this fruitful collaboration",
     address: "USA",
     img: "https://i.ibb.co/hgGJc8d/Gareth-Bale.jpg",
   },
   {
     name: "Brandon Savage",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+      "We extend our sincerest appreciation for the remarkable B2B collaboration. Your commitment to crafting cutting-edge race wear has not only met but exceeded our expectations. The exceptional quality, attention to detail, and reliability in meeting deadlines have been instrumental in enhancing our brand's credibility and performance. Here's to continued success through our valued partnership.",
     address: "USA",
     img: "https://i.ibb.co/z7Kp6yr/np-file-33188.jpg",
   },
   {
     name: "Steve Burns",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+      "We would like to express our heartfelt gratitude for the outstanding B2B relationship we've cultivated. Your dedication to delivering top-tier race wear has significantly elevated our brand's image and performance in the market. The seamless collaboration, unmatched quality, and on-time deliveries have been instrumental in our joint success. We look forward to many more milestones together",
     address: "USA",
     img: "https://i.ibb.co/CP5sj7g/2856040-58866808-2560-1440.jpg",
   },
   {
     name: "Kevin Canlas",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.",
+      "We want to extend our deepest appreciation for the exceptional B2B collaboration. Your commitment to providing high-quality race wear has played a pivotal role in enhancing our brand's identity and customer satisfaction. The seamless communication, attention to detail, and adherence to timelines showcase Cuircon's dedication to excellence. We are truly grateful for the positive impact on our business and eagerly anticipate a continued successful partnership",
     address: "USA",
     img: "https://i.ibb.co/10SYccm/1552313010-354215-noticia-normal.jpg",
   },
@@ -183,7 +183,7 @@ const Customercarsl = () => {
     center: true,
     items: 3,
     margin: 0,
-    autoplay: true,
+    // autoplay: true,
     dots: true,
     autoplayTimeout: 8500,
     smartSpeed: 450,
@@ -192,7 +192,7 @@ const Customercarsl = () => {
       0: {
         items: 1,
       },
-      600: {
+      768: {
         items: 3,
       },
       1000: {
@@ -218,11 +218,13 @@ const Customercarsl = () => {
               <div key={step.id} className="item ">
                 <div className="shadow-effect">
                   <img
-                    className="img-circle"
+                    className="img-circle img-fluid"
                     src={step.img}
                     alt="Cuircon Intl"
                   />
-                  <p className="text-white">{step.description}</p>
+                  <h5 className="text-white customerdesc ">
+                    {step.description}
+                  </h5>
                 </div>
                 <div className="testimonial-name">
                   <h5>{step.name}</h5>

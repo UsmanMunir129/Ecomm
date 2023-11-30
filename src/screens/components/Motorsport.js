@@ -15,7 +15,7 @@ const Motorsport = () => {
       <Parallax
         blur={{ min: -15, max: 15 }}
         strength={100}
-        bgImage={require("../../assets/About.jpg")}
+        bgImage={require("../../assets/bannermotorsp.jpg")}
         bgImageAlt="Banner image"
       >
         <div className="content" data-aos="zoom-in">

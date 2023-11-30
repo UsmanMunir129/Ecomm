@@ -8,16 +8,28 @@
     box-shadow: 0px 9px 18px rgba(252, 187, 187, 0.12), 0px 5px 7px rgba(82, 56, 56, 0.5);
 }
 .image1{
-    max-width: 70%;
+    max-width: 80%;
 }
+
 
 @media only screen and (max-width: 768px) {
     .imgcont{
-        
-        height: 150px;
-        
+        background-color: aqua;
+        height: 180px;  
     }
     .image1{
-        max-width: 50%;
+        max-width: 45%;
     }
+
+}
+@media only screen and (max-width: 576px) {
+    .imgcont{
+        background-color: red;
+        height: 160px;  
+    }
+    .image1{
+        max-width: 62%;
+        margin: 44px;
+    }
+
 }

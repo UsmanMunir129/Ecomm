@@ -11,8 +11,6 @@ export const GlobalStyle = createGlobalStyle`
 body{
   background: #fff;
 }
-
-
 html {
   font-size: 62.5%;
   /* scroll-behavior: smooth; */

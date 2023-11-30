@@ -1,18 +1,25 @@
 .shadow-effect {
     background-color: #53575C;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 19px 38px rgba(74, 74, 74, 0.1)0 15px 12px rgba(255, 255, 255, 0.02);
     height: 400px;
+ /* width: 430px !important; */
   }
-  #shadow-effect p {
-    /* font-family: inherit; */
-    /* color: #fff;
-    font-size: 37px; */
+  /* #shadow-effect span {
+    font-family: inherit;
+    color: red;
+    font-size: 13px !important;
     line-height: 1.5;
     margin: 0 0 17px 0;
     font-weight: 300;
+  } */
+  .customerdesc {
+    /* background-color: #f97e77; */
+    /* font-size: 15px; */
+    /* font-size: calc(9px + (25 - 17) * (100vw - 320px) / (1920 - 320)); */
+    font-size: calc(0.59rem + 0.6vw);
   }
   .img-circle {
     border-radius: 50%;
@@ -40,7 +47,7 @@
   }
   #customer-testimonoals .item {
     text-align: center;
-    padding: 50px;
+    padding: 20px;
     margin-bottom: 0px;
     opacity: 0.4;
     transform: scale3d(0.8, 0.8, 1);
@@ -77,86 +84,16 @@
     background-color: #2B2F36;
     
 }
+/* @media only screen and (max-width: 768px) {
+  .customerdesc {
+    background-color: red !important;
+    font-size: 1.29rem !important;
+  }
+} */
 
-
-/* .cardsmaincont1{
-    background-color: #2B2F36;
-    
-}
-.cards1{
-  background-color: #53575C;
-  border-radius: 10px;
-  width: 85%;
-  height: 520px;
-}
-.cont11{
-  height: 60%;
-}
-.cont22{
-height: 40%;
-margin-bottom: 5px;
-}
-.heading2{
-  font-size: 24px;
-  font-weight: 600;
-  color: #fff;
-}
-.desc2{
-  font-size: 16px;
-  color: #fff;
-}
-.cardbotmimg1{
-  max-width: 50%;
-}
-
-    .owl-prev {
-        left: 0;
-        display: flex;
-        background: black;
-        border-radius: 50%;
-      }
-      
-      .owl-next {
-        right: 0;
-        display: flex;
-        background: #fff;
-      }
-      
-      .owl-prev i,
-      .owl-next i {
-        margin: auto;
-        font-size: 32px;
-        height: 35px;
-        width: 35px;
-        color: white;
-        border: 1px solid white;
-        border-radius: 10%;
-        align-self: center;
-      }
-      
-      @media only screen and (max-width: 768px) {
-        .cardbotmimg1{
-          max-width: 40%;
-        }
-        .cont11{
-          height: 150px;
-  
-          font-size: 24px;
-        }
-        .heading2{
-          font-size: 20px;
-        }
-        .cont22{
-        height: 150px;
-        }
-        .cards1{
-          height: 300px;
-        }
-        .owl-prev i,
-      .owl-next i{
-        font-size: 22px;
-        height: 25px;
-        width: 25px;
-      }
-
-      } */
+/* @media only screen and (max-width: 992px) {
+  .customerdesc {
+    background-color: aqua;
+    font-size: 13px;
+  }
+} */

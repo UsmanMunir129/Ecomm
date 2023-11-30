@@ -36,7 +36,7 @@ const Dashboard = () => {
               <NavLink to={step.link}>
                 <div className="imgcont">
                   <img
-                    className="img-fluid image1"
+                    className="img-fluid object-fit-cover image1"
                     src={step.imgPath}
                     alt="Cuircon"
                   />

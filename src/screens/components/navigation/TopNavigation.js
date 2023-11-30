@@ -3,33 +3,29 @@ import React from "react";
 // Importing Screen
 import DropNavigation from "./DropNavigation";
 import "./topnav.css";
+import { NavLink } from "react-router-dom";
 
 const navCate = [
   {
     id: 1,
-    name: "First",
-    link: "/about",
+    name: "Suits",
+    link: "/Kartrace",
   },
   {
     id: 2,
-    name: "Lorem",
-    link: "/about",
+    name: "Gloves",
+    link: "/About",
   },
   {
     id: 3,
-    name: "Lorem",
+    name: "Shoes",
     link: "/about",
   },
-  // {
-  //   id: 4,
-  //   name: "Lorem",
-  //   link: "/about",
-  // },
-  // {
-  //   id: 5,
-  //   name: "Lorem",
-  //   link: "/about",
-  // },
+  {
+    id: 4,
+    name: "Under Garments",
+    link: "/about",
+  },
 ];
 const navbarTop = [
   {
@@ -67,9 +63,10 @@ const TopNavigation = () => {
       >
         <div className="container-fluid">
           {/* For Large Screen */}
-          <a className="navbar-brand d-none d-md-block" href="/">
+
+          <NavLink className="navbar-brand d-none d-md-block" to="/">
             <h3>MANUFACTURE</h3>
-          </a>
+          </NavLink>
           {/* For Mobile Screen (Image and Heading) */}
           <div
             className="  d-md-none "
@@ -79,7 +76,7 @@ const TopNavigation = () => {
               alignItems: "center",
             }}
           >
-            <a href="./">
+            <NavLink to="./">
               <img
                 src="https://images.crunchbase.com/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nipimluadtvolo3jvrlr"
                 alt="Cuircon Intl"
@@ -87,19 +84,20 @@ const TopNavigation = () => {
                   maxWidth: "90px",
                 }}
               />
-            </a>
-            <a href="/">
+            </NavLink>
+            <NavLink to="/">
               <span
                 style={{
                   color: "white",
                   float: "right",
                   fontSize: "12px",
                   fontWeight: "bold",
+                  marginTop: "3px",
                 }}
               >
                 MANUFACTURE
               </span>
-            </a>
+            </NavLink>
           </div>
           {/* Drawer Button */}
           <button
@@ -144,7 +142,7 @@ const TopNavigation = () => {
               ))}
             </div>
             {/* Search Bar For Mobile Screen */}
-            <div
+            {/* <div
               className="align-self-center d-flex justify-content-center d-md-none  "
               style={{ overflow: "hidden" }}
             >
@@ -160,7 +158,7 @@ const TopNavigation = () => {
                   Search
                 </button>
               </div>
-            </div>
+            </div> */}
             {/* DropNavigation For Mobile Screen */}
             <div className="maindropcont d-md-none  d-flex">
               {/* First Link */}
@@ -181,7 +179,7 @@ const TopNavigation = () => {
                         href={items.link}
                         style={{ textDecoration: "none" }}
                       >
-                        <h4 className="catetext">{items.name}</h4>
+                        <h4 className="catetext fs-4">{items.name}</h4>
                       </a>
                     ))}
                   </div>
@@ -213,12 +211,12 @@ const TopNavigation = () => {
                         href={items.link}
                         style={{ textDecoration: "none" }}
                       >
-                        <h4 className="catetext">{items.name}</h4>
+                        <h4 className="catetext fs-4">{items.name}</h4>
                       </a>
                     ))}
                   </div>
 
-                  <div className="col-12 col-sm-12 col-md-4  align-self-center">
+                  <div className="col-12 col-sm-12 col-md-4 align-self-center">
                     <img
                       src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
                       className="img-fluid"
@@ -229,7 +227,7 @@ const TopNavigation = () => {
               </div>
               {/* Third Link */}
               <a
-                className="nav-link "
+                className="nav-link"
                 href="/"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
