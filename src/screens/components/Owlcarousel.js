@@ -9,9 +9,9 @@ const images = [
   {
     id: 1,
     image: [require("../../assets/color-selection.png")],
-    heading: "Custom Design and Manufacturing",
+    heading: "Custom Design & Manufacturing",
     Description:
-      "Collaborate with racewear brands to create custom designs for racing suits, gloves, boots, and other gear. Utilize advanced materials and technologies to ensure the highest level of performance and safety",
+      "Collaborate with racewear brands to create custom designs for racing suits, gloves, boots, and other gear.Utilize advanced materials and technologies to ensure the highest level of performance and safety",
   },
   {
     id: 2,
@@ -92,13 +92,13 @@ const options = {
     400: {
       items: 1,
     },
-    600: {
-      items: 2,
-    },
-    700: {
+    768: {
       items: 2,
     },
     1000: {
+      items: 3,
+    },
+    1100: {
       items: 4,
     },
   },

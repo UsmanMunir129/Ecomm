@@ -9,7 +9,7 @@ const navCate = [
   {
     id: 1,
     name: "Suits",
-    link: "/Kartrace",
+    link: "/Suits",
   },
   {
     id: 2,

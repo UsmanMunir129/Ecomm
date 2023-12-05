@@ -9,8 +9,13 @@ import ContactUs from "../screens/components/ContactUs";
 
 import Motorsport from "../screens/components/Motorsport";
 import Motorsp from "../screens/components/Motorsp";
-import ProductDetail from "../screens/ProductSection/ProductDetail";
-import Kartrace from "../screens/ProductSection/Kartrace";
+import SuitRS002 from "../screens/ProductSection/SuitSection/SuitRS002";
+import SuitsScreen from "../screens/ProductSection/SuitsScreen";
+import SuitKS002 from "../screens/ProductSection/SuitSection/SuitKS002";
+import SuitRS004 from "../screens/ProductSection/SuitSection/SuitRS004";
+import SuitKS001 from "../screens/ProductSection/SuitSection/SuitKS001";
+import SuitRS003 from "../screens/ProductSection/SuitSection/SuitRS003";
+import SuitRS000 from "../screens/ProductSection/SuitSection/SuitRS000";
 
 const Routees = () => {
   return (
@@ -20,12 +25,17 @@ const Routees = () => {
 
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/Kartrace" element={<Kartrace />} />
+        <Route path="/Suits" element={<SuitsScreen />} />
         <Route path="/About" element={<About />} />
         <Route path="/Contactus" element={<ContactUs />} />
         <Route path="/motorsport" element={<Motorsport />} />
         <Route path="/motorsp" element={<Motorsp />} />
-        <Route path="/ProductDetail" element={<ProductDetail />} />
+        <Route path="/SuitRS002" element={<SuitRS002 />} />
+        <Route path="/SuitKS002" element={<SuitKS002 />} />
+        <Route path="/SuitRS004" element={<SuitRS004 />} />
+        <Route path="/SuitKS001" element={<SuitKS001 />} />
+        <Route path="/SuitRS003" element={<SuitRS003 />} />
+        <Route path="/RS000" element={<SuitRS000 />} />
       </Routes>
       <Contact />
     </BrowserRouter>

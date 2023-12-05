@@ -9,19 +9,23 @@ import { NavLink } from "react-router-dom";
 const images1 = [
   {
     link: "/motorsport",
-    imgPath: [require("../../../assets/Think (5).png")],
+    imgPath: [require("../../../assets/Shoes.jpg")],
+    head: "Auto Racing",
   },
   {
     link: "/motorsp",
     imgPath: [require("../../../assets/factory.png")],
+    head: "Kart Racing",
   },
   {
     link: "/e",
     imgPath: [require("../../../assets/shipment.png")],
+    head: "Rental Kart",
   },
   {
     link: "/w",
     imgPath: [require("../../../assets/supply.png")],
+    head: "Mechanic",
   },
 ];
 
@@ -35,11 +39,12 @@ const Dashboard = () => {
             <div key={index} className="col-6 col-sm-6 col-md-3 col-lg-3 mb-3">
               <NavLink to={step.link}>
                 <div className="imgcont">
-                  <img
+                  {/* <img
                     className="img-fluid object-fit-cover image1"
                     src={step.imgPath}
                     alt="Cuircon"
-                  />
+                  /> */}
+                  <span className="dashboardheading">{step.head}</span>
                 </div>
               </NavLink>
             </div>
@@ -81,17 +86,11 @@ const Dashboard = () => {
       </div>
       <Social />
       <Trusted />
-      <Endslider />
+      {/* This Component hide for Short Time */}
+      {/* <Endslider /> */}
       <Services />
     </>
   );
 };
 
 export default Dashboard;
-
-{
-  /* <Social />
-<Trusted />
-<Endslider />
-<Services /> */
-}

@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:  'Roboto',sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 body{
   background: #fff;
@@ -44,7 +44,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family:  'Roboto',sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -69,7 +69,7 @@ h3 {
 p, button {
   color: ${({ theme }) => theme.colors.text};
   font-size: 1.81rem;
-  font-weight:300;
+  font-weight:400;
 }
 
 a {

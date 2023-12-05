@@ -32,7 +32,7 @@ const contactSec1 = [
   {
     id: 1,
     name: "View Catalog",
-    link: "/View",
+    link: [require("../../newdoc.pdf")],
   },
   {
     id: 2,
@@ -171,6 +171,7 @@ export default function Contact() {
           </Grid>
         </Box>
       </ThemeProvider>
+
       {/* Footer Comp */}
       <Endfooter />
     </>

@@ -11,22 +11,21 @@ const images = [
     image: [require("../../assets/research.png")],
     heading: "Research & Development",
     Description:
-      "Revolutionizing racewear through cutting-edge R&D services, we use innovation with performance, crafting bespoke solutions that push the boundaries of speed and safety for the ultimate racing experience",
+      "Revolutionizing racewear through cutting-edge R & D services, we use innovation with performance, crafting bespoke solutions that push the boundaries of speed and safety for the ultimate racing experience",
   },
   {
     id: 2,
-
     image: [require("../../assets/factory.png")],
     heading: "Global ecommerce focus",
     Description:
-      "Experience precision and passion in our racewear manufacturing services. Elevate your brand with expert craftsmanship, delivering the top-notch performance gear for the track champions",
+      "Experience precision and passion in our racewear manufacturing services. Elevate your brand with expert craftsmanships, delivering the top-notch performance gear for the track champions",
   },
   {
     id: 3,
     image: [require("../../assets/shipment.png")],
     heading: "Unrivaled quality and solutions      ",
     Description:
-      "Seamless global delivery for every brands, our shipping service ensures your gear reaches the finish line faster. From track to doorstep, trust us to accelerate your products worldwide with unparalleled efficiency and reliability.",
+      "Seamless global delivery for every brands, our shipping service ensures your gear reaches the finish line faster.From track to doorstep, trust us to accelerate your products worldwide with unparalleled efficiency and reliability.",
   },
 ];
 const Motorsp = () => {
@@ -64,17 +63,16 @@ const Motorsp = () => {
         {/* Text heading section */}
         <div className="px-3  m-5">
           <h2>Get new unique ecommerce solutions for your brand</h2>
-          <p className=" mt-4">
+          <p className="text-black mt-4">
             With Snow Commerce as part of our team, we’re making ecommerce
             management and fandom engagement even easier and more powerful for
             our largest customers
           </p>
         </div>
         {/* card section */}
-
         <div className="row mx-5">
           {images.map((step, index) => (
-            <div key={index} className="col-12 col-sm-4 col-md-4 col-lg-4">
+            <div key={index} className="col-12 col-sm-12 col-md-4 col-lg-4">
               <div className="card p-3 mb-2">
                 <div className="iconimg">
                   <img
@@ -86,14 +84,13 @@ const Motorsp = () => {
                 </div>
                 <div className="mt-5">
                   <h3 className="headingresearch fw-bold">{step.heading}</h3>
-                  <p>{step.Description}</p>
+                  <p className="text-black">{step.Description}</p>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-
       <Owlcarousel />
     </>
   );

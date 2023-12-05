@@ -1,6 +1,5 @@
 .cardsmaincont{
     background-color: #2B2F36;
-    
 }
 .cards{
   background-color: #53575C;
@@ -25,16 +24,15 @@ margin-bottom: 5px;
   color: #fff;
 }
 .cardbotmimg{
-  max-width: 50%;
+  max-width: 35%;
 }
 
-    .owl-prev {
+.owl-prev {
         left: 0;
         display: flex;
         background: black;
         border-radius: 50%;
-      }
-      
+      } 
       .owl-next {
         right: 0;
         display: flex;
@@ -55,24 +53,22 @@ margin-bottom: 5px;
       
       @media only screen and (max-width: 768px) {
         .cardbotmimg{
-          max-width: 30%;
+          max-width: 25%;
         }
         .cont1{
-          height: 150px;
-  background-color: aqua;
+          height: 180px;
           font-size: 24px;
         }
         .heading1{
           font-size: 20px;
         }
         .cont2{
-        height: 150px;
-        background-color: red;
+        height:clamp(120px, 0.5vw, 20px);
 
         }
-        /* .cards{
-          height: 300px;
-        } */
+        .cards{
+          height: 350px;
+        }
         .owl-prev i,
       .owl-next i{
         font-size: 22px;

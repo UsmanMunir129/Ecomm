@@ -183,7 +183,6 @@ const Customercarsl = () => {
     center: true,
     items: 3,
     margin: 0,
-    // autoplay: true,
     dots: true,
     autoplayTimeout: 8500,
     smartSpeed: 450,
@@ -192,7 +191,7 @@ const Customercarsl = () => {
       0: {
         items: 1,
       },
-      768: {
+      769: {
         items: 3,
       },
       1000: {
@@ -215,14 +214,14 @@ const Customercarsl = () => {
             {...options}
           >
             {testiMonials.map((step, index) => (
-              <div key={step.id} className="item ">
+              <div key={index} className="item ">
                 <div className="shadow-effect">
                   <img
                     className="img-circle img-fluid"
                     src={step.img}
                     alt="Cuircon Intl"
                   />
-                  <h5 className="text-white customerdesc ">
+                  <h5 className="text-white customerdesc">
                     {step.description}
                   </h5>
                 </div>
