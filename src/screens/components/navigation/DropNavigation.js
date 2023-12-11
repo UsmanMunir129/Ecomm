@@ -2,14 +2,12 @@ import React from "react";
 import "./Dropnav.css";
 const images = [
   {
-    link: "/",
-    imgPath:
-      "https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1374",
+    link: "/Suits",
+    imgPath: [require("../../../assets/CI-RS001 (1).jpg")],
   },
   {
-    link: "/",
-    imgPath:
-      "https://hips.hearstapps.com/hmg-prod/images/el-womeninmotorsport-comp-abbi-64d0c0bc96198.jpg",
+    link: "/Suits",
+    imgPath: [require("../../../assets/KS002.JPG")],
   },
 ];
 const navCate = [
@@ -44,44 +42,17 @@ const manCate = [
   {
     id: 2,
     name: "Gloves",
-    link: "/About",
+    link: "/Gloves",
   },
   {
     id: 3,
     name: "Shoes",
-    link: "/about",
+    link: "/Shoes",
   },
   {
     id: 4,
     name: "Under Garments",
-    link: "/about",
-  },
-  // {
-  //   id: 5,
-  //   name: "Lorem",
-  //   link: "/about",
-  // },
-];
-const womenCate = [
-  {
-    id: 1,
-    name: "Suits",
-    link: "/Kartrace",
-  },
-  {
-    id: 2,
-    name: "Gloves",
-    link: "/About",
-  },
-  {
-    id: 3,
-    name: "Shoes",
-    link: "/about",
-  },
-  {
-    id: 4,
-    name: "Under Garments",
-    link: "/about",
+    link: "/Undergarments",
   },
   // {
   //   id: 5,
@@ -94,7 +65,7 @@ const DropNavigation = () => {
   return (
     <>
       {/* For Wider Screen  */}
-      <div className="d-none d-md-block">
+      <div className="d-none d-md-block ">
         <div className="Headcont ">
           <a
             className="nav-link "
@@ -104,11 +75,11 @@ const DropNavigation = () => {
           >
             <h3 className="heading">Auto</h3>
           </a>
-          <div id="dropnav" className="dropdown-menu  border-0 ">
+          <div id="dropnav" className="dropdown-menu  ">
             <div className="row px-5 ">
               <div className="row col-md-6 col-lg-6 p-2 col-xl-5 ">
                 <div className="col col-md-6 col-lg-6 col-xl-6 px-5 ">
-                  <h2>Men</h2>
+                  <h2>Men/Women</h2>
                   {manCate.map((items, index) => (
                     <a
                       key={index}
@@ -119,7 +90,7 @@ const DropNavigation = () => {
                     </a>
                   ))}
                 </div>
-                <div className="col col-md-6 col-lg-6 col-xl-6 px-5 ">
+                {/* <div className="col col-md-6 col-lg-6 col-xl-6 px-5 ">
                   <h2>Women</h2>
                   {womenCate.map((items, index) => (
                     <a
@@ -130,7 +101,7 @@ const DropNavigation = () => {
                       <h3 className="catetext">{items.name}</h3>
                     </a>
                   ))}
-                </div>
+                </div> */}
               </div>
               <div className="col col-md-6 col-lg-6 p-2 col-xl-6 ">
                 <div className="d-flex justify-content-between  ">

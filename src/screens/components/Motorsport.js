@@ -26,7 +26,7 @@ const Motorsport = () => {
       </Parallax>
       {/* Second detail banner image */}
       <div className="row  ">
-        <div class="col-12  col-md-6 col-lg-6 align-self-center p-5  ">
+        <div className="col-12  col-md-6 col-lg-6 align-self-center p-5  ">
           <div>
             <div
               className="text-light"
@@ -69,20 +69,17 @@ const Motorsport = () => {
             </div>
           </div>
         </div>
-        <div
-          class="col-12  col-md-6 col-lg-6 bg-danger px-0"
-          data-aos="fade-up"
-        >
+        <div className="col-12  col-md-6 col-lg-6 " data-aos="fade-up">
           <img
             src={require("../../assets/About.jpg")}
             alt="hero-section"
-            className="img-fluid imagescnd "
+            className="img-fluid imagescnd"
           />
         </div>
       </div>
       {/* First Image Desc */}
       <div className="row ">
-        <div className="col-sm-6 col-md-6 col-lg-6 px-0 d-none d-sm-block imagecont">
+        <div className="col-sm-12 col-md-12 col-lg-6 px-0 d-none d-sm-block imagecont">
           <img
             src={require("../../assets/a1.jpg")}
             alt="hero-section"
@@ -123,7 +120,7 @@ const Motorsport = () => {
       {/* Second image nd Desc */}
       <div className="row ">
         <div
-          className="col-sm-6 col-md-6 col-lg-6 align-self-center  p-5"
+          className="col-sm-12 col-md-12 col-lg-6 align-self-center  p-5"
           data-aos="fade-right"
         >
           <h2 className="text-light">AUTO GLOVES</h2>
@@ -145,7 +142,7 @@ const Motorsport = () => {
             </p>
           </div>
         </div>
-        <div className="col-sm-6 col-md-6 col-lg-6 bg-primary px-0 imagecont">
+        <div className="col-sm-12 col-md-12 col-lg-6 bg-primary px-0 imagecont">
           <img
             src={require("../../assets/a4.jpg")}
             alt="hero-section"
@@ -157,7 +154,7 @@ const Motorsport = () => {
 
       <div className="row">
         {/* For Small and Wider Screens */}
-        <div className="col-sm-6 col-md-6 col-lg-6 d-none d-sm-block px-0 imagecont">
+        <div className="col-sm-12 col-md-12 col-lg-6 d-none d-sm-block px-0 imagecont">
           <img
             src={require("../../assets/a2.jpg")}
             alt="hero-section"
@@ -165,7 +162,7 @@ const Motorsport = () => {
           />
         </div>
         <div
-          className="col-12 col-sm-6 col-md-6 col-lg-6 align-self-center p-5"
+          className="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center p-5"
           data-aos="fade-left"
         >
           <h2 className="text-light">Masks</h2>
@@ -197,7 +194,7 @@ const Motorsport = () => {
 
       <div className="row">
         <div
-          className="col-12 col-sm-6 col-md-6 col-lg-6 align-self-center p-5"
+          className="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center p-5"
           data-aos="fade-right"
         >
           <h2 className="text-light">SEAT</h2>
@@ -217,7 +214,7 @@ const Motorsport = () => {
             </p>
           </div>
         </div>
-        <div className="col-12 col-sm-6 col-md-6 col-lg-6 bg-primary px-0 imagecont">
+        <div className="col-12 col-sm-12 col-md-12 col-lg-6 bg-primary px-0 imagecont">
           <img
             src={require("../../assets/a3.jpg")}
             alt="hero-section"

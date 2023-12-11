@@ -14,17 +14,17 @@ const navCate = [
   {
     id: 2,
     name: "Gloves",
-    link: "/About",
+    link: "/Gloves",
   },
   {
     id: 3,
     name: "Shoes",
-    link: "/about",
+    link: "/Shoes",
   },
   {
     id: 4,
     name: "Under Garments",
-    link: "/about",
+    link: "/Undergarments",
   },
 ];
 const navbarTop = [

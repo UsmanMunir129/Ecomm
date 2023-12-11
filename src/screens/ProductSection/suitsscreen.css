@@ -22,21 +22,35 @@
     font-size: 33px;
     }
     .catecontainer{
-        margin-left: 20px;
+        margin-left: 10px;
         width: fit-content;
     }
     
     .catglinkbtn{
         text-decoration: none; 
+        color: black;
+        display: block;
+        width: 100%;
+    }
+   .catglinkbtn.active {
+      color: #DC3545 !important;
+      text-decoration: underline;
+     
     }
     
     .categorylinktext{
-    color: black;
     text-transform: uppercase;
+    font-weight: bold;
     font-size: 23px;
+    padding-left: 9px;
+    border-left: 3px solid #DC3545;
+    
     }
     .categorylinktext:hover{
         text-decoration: underline;
+        color: #DC3545;
+        border: none;
+       
     }
   .kartprodcards{
     
@@ -74,8 +88,7 @@ text-decoration: none;
 .katelastbtn{
   background-color: #000;
   color: white;
-  font-size: 13px;
-  
+  font-size: clamp(9px, 1.2vw, 13px);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -87,7 +100,6 @@ text-decoration: none;
 .katelastbtn:hover{
   background-color: #434242;
   color: #fff;
-  
 }
 
 

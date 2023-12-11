@@ -1,36 +1,33 @@
-/* .input-group{
-    height: 5,  
-} */
+
 body{
     font-family:  'Roboto',sans-serif;
 }
-.nav-link tt:hover{
-    border-bottom: #dc3545;
+#dropnav{
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(224, 222, 222);
 }
 .Headcont{
     display: flex;
     flex-direction: row;
     margin: 15px 20px;
-    /* margin-top: 30px;
-    margin-left: 20px; */
 
 }
-#dropnav{
-    width: 100%;
-    overflow: hidden;
+.nav-link.active{
+    color: #dc3545 !important;
 }
+.nav-link{
+    color: #000 ;
+}
+
 .heading{
-    color: black;
+    /* color: black; */
     font-weight: bold;
     font-family:  'Roboto',sans-serif;
-    text-transform: uppercase;
-   
-    
-     
+    text-transform: uppercase;  
 }
 .heading:hover{
     color: #dc3545;
-   
 }
 .dropnavimgs{
     height: 318px;
