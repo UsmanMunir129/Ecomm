@@ -9,7 +9,6 @@
 
   .customerdesc {
     font-size: clamp(10.2px, 1.2vw, 16px)
-
   }
   .img-circle {
     border-radius: 50%;
@@ -24,7 +23,7 @@
     margin: -17px auto 0;
     display: table;
     width: auto;
-    background: linear-gradient(100deg, #FF8066, #f97e77);
+    background: linear-gradient(100deg, #e0636f, #e0636f);
     padding: 9px 35px;
     border-radius: 12px;
     text-align: center;
@@ -44,7 +43,7 @@
     transform: scale3d(1.0, 1.0, 1);
   }
   .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #FF8066;
+    background: #e0636f;
     transform: translate3d(0px, -50%, 0px) scale(0.8);
   }
   .owl-carousel .owl-dots {
@@ -56,7 +55,7 @@
     display: inline-block;
   }
   .owl-carousel .owl-dots .owl-dot span{ 
-    background: #FF8066;
+    background: #e0636f;
     display: inline-block;
     height: 20px;
     width: 20px;

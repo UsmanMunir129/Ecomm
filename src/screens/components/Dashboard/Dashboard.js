@@ -1,10 +1,6 @@
 import React from "react";
-import CarouselTop from "./CarouselTop";
 import "./dashboard.css";
-import Social from "./Social";
-import Trusted from "./Trusted";
-import Endslider from "./Endslider";
-import Services from "./Services";
+
 import { NavLink } from "react-router-dom";
 const images1 = [
   {
@@ -32,9 +28,8 @@ const images1 = [
 const Dashboard = () => {
   return (
     <>
-      <CarouselTop />
-      <div className="container my-5">
-        <div className="row mb-3 ">
+      <div className="my-5 px-5">
+        <div className="row ">
           {images1.map((step, index) => (
             <div key={index} className="col-6 col-sm-6 col-md-3 col-lg-3 mb-3">
               <NavLink to={step.link}>
@@ -69,7 +64,7 @@ const Dashboard = () => {
                   <div className="imgcont">
                     <img
                       className="img-fluid image1"
-                      src={require("../../../assets/sample.png")}
+                      src={require("../../../assets/factory.png")}
                       alt="Cuircon"
                     />
                   </div>
@@ -84,11 +79,6 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <Social />
-      <Trusted />
-      {/* This Component hide for Short Time */}
-      {/* <Endslider /> */}
-      <Services />
     </>
   );
 };

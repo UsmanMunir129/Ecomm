@@ -43,9 +43,8 @@ const ShoesScreen = () => {
         </div>
         {/* Left Bar and Product Section */}
         <div className="kartprodcont row mt-5">
-          <div className="col-md-3 col-lg-3 col-xl-3 px-5 d-none d-md-block">
-            <NavAuto />
-          </div>
+          <NavAuto />
+
           {/* Product Section */}
           <div className="row col-sm-12 col-md-9 col-lg-9 col-xl-9  d-flex justify-content-center ">
             {images.map((items, index) => (

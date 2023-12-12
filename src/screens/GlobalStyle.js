@@ -193,7 +193,6 @@ input, textarea{
     }
     p{
       font-size:1.5rem !important;
-  
     }
 
 .grid{

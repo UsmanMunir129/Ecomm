@@ -72,58 +72,6 @@ const OrderModal = ({ isOpen, toggleModal }) => {
         .catch((error) => alert(error));
     }
   };
-  // const form = useRef();
-
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   // Append the file to the form data
-  //   // const fileInput = form.current.querySelector('input[type="file"]');
-  //   // form.current.append("files", fileInput.files[0]);
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_8ae3bet",
-  //       "template_hr4m25d",
-  //       form.current,
-  //       "wwoVci7BmPiTJjr5f"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  //   toggleModal();
-  //   emptyModal();
-  // };
-
-  // const uploadProduct= async()=>{
-  //     const formData= new FormData();
-  //     formData.append('ptitle', ptitle);
-  //     formData.append('pprice',pprice);
-  //     formData.append('pfile', pfile);
-  //     const responce= await axios.post("http://localhost/reactcrudphp/api/product.php", formData, {
-  //         headers:{'Content-Type':"multipart/form-data"},
-  //     } );
-
-  //     if(responce.data.success)
-  //     {
-  //         setMessage(responce.data.success);
-  //         setTimeout(()=>{
-  //             navigate('/productlist');
-  //         }, 2000);
-
-  //     }
-  // }
-
-  //   const handleSubmit= async(e)=>{
-  //     e.preventDefault();
-  //     await uploadProduct();
-
-  //  }
 
   return (
     <>
