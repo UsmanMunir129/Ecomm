@@ -12,9 +12,9 @@ const SuitKS001 = () => {
     setModalOpen(!isModalOpen);
   };
   return (
-    <div className="container p-0  my-5">
-      <div className="row m-0 px-3">
-        <div className="col-12  col-md-12 col-sm-12 col-lg-5 col-xl-5 col-xxl-5 text-center my-2">
+    <div className=" p-0  my-5">
+      <div className="row  px-5">
+        <div className="col-12  col-md-12 col-sm-12 col-lg-5 col-xl-5 col-xxl-4 text-center">
           <div id="contimagdetail">
             <img
               className="imagedetail"
@@ -23,16 +23,16 @@ const SuitKS001 = () => {
             />
           </div>
         </div>
-        <div className="col-12 col-md-12 col-sm-12 col-lg-7 col-xl-7 col-xxl-7 mt-1">
-          <h2 className="table-title">2 Layer Karting Suit</h2>
-          <div className="table-responsive rounded mt-5">
+        <div className="col-12 col-md-12 col-sm-12 col-lg-7 col-xl-7 col-xxl-8 mt-3">
+          <h2 className="table-title">2 Layer Gabardine Nomex Suit</h2>
+          <div className="table-responsive rounded ">
             <table className="table table-striped table-hover table-lg  table-bordered ">
               <tbody>
                 <tr>
                   <td>
                     <strong>Item:</strong>
                   </td>
-                  <td className="col-11">CI-KS001</td>
+                  <td className="col-11">CI-RS003</td>
                 </tr>
                 <tr>
                   <td>
@@ -42,37 +42,75 @@ const SuitKS001 = () => {
                 </tr>
                 <tr>
                   <td>
-                    <strong>Size:</strong>
+                    <strong>Box Quilting:</strong>
                   </td>
                   <td className="col-11">
-                    All Sizes Are Available (customer’s choice).
+                    The meticulous box quilting design adds a touch of
+                    sophistication to the suit. Choose between a matching or
+                    contrasting color for a personalized look that reflects your
+                    team's unique style.
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <strong>Printing:</strong>
-                  </td>
-                  <td className="col-11">Embroidery</td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>Design:</strong>
-                  </td>
-                  <td className="col-11">Any Design As Per Requirement.</td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>Logo:</strong>
-                  </td>
-                  <td className="col-11">Fully Customized.</td>
-                </tr>
-                <tr>
-                  <td>
-                    <strong>Branding:</strong>
+                    <strong>Radial Knit Sleeves:</strong>
                   </td>
                   <td className="col-11">
-                    Company Logos, Patches, Badges, Labels Can Be Added As
-                    Required.
+                    Unrestricted movement is key to a successful race. Our suit
+                    features radial knit sleeves, providing a full 360-degree
+                    range of motion, ensuring you can maneuver effortlessly and
+                    maintain peak performance.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Stretch Knit Waist:</strong>
+                  </td>
+                  <td className="col-11">
+                    The hidden stretch knit waist ensures a secure fit while
+                    accommodating movement. Experience unparalleled comfort and
+                    flexibility, allowing you to focus on the race ahead.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Inset Pockets:</strong>
+                  </td>
+                  <td className="col-11">
+                    Convenience meets functionality with strategically placed
+                    inset pockets at the front of the pants. Easily access
+                    essentials without compromising the aerodynamic design of
+                    the suit.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Soft Knit Collar:</strong>
+                  </td>
+                  <td className="col-11">
+                    The soft knit collar adds a touch of luxury and comfort.
+                    Choose between a classic flap or mandarin style, tailoring
+                    the suit to your preferences.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Regulay/Boot Cut Leys:</strong>
+                  </td>
+                  <td className="col-11">
+                    Tailor your racing look with the option of regular or boot
+                    cut legs. Hidden cuffs ensure a sleek appearance while
+                    maintaining safety standards.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Color Knit Cuffs:</strong>
+                  </td>
+                  <td className="col-11">
+                    Add a pop of color to your suit with our vibrant knit cuffs.
+                    Personalize your racewear and showcase your team spirit with
+                    a wide array of color options.
                   </td>
                 </tr>
               </tbody>

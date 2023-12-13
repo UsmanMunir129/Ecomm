@@ -13,10 +13,9 @@ max-height:100%;
 padding: 15px;
 }
 .dashboardheading{
-    font-size: clamp(19.2px, 3.1vw, 40px);
+    font-size: clamp(15.2px, 3.1vw, 40px);
     font-weight: bold;
     color: #18181D;
-
 }
 
 
@@ -27,12 +26,10 @@ padding: 15px;
     .image1{
         max-width: 45%;
     }
-
 }
 @media only screen and (max-width: 576px) {
     .imgcont{
-        
-        height: 160px;  
+        height: 120px;  
     }
     .image1{
         max-width:100%;

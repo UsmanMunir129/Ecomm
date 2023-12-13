@@ -1,40 +1,42 @@
 import Carousel from "react-bootstrap/Carousel";
 import "./CarouselTop.css";
-
+// Images for Wide Screens
 const images = [
   {
     link: "/ll",
-    imgPath: [require("../../../assets/carsl1.jpg")],
+    imgPath: [require("../../../assets/desktop 1 web.jpg")],
   },
   {
     link: "/s",
-    imgPath: [require("../../../assets/carsl2.jpg")],
+    imgPath: [require("../../../assets/ELEGANCE 1.jpg")],
   },
   {
     link: "/e",
-    imgPath: [require("../../../assets/carsl3.jpg")],
+    imgPath: [require("../../../assets/CUSTOM 3.jpg")],
   },
   {
     link: "/w",
-    imgPath: [require("../../../assets/carsl4.jpg")],
+    imgPath: [require("../../../assets/GREEN.jpg")],
   },
 ];
+// Images for Small Screens
+
 const images1 = [
   {
     link: "/ll",
-    imgPath: [require("../../../assets/a1.jpg")],
+    imgPath: [require("../../../assets/3524.jpg")],
   },
   {
     link: "/s",
-    imgPath: [require("../../../assets/a3.jpg")],
+    imgPath: [require("../../../assets/ELEGANCE 2.jpg")],
   },
   {
     link: "/e",
-    imgPath: [require("../../../assets/a4.jpg")],
+    imgPath: [require("../../../assets/CUSTOM 2.jpg")],
   },
   {
     link: "/w",
-    imgPath: [require("../../../assets/a2.jpg")],
+    imgPath: [require("../../../assets/GREEN 1.jpg")],
   },
 ];
 function CarouselTop() {

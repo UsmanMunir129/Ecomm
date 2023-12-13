@@ -29,7 +29,7 @@ const Dashboard = () => {
   return (
     <>
       <div className="my-5 px-5">
-        <div className="row ">
+        <div className="row px-5">
           {images1.map((step, index) => (
             <div key={index} className="col-6 col-sm-6 col-md-3 col-lg-3 mb-3">
               <NavLink to={step.link}>
@@ -45,7 +45,7 @@ const Dashboard = () => {
             </div>
           ))}
         </div>
-        <div className="row">
+        <div className="row px-5">
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <div className="row">
               <div className="col-6 col-sm-6 col-md-6 col-lg-6">
