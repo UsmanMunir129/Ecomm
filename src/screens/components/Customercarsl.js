@@ -160,7 +160,7 @@ const testiMonials = [
     description:
       "We extend our sincerest appreciation for the remarkable B2B collaboration. Your commitment to crafting cutting-edge race wear has not only met but exceeded our expectations. The exceptional quality, attention to detail, and reliability in meeting deadlines have been instrumental in enhancing our brand's credibility and performance. Here's to continued success through our valued partnership.",
     address: "USA",
-    img: "https://i.ibb.co/z7Kp6yr/np-file-33188.jpg",
+    img: [require("../../assets/IMG-20200125-WA0033.jpg")],
   },
   {
     name: "Steve Burns",
@@ -217,7 +217,7 @@ const Customercarsl = () => {
               <div key={index} className="item ">
                 <div className="shadow-effect">
                   <img
-                    className="img-circle img-fluid"
+                    className="img-circle img-fluid object-fit-cover"
                     src={step.img}
                     alt="Cuircon Intl"
                   />

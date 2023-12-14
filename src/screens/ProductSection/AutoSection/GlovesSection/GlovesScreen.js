@@ -46,7 +46,7 @@ const GlovesScreen = () => {
           <NavAuto />
 
           {/* Product Section */}
-          <div className=" row col-sm-12 col-md-12 col-lg-9 col-xl-9 d-flex justify-content-center ">
+          <div className=" row col-sm-12 col-md-12 col-lg-9 col-xl-9 d-flex justify-content-center">
             {images.map((items, index) => (
               <div
                 key={index}
@@ -56,7 +56,7 @@ const GlovesScreen = () => {
                   <div className="kartproimg ">
                     <img
                       src={items.imgPath}
-                      className="img-fluid object-fit-cover"
+                      className="img-fluid "
                       alt="Suits"
                     />
                   </div>

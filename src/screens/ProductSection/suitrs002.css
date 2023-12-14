@@ -1,33 +1,23 @@
 
 .imagedetail{
-    height: 500px;
+    height: fit-content;
     width: 400px;
     border-radius: 15px;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 td{
-    font-size: clamp(9.2px, 1.2vw, 19px);
+    font-size: clamp(9.8px, 1.2vw, 19px);
     font-family: 'Times New Roman', Times, serif;
 }
 strong{
     font-family: 'Times New Roman', Times, serif;
     font-size: clamp(11.2px, 1.2vw, 22px);
-  
-
 }
 @media only screen and (max-width: 768px) {
     .imagedetail{
-        height: 350px;
-        width: 300px;
-        /* object-fit: contain; */
+        height: fit-content;
+        width: 250px;
         border-radius: 25px !important;
-        margin-top: 2px;
     }
-    /* td{
-        font-size: 12px;
-    }
-    .table-title{
-        font-size: 16px;
-        font-weight: 700;
-    } */
+
 }

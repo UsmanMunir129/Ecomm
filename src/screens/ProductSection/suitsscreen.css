@@ -1,53 +1,17 @@
 /* Banner img Styling */
 @media only screen and (max-width: 768px) {
     .kartbanner {
-      height: 250px;
-      
+      height: 150px;
+      background-color: #DC3545;
     }
    .kartbannerimg {
-     height: 250px;
-   }
-     .protext{
-      font-size: 12px !important;
-     }
-  }
-  .categoryhead{
-    color: #000;
-    font-size: 33px;
-    }
-    .catecontainer{
-        margin-left: 10px;
-        width: fit-content;
-    }
-    
-    .catglinkbtn{
-        text-decoration: none; 
-        color: black;
-        display: block;
-        width: 100%;
-    }
-   .catglinkbtn.active {
-      color: #DC3545 !important;
-      text-decoration: underline;
+     height: 120px;
      
-    }
-    
-    .categorylinktext{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 23px;
-    padding-left: 9px;
-    border-left: 3px solid #DC3545;
-    
-    }
-    .categorylinktext:hover{
-        text-decoration: underline;
-        color: #DC3545;
-        border: none;
-       
-    }
+   }
+
+  }
+
   .kartprodcards{
-    
      background-color: #fff;
      -webkit-transition: all .2s ease-out;
    }
@@ -60,8 +24,8 @@
   }
 .kartproimg{
   justify-content: center;
-  object-fit: cover;
 }
+
 .kartlink{
 text-decoration: none;
 }
@@ -71,11 +35,11 @@ text-decoration: none;
   }
  .kartbodytext{
   color: #000;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
  }
 .protext{
-  font-size: 18px;
+  font-size: clamp(12px, 1.5vw, 18px);
   font-weight: 800;
 }
 
@@ -87,14 +51,49 @@ text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 30px;
+  width: fit-content;
+  height: fit-content;
   margin-bottom: 9px;
 }
 .katelastbtn:hover{
   background-color: #434242;
   color: #fff;
 }
-
+ 
+/* NavAuto Styling */
+.categoryhead{
+  color: #000;
+  font-size: clamp(30px, 1.9vw, 35px);
+  }
+  .catecontainer{
+      margin-left: 10px;
+      width: fit-content;
+  }
+  
+  .catglinkbtn{
+      text-decoration: none; 
+      color: black;
+      display: block;
+      width: fit-content;
+  }
+ .catglinkbtn.active {
+    color: #DC3545 !important;
+    text-decoration: underline;
+  }
+  
+  .categorylinktext{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: clamp(20px, 1.8vw, 32px);
+  padding-left: 9px;
+  border-left: 3px solid #DC3545;
+  
+  }
+  .categorylinktext:hover{
+      text-decoration: underline;
+      color: #DC3545;
+      border: none;
+     
+  }
 
 

@@ -15,13 +15,11 @@ const SuitRS001 = () => {
     <div className=" p-0  my-5">
       <div className="row  px-5">
         <div className="col-12  col-md-12 col-sm-12 col-lg-5 col-xl-5 col-xxl-4 text-center">
-          <div id="contimagdetail">
-            <img
-              className="imagedetail"
-              src={require("../../../../assets/SuitRS002.jpeg")}
-              alt="suits"
-            />
-          </div>
+          <img
+            className="imagedetail"
+            src={require("../../../../assets/SuitRS002.jpeg")}
+            alt="suits"
+          />
         </div>
         <div className="col-12 col-md-12 col-sm-12 col-lg-7 col-xl-7 col-xxl-8 mt-3">
           <h2 className="table-title">2 Layer Gabardine Nomex Suit</h2>

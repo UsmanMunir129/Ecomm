@@ -36,7 +36,7 @@ const SuitRS003 = () => {
                   <td>
                     <strong>Material:</strong>
                   </td>
-                  <td className="col-11">Nomex & FR Cotton</td>
+                  <td className="col-11">Sateen Nomex</td>
                 </tr>
                 <tr>
                   <td>

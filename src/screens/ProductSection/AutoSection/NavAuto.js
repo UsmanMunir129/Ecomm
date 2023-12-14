@@ -25,7 +25,7 @@ const navCate = [
 ];
 const NavAuto = () => {
   return (
-    <div className=" col-md-3 col-lg-3 col-xl-3 px-5 d-none d-lg-block">
+    <div className=" col-lg-3 col-xl-3 px-5 d-none d-lg-block">
       <div className="catecontainer ">
         <h2 className="categoryhead">Category</h2>
         {navCate.map((items, index) => (

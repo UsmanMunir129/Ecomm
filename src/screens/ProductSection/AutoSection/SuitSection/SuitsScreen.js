@@ -11,10 +11,16 @@ const images = [
     imgPath: [require("../../../../assets/SuitRS002.jpeg")],
   },
   {
-    link: "/Suits/KS002",
-    code: "CI-KS002",
-    detail: "2 Layer Karting Suit",
+    link: "/Suits/RS002",
+    code: "CI-RS002",
+    detail: "2 Layer Sateen Nomex Suit",
     imgPath: [require("../../../../assets/KS002.JPG")],
+  },
+  {
+    link: "/Suits/RS003",
+    code: "CI-RS003",
+    detail: "2 Layer Sateen Nomex Suit",
+    imgPath: [require("../../../../assets/RS003.jpg")],
   },
   {
     link: "/Suits/RS004",
@@ -23,16 +29,10 @@ const images = [
     imgPath: [require("../../../../assets/RS004.JPG")],
   },
   {
-    link: "/Suits/KS001",
-    code: "CI-KS001",
-    detail: "2 Layer Karting Suit",
-    imgPath: [require("../../../../assets/KS001.JPG")],
-  },
-  {
-    link: "/Suits/RS003",
-    code: "CI-RS003",
-    detail: "2 Layer Sateen Nomex Suit",
-    imgPath: [require("../../../../assets/RS003.jpg")],
+    link: "/Suits/RS005",
+    code: "CI-RS005",
+    detail: "2 Layer FR Cotton Suit",
+    imgPath: [require("../../../../assets/RS005.JPG")],
   },
   {
     link: "/Suits/RS000",
@@ -48,13 +48,13 @@ const SuitsScreen = () => {
         {/* Top Banner img */}
         <div className=" container-fluid kartbanner">
           <img
-            className="img-fluid object-fit-cover kartbannerimg"
-            src={require("../../../../assets/carsl1.jpg")}
+            className="img-fluid kartbannerimg"
+            src={require("../../../../assets/AutoSuitBanner.jpg")}
             alt="Bannerimage"
           />
         </div>
         {/* Left Bar and Product Section */}
-        <div className="kartprodcont row mt-5">
+        <div className="kartprodcont row mt-5 bg-dark">
           <NavAuto />
 
           {/* Product Section */}

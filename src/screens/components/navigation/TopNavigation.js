@@ -185,11 +185,13 @@ const TopNavigation = () => {
                   </div>
 
                   <div className="col-12 col-sm-12 col-md-4  align-self-center">
-                    <img
-                      src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
-                      className="img-fluid"
-                      alt="Cuircon intl"
-                    />
+                    <NavLink to={"/Suits"}>
+                      <img
+                        src={require("../../../assets/AutoSuitBanner.jpg")}
+                        className="img-fluid"
+                        alt="Cuircon intl"
+                      />
+                    </NavLink>
                   </div>
                 </div>
               </div>

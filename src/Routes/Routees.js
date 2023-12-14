@@ -11,9 +11,9 @@ import Motorsport from "../screens/components/Motorsport";
 import Motorsp from "../screens/components/Motorsp";
 import SuitsScreen from "../screens/ProductSection/AutoSection/SuitSection/SuitsScreen";
 import SuitRS001 from "../screens/ProductSection/AutoSection/SuitSection/SuitRS001";
-import SuitKS002 from "../screens/ProductSection/AutoSection/SuitSection/SuitKS002";
+import SuitRS002 from "../screens/ProductSection/AutoSection/SuitSection/SuitRS002";
 import SuitRS004 from "../screens/ProductSection/AutoSection/SuitSection/SuitRS004";
-import SuitKS001 from "../screens/ProductSection/AutoSection/SuitSection/SuitKS001";
+import SuitRS005 from "../screens/ProductSection/AutoSection/SuitSection/SuitRS005";
 import SuitRS003 from "../screens/ProductSection/AutoSection/SuitSection/SuitRS003";
 import SuitRS000 from "../screens/ProductSection/AutoSection/SuitSection/SuitRS000";
 import UnderGar from "../screens/ProductSection/AutoSection/UnderGarments/UnderGar";
@@ -25,10 +25,10 @@ import CI1730 from "../screens/ProductSection/AutoSection/GlovesSection/CI1730";
 import CI1731 from "../screens/ProductSection/AutoSection/GlovesSection/CI1731";
 import CI1732 from "../screens/ProductSection/AutoSection/GlovesSection/CI1732";
 import ShoesScreen from "../screens/ProductSection/AutoSection/ShoesSection/ShoesScreen";
-import CIKSO11 from "../screens/ProductSection/AutoSection/ShoesSection/CIKSO11";
-import CIKSO22 from "../screens/ProductSection/AutoSection/ShoesSection/CIKSO22";
-import CIKSO33 from "../screens/ProductSection/AutoSection/ShoesSection/CIKSO33";
-import CIKSO44 from "../screens/ProductSection/AutoSection/ShoesSection/CIKSO44";
+import CIRS011 from "../screens/ProductSection/AutoSection/ShoesSection/CIRS011";
+import CIRS022 from "../screens/ProductSection/AutoSection/ShoesSection/CIRS022";
+import CIRS012 from "../screens/ProductSection/AutoSection/ShoesSection/CIRS012";
+import CIRS023 from "../screens/ProductSection/AutoSection/ShoesSection/CIRS023";
 
 const Routees = () => {
   return (
@@ -42,11 +42,12 @@ const Routees = () => {
         <Route path="/Contactus" element={<ContactUs />} />
         <Route path="/motorsport" element={<Motorsport />} />
         <Route path="/motorsp" element={<Motorsp />} />
+        {/* MotorSport/Auto Screen Section */}
         <Route path="/Suits" element={<SuitsScreen />} />
         <Route path="/Suits/RS001" element={<SuitRS001 />} />
-        <Route path="/Suits/KS002" element={<SuitKS002 />} />
+        <Route path="/Suits/RS002" element={<SuitRS002 />} />
         <Route path="/Suits/RS004" element={<SuitRS004 />} />
-        <Route path="/Suits/KS001" element={<SuitKS001 />} />
+        <Route path="/Suits/RS005" element={<SuitRS005 />} />
         <Route path="/Suits/RS003" element={<SuitRS003 />} />
         <Route path="/Suits/RS000" element={<SuitRS000 />} />
 
@@ -56,10 +57,10 @@ const Routees = () => {
         <Route path="/Gloves/CI-1731" element={<CI1731 />} />
         <Route path="/Gloves/CI-1732" element={<CI1732 />} />
         <Route path="/Shoes" element={<ShoesScreen />} />
-        <Route path="/Shoes/CI-KSO11" element={<CIKSO11 />} />
-        <Route path="/Shoes/CI-KSO22" element={<CIKSO22 />} />
-        <Route path="/Shoes/CI-KSO33" element={<CIKSO33 />} />
-        <Route path="/Shoes/CI-KSO44" element={<CIKSO44 />} />
+        <Route path="/Shoes/RS011" element={<CIRS011 />} />
+        <Route path="/Shoes/RS022" element={<CIRS022 />} />
+        <Route path="/Shoes/RS012" element={<CIRS012 />} />
+        <Route path="/Shoes/RS023" element={<CIRS023 />} />
         <Route path="/Undergarments" element={<UnderGar />} />
         <Route path="/Mask-CiBlava" element={<CiBlava />} />
         <Route path="/Mask-CiBlava1" element={<CiBlava1 />} />
