@@ -7,7 +7,7 @@ const images = [
   },
   {
     link: "/Suits",
-    imgPath: [require("../../../assets/KS002.JPG")],
+    imgPath: [require("../../../assets/RS002.jpg")],
   },
 ];
 const navCate = [
@@ -32,7 +32,6 @@ const navCate = [
     link: "/about",
   },
 ];
-
 const manCate = [
   {
     id: 1,
@@ -51,8 +50,8 @@ const manCate = [
   },
   {
     id: 4,
-    name: "Under Garments",
-    link: "/Undergarments",
+    name: "Accessories",
+    link: "/Accessories",
   },
   // {
   //   id: 5,
@@ -73,7 +72,7 @@ const DropNavigation = () => {
             data-bs-toggle="dropdown"
             data-bs-auto-close="outside"
           >
-            <h3 className="heading">Auto</h3>
+            <h3 className="heading">Motorsport</h3>
           </a>
           <div id="dropnav" className="dropdown-menu  ">
             <div className="row px-5 ">
@@ -157,7 +156,7 @@ const DropNavigation = () => {
             </div>
           </div>
           {/* Third Link */}
-          <a
+          {/* <a
             className="nav-link "
             href="race"
             data-bs-toggle="dropdown"
@@ -193,7 +192,7 @@ const DropNavigation = () => {
               </div>
               <div className="col  col-lg-3 col-xl-5 bg-primary "></div>
             </div>
-          </div>
+          </div> */}
           {/* Fourth Link */}
           <a
             className="nav-link "

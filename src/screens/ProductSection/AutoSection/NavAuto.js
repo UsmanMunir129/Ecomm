@@ -19,8 +19,8 @@ const navCate = [
   },
   {
     id: 4,
-    name: "Undergarments",
-    link: "/Undergarments",
+    name: "Accessories",
+    link: "/Accessories",
   },
 ];
 const NavAuto = () => {

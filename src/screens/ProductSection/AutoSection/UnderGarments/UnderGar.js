@@ -5,16 +5,60 @@ import NavAuto from "../NavAuto";
 
 const images = [
   {
-    link: "/Mask-CiBlava",
+    link: "/Mask-CiBlava1",
     code: "CI-Blava",
     detail: "Nomex Balaclava",
-    imgPath: [require("../../../../assets/Mask2.jpg")],
+    imgPath: [require("../../../../assets/undergarment.jpg")],
   },
   {
     link: "/Mask-CiBlava1",
     code: "CI-Blava",
     detail: "Nomex Balaclava",
-    imgPath: [require("../../../../assets/Mask1 (1).jpg")],
+    imgPath: [require("../../../../assets/neck.jpg")],
+  },
+  {
+    link: "/Mask-CiBlava",
+    code: "CI-Blava",
+    detail: "Nomex Balaclava",
+    imgPath: [require("../../../../assets/CI-RA0023.jpg")],
+  },
+  {
+    link: "/Mask-CiBlava1",
+    code: "CI-Blava",
+    detail: "Nomex Balaclava",
+    imgPath: [require("../../../../assets/CI-RA001 Nomex Balaclava.jpg")],
+  },
+  {
+    link: "/Mask-CiBlava",
+    code: "CI-Blava",
+    detail: "Nomex Balaclava",
+    imgPath: [require("../../../../assets/CI-RA0028.jpg")],
+  },
+  {
+    link: "/Mask-CiBlava",
+    code: "CI-Blava",
+    detail: "Nomex Balaclava",
+    imgPath: [require("../../../../assets/CI-RA0024 Nomex Neck copy.jpg")],
+  },
+  {
+    link: "/Mask-CiBlava",
+    code: "CI-Blava",
+    detail: "Nomex Balaclava",
+    imgPath: [require("../../../../assets/CI-RA0027.jpg")],
+  },
+
+  {
+    link: "/Mask-CiBlava",
+    code: "CI-Blava",
+    detail: "Nomex Balaclava",
+    imgPath: [require("../../../../assets/CI-RA0025 window net copy.jpg")],
+  },
+
+  {
+    link: "/Mask-CiBlava1",
+    code: "CI-Blava",
+    detail: "Nomex Balaclava",
+    imgPath: [require("../../../../assets/CI-RA0022 socks - Copy copy.jpg")],
   },
 ];
 const UnderGar = () => {
@@ -44,8 +88,12 @@ const UnderGar = () => {
                   <div className="kartproimg ">
                     <img
                       src={items.imgPath}
-                      className="img-fluid object-fit-cover"
+                      className="img-fluid "
                       alt="Suits"
+                      style={{
+                        height: "365px",
+                        width: "100%",
+                      }}
                     />
                   </div>
                   <div className="kartbodytext">

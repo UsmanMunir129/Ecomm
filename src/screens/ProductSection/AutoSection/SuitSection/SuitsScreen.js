@@ -14,7 +14,7 @@ const images = [
     link: "/Suits/RS002",
     code: "CI-RS002",
     detail: "2 Layer Sateen Nomex Suit",
-    imgPath: [require("../../../../assets/KS002.JPG")],
+    imgPath: [require("../../../../assets/RS002.jpg")],
   },
   {
     link: "/Suits/RS003",
@@ -32,7 +32,7 @@ const images = [
     link: "/Suits/RS005",
     code: "CI-RS005",
     detail: "2 Layer FR Cotton Suit",
-    imgPath: [require("../../../../assets/RS005.JPG")],
+    imgPath: [require("../../../../assets/RS005.jpg")],
   },
   {
     link: "/Suits/RS000",
@@ -54,7 +54,7 @@ const SuitsScreen = () => {
           />
         </div>
         {/* Left Bar and Product Section */}
-        <div className="kartprodcont row mt-5 bg-dark">
+        <div className="kartprodcont row mt-5 ">
           <NavAuto />
 
           {/* Product Section */}

@@ -1,8 +1,8 @@
 /* Banner img Styling */
 @media only screen and (max-width: 768px) {
     .kartbanner {
-      height: 150px;
-      background-color: #DC3545;
+      height: 120px;
+      
     }
    .kartbannerimg {
      height: 120px;

@@ -1,4 +1,8 @@
-
+/* #contimagdetail{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.16), 0 4px 10px rgba(0,0,0,0.23); 
+    border-radius: 40px;
+    width: fit-content;
+} */
 .imagedetail{
     height: fit-content;
     width: 400px;

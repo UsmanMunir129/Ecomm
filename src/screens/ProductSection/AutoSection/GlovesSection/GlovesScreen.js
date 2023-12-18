@@ -5,28 +5,34 @@ import NavAuto from "../NavAuto";
 
 const images = [
   {
-    link: "/Gloves/CI-1552",
-    code: "CI-1552",
-    detail: "2 Layer Nomex Leather Gloves",
-    imgPath: [require("../../../../assets/CI-1552.JPG")],
+    link: "/Gloves/CI-RG20",
+    code: "CI-RG20",
+    detail: "Skeleton Gloves SFI 3.3/5",
+    imgPath: [require("../../../../assets/CI-RG20.jpg")],
   },
   {
-    link: "/Gloves/CI-1730",
-    code: "CI-1730",
+    link: "/Gloves/CI-RG30",
+    code: "CI-RG30",
     detail: "2 Layer Nomex Leather Gloves",
-    imgPath: [require("../../../../assets/CI-1730.jpg")],
+    imgPath: [require("../../../../assets/CI-RG30.jpg")],
   },
   {
-    link: "/Gloves/CI-1731",
-    code: "CI-1731",
+    link: "/Gloves/CI-RG003",
+    code: "CI-RG003",
     detail: "2 Layer Nomex Leather Gloves",
-    imgPath: [require("../../../../assets/CI-1731.jpg")],
+    imgPath: [require("../../../../assets/CI-RG31.JPG")],
   },
   {
-    link: "/Gloves/CI-1732",
-    code: "CI-1732",
+    link: "/Gloves/CI-RG001",
+    code: "CI-RG001",
     detail: "2 Layer Nomex Leather Gloves",
-    imgPath: [require("../../../../assets/CI-1732.jpg")],
+    imgPath: [require("../../../../assets/CI-RG001.JPG")],
+  },
+  {
+    link: "/Gloves/CI-RG41",
+    code: "CI-RG41",
+    detail: "2 Layer Nomex Leather Gloves",
+    imgPath: [require("../../../../assets/CI-RG41.JPG")],
   },
 ];
 const GlovesScreen = () => {

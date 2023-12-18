@@ -23,8 +23,8 @@ const navCate = [
   },
   {
     id: 4,
-    name: "Under Garments",
-    link: "/Undergarments",
+    name: "Accessories",
+    link: "/Accessories",
   },
 ];
 const navbarTop = [
@@ -168,7 +168,7 @@ const TopNavigation = () => {
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
               >
-                <h6 className="dropnavtitle text-white">Auto</h6>
+                <h6 className="dropnavtitle text-white">Motorsport</h6>
               </a>
               <div className="dropdown-menu  border-0 ">
                 <div className="row justify-content-between py-3 px-5">
@@ -228,7 +228,8 @@ const TopNavigation = () => {
                 </div>
               </div>
               {/* Third Link */}
-              <a
+
+              {/* <a
                 className="nav-link"
                 href="/"
                 data-bs-toggle="dropdown"
@@ -258,7 +259,7 @@ const TopNavigation = () => {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* Forth Link */}
               <a
                 className="nav-link "
