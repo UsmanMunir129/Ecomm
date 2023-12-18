@@ -38,7 +38,13 @@ const CIRG30 = () => {
                   <td>
                     <strong>Material:</strong>
                   </td>
-                  <td className="col-11">Nomex & FR Cotton</td>
+                  <td className="col-11">Fluorescent Nomex 3.3/5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Inside Layer:</strong>
+                  </td>
+                  <td className="col-11">Nomex Lining</td>
                 </tr>
                 <tr>
                   <td>
@@ -52,7 +58,13 @@ const CIRG30 = () => {
                   <td>
                     <strong>Printing:</strong>
                   </td>
-                  <td className="col-11">Embroidery</td>
+                  <td className="col-11">Screen/ Silicon</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Grip:</strong>
+                  </td>
+                  <td className="col-11">Ultra Palm Grip</td>
                 </tr>
                 <tr>
                   <td>

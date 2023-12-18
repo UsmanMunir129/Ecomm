@@ -17,7 +17,7 @@ const SuitRS001 = () => {
         <div className="col-12  col-md-12 col-sm-12 col-lg-5 col-xl-5 col-xxl-4 text-center">
           <img
             className="imagedetail"
-            src={require("../../../../assets/SuitRS002.jpeg")}
+            src={require("../../../../assets/RS001.jpg")}
             alt="suits"
           />
         </div>

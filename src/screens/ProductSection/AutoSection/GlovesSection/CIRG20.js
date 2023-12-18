@@ -24,8 +24,8 @@ const CIRG20 = () => {
           </div>
         </div>
         <div className="col-12 col-md-12 col-sm-12 col-lg-7 col-xl-7 col-xxl-7 mt-1">
-          <h2 className="table-title">2 Layer Nomex Leather Gloves</h2>
-          <div className="table-responsive rounded mt-5">
+          <h2 className="table-title">Skeleton Gloves SFI 3.3/5</h2>
+          <div className="table-responsive rounded mt-3">
             <table className="table table-striped table-hover table-lg  table-bordered ">
               <tbody>
                 <tr>
@@ -38,7 +38,13 @@ const CIRG20 = () => {
                   <td>
                     <strong>Material:</strong>
                   </td>
-                  <td className="col-11">Nomex & FR Cotton</td>
+                  <td className="col-11">Nomex 3.3/5</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Inside Layer:</strong>
+                  </td>
+                  <td className="col-11">Nomex Lining</td>
                 </tr>
                 <tr>
                   <td>
@@ -52,7 +58,13 @@ const CIRG20 = () => {
                   <td>
                     <strong>Printing:</strong>
                   </td>
-                  <td className="col-11">Embroidery</td>
+                  <td className="col-11">Screen/ Silicon</td>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Grip:</strong>
+                  </td>
+                  <td className="col-11">Ultra Palm Grip</td>
                 </tr>
                 <tr>
                   <td>

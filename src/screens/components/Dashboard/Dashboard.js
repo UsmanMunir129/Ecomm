@@ -4,24 +4,24 @@ import "./dashboard.css";
 import { NavLink } from "react-router-dom";
 const images1 = [
   {
-    link: "/motorsport",
+    link: "/Suits",
     imgPath: [require("../../../assets/Shoes.jpg")],
-    head: "Auto Racing",
+    head: "MotorSport",
   },
   {
     link: "/motorsp",
     imgPath: [require("../../../assets/factory.png")],
-    head: "Kart Racing",
+    head: "Kart",
   },
   {
     link: "/e",
     imgPath: [require("../../../assets/shipment.png")],
-    head: "Rental Kart",
+    head: "Mechanic",
   },
   {
     link: "/w",
     imgPath: [require("../../../assets/supply.png")],
-    head: "Mechanic",
+    head: "ECO",
   },
 ];
 
@@ -49,7 +49,7 @@ const Dashboard = () => {
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <div className="row">
               <div className="col-6 col-sm-6 col-md-6 col-lg-6">
-                <a href="/">
+                <a href="/motorsport">
                   <div className="imgcont">
                     <img
                       className="img-fluid image1"
@@ -73,9 +73,13 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="col-12 col-sm-12 col-md-6 col-lg-6">
-            <div className="imgcont px-5">
-              <h2 className="">Choose from 341+ premium merchandise pieces</h2>
-            </div>
+            <NavLink to="/motorsp">
+              <div className="imgcont px-5">
+                <h2 className="">
+                  Choose from 341+ premium merchandise pieces
+                </h2>
+              </div>
+            </NavLink>
           </div>
         </div>
       </div>

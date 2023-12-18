@@ -8,7 +8,7 @@ const images = [
     link: "/Suits/RS001",
     code: "CI-RS001",
     detail: "2 Layer Gabardine Nomex Suit",
-    imgPath: [require("../../../../assets/SuitRS002.jpeg")],
+    imgPath: [require("../../../../assets/RS001.jpg")],
   },
   {
     link: "/Suits/RS002",
@@ -26,7 +26,7 @@ const images = [
     link: "/Suits/RS004",
     code: "CI-RS004",
     detail: "2 Layer FR Cotton Suit",
-    imgPath: [require("../../../../assets/RS004.JPG")],
+    imgPath: [require("../../../../assets/RS004.jpg")],
   },
   {
     link: "/Suits/RS005",
@@ -38,7 +38,7 @@ const images = [
     link: "/Suits/RS000",
     code: "CU-0000",
     detail: "2 Layer Sateen Nomex Suit",
-    imgPath: [require("../../../../assets/CU.JPG")],
+    imgPath: [require("../../../../assets/CU.jpg")],
   },
 ];
 const SuitsScreen = () => {

@@ -17,8 +17,7 @@ import SuitRS005 from "../screens/ProductSection/AutoSection/SuitSection/SuitRS0
 import SuitRS003 from "../screens/ProductSection/AutoSection/SuitSection/SuitRS003";
 import SuitRS000 from "../screens/ProductSection/AutoSection/SuitSection/SuitRS000";
 import UnderGar from "../screens/ProductSection/AutoSection/UnderGarments/UnderGar";
-import CiBlava from "../screens/ProductSection/AutoSection/UnderGarments/CiBlava";
-import CiBlava1 from "../screens/ProductSection/AutoSection/UnderGarments/CiBlava1";
+
 import GlovesScreen from "../screens/ProductSection/AutoSection/GlovesSection/GlovesScreen";
 import CIRG20 from "../screens/ProductSection/AutoSection/GlovesSection/CIRG20";
 import CIRG30 from "../screens/ProductSection/AutoSection/GlovesSection/CIRG30";
@@ -67,8 +66,6 @@ const Routees = () => {
         <Route path="/Shoes/RS023" element={<CIRS023 />} />
         {/*Auto Accessories Routes */}
         <Route path="/Accessories" element={<UnderGar />} />
-        <Route path="/Mask-CiBlava" element={<CiBlava />} />
-        <Route path="/Mask-CiBlava1" element={<CiBlava1 />} />
       </Routes>
       <Contact />
     </BrowserRouter>

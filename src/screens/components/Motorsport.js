@@ -13,108 +13,83 @@ const Motorsport = () => {
     <div className="bg-black">
       {/* Banner Image */}
       <Parallax
-        blur={{ min: -15, max: 15 }}
+        className="parallax"
+        blur={{ min: -5, max: 5 }}
         strength={100}
         bgImage={require("../../assets/bannermotorsp.jpg")}
         bgImageAlt="Banner image"
       >
-        <div className="content" data-aos="zoom-in">
-          <div className="text-content">
-            <h2 className="fs-1 fw-bold">RACING WEAR</h2>
+        <div className="content1 ">
+          <div className="text-content1">
+            <h1 className="headingcontent text-white" data-aos="fade-right">
+              Welcome to Cuircon International
+            </h1>
+            <p
+              className="headingscndcontent text-white"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+            >
+              - Crafting Excellence in Eco-Friendly Racewear
+            </p>
           </div>
         </div>
       </Parallax>
       {/* Second detail banner image */}
       <div className="row  ">
-        <div className="col-12  col-md-6 col-lg-6 align-self-center p-5  ">
+        <div className="col-12  col-md-6 col-lg-6 align-self-center ">
           <div>
             <div
-              className="text-light"
+              className="text-light ms-5"
               data-aos="fade-right"
-              style={{ borderLeft: "3px solid red" }}
+              style={{ borderLeft: "3px solid red", paddingLeft: "20px" }}
             >
-              <p className="text-light fs-4 ms-4">
-                We represent quality and we have the intention of maintaining
-                our position at the top. We are continually developing new
-                technologies, new solutions and new materials and we are the
-                only manufacturer of racing products that owns a full testing
-                laboratory which allows us to be constantly in line with FIA
-                requests
-              </p>
-            </div>
-            <div
-              className="text-light"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              style={{ borderLeft: "3px solid red" }}
-            >
-              <p className="text-light fs-4 ms-4">
-                We represent quality and we have the intention of maintaining
-                our position at the top. We are continually developing new
-                technologies, new solutions and new materials and we are the
-                only manufacturer of racing products that owns a full testing
-              </p>
-            </div>
-            <div
-              className="text-light"
-              data-aos="fade-right"
-              data-aos-duration="2500"
-              style={{ borderLeft: "3px solid red" }}
-            >
-              <p className="text-light fs-4 ms-4">
-                We represent quality and we have the intention of maintaining
-                our position at the top. We are continually developing new
-                technologies
-              </p>
+              <span className="text-light textmotorsport ">
+                At Cuircon International, we take pride in revolutionizing the
+                racewear industry by seamlessly blending performance with
+                sustainability. As avid enthusiasts of motorsports, we
+                understand the importance of not only excelling on the track but
+                also leaving a positive impact on the environment. Our
+                commitment to eco-friendly practices and sustainable
+                manufacturing sets us apart as leaders in the racewear industry.
+              </span>
             </div>
           </div>
         </div>
         <div className="col-12  col-md-6 col-lg-6 " data-aos="fade-up">
           <img
-            src={require("../../assets/About.jpg")}
+            src={require("../../assets/Fabric.jpg")}
             alt="hero-section"
-            className="img-fluid imagescnd"
+            className="img-fluid dashboardimg"
           />
         </div>
       </div>
       {/* First Image Desc */}
-      <div className="row ">
-        <div className="col-sm-12 col-md-12 col-lg-6 px-0 d-none d-sm-block imagecont">
+      <div className="row  ">
+        <div className="col-12 col-md-6 col-lg-6 " data-aos="fade-up">
           <img
-            src={require("../../assets/a1.jpg")}
+            src={require("../../assets/Fabric.jpg")}
             alt="hero-section"
-            className="dashboardimg img-fluid "
+            className="img-fluid dashboardimg"
           />
         </div>
-        <div
-          className="col-12 col-sm-6 col-md-6 col-lg-6 align-self-center p-5"
-          data-aos="fade-left"
-        >
-          <h2 className="text-light">AUTO SUITS</h2>
-          <div className="">
-            <p className="detailtext text-light">
-              Accelerate your brand's performance with our elite B2B racing
-              gloves, meticulously crafted for motorsports excellence. Unleash
-              precision and control on the track with our high-performance
-              gloves designed for professionals. Engineered for maximum grip,
-              durability, and comfort, our customizable racing gloves set a new
-              standard in B2B motorsports apparel. Elevate your team's
-              experience with cutting-edge technology and superior
-              craftsmanship. Partner with us for a seamless production journey,
-              ensuring your brand races ahead with confidence and style.
-              Discover the perfect blend of innovation and reliability – choose
-              our B2B racing gloves for a competitive edge in the fast-paced
-              world of motorsports.
-            </p>
+        <div className="col-12  col-md-6 col-lg-6 align-self-center ">
+          <div>
+            <div
+              className="text-light ms-5"
+              data-aos="fade-right"
+              style={{ borderLeft: "3px solid red", paddingLeft: "20px" }}
+            >
+              <span className="text-light textmotorsport ">
+                At Cuircon International, we take pride in revolutionizing the
+                racewear industry by seamlessly blending performance with
+                sustainability. As avid enthusiasts of motorsports, we
+                understand the importance of not only excelling on the track but
+                also leaving a positive impact on the environment. Our
+                commitment to eco-friendly practices and sustainable
+                manufacturing sets us apart as leaders in the racewear industry.
+              </span>
+            </div>
           </div>
-        </div>
-        {/* for small screen */}
-        <div className="col-12 px-0 d-block d-sm-none imagecont">
-          <img
-            src={require("../../assets/a1.jpg")}
-            alt="hero-section"
-            className="dashboardimg img-fluid "
-          />
         </div>
       </div>
       {/* Second image nd Desc */}
@@ -192,7 +167,7 @@ const Motorsport = () => {
       </div>
       {/* Forth image nd Desc */}
 
-      <div className="row">
+      {/* <div className="row">
         <div
           className="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center p-5"
           data-aos="fade-right"
@@ -221,7 +196,7 @@ const Motorsport = () => {
             className="dashboardimg  img-fluid "
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -300,13 +300,13 @@ const TopNavigation = () => {
       <div className="container-fluid d-none d-md-block my-3 ">
         <div className="row">
           <div className="col-3 col-lg-4 col-xl-3 col-md-6">
-            <a href="/">
+            <NavLink to="/">
               <img
                 src="https://images.crunchbase.com/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nipimluadtvolo3jvrlr"
                 alt="fdm4"
                 style={{ maxWidth: "290px" }}
               />
-            </a>
+            </NavLink>
           </div>
           <div
             className="col col-lg-4 col-xl-5  align-self-center justify-content-center d-md-none d-lg-block "
