@@ -5,22 +5,22 @@ import { NavLink } from "react-router-dom";
 const images1 = [
   {
     link: "/Suits",
-    imgPath: [require("../../../assets/Shoes.jpg")],
+    imgPath: [require("../../../assets/motorsport.jpg")],
     head: "MotorSport",
   },
   {
     link: "/motorsp",
-    imgPath: [require("../../../assets/factory.png")],
+    imgPath: [require("../../../assets/kartrac.png")],
     head: "Kart",
   },
   {
     link: "/e",
-    imgPath: [require("../../../assets/shipment.png")],
+    imgPath: [require("../../../assets/mechanic-icon.png")],
     head: "Mechanic",
   },
   {
-    link: "/w",
-    imgPath: [require("../../../assets/supply.png")],
+    link: "/motorsport",
+    imgPath: [require("../../../assets/earth.png")],
     head: "ECO",
   },
 ];
@@ -34,12 +34,12 @@ const Dashboard = () => {
             <div key={index} className="col-6 col-sm-6 col-md-3 col-lg-3 mb-3">
               <NavLink to={step.link}>
                 <div className="imgcont">
-                  {/* <img
+                  <img
                     className="img-fluid object-fit-cover image1"
                     src={step.imgPath}
                     alt="Cuircon"
-                  /> */}
-                  <span className="dashboardheading">{step.head}</span>
+                  />
+                  {/* <span className="dashboardheading">{step.head}</span> */}
                 </div>
               </NavLink>
             </div>

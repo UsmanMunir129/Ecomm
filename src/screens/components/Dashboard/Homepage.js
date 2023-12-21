@@ -4,6 +4,7 @@ import CarouselTop from "./CarouselTop";
 import Social from "./Social";
 import Trusted from "./Trusted";
 import Services from "./Services";
+import Endslider from "./Endslider";
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
       <Social />
       <Trusted />
       <Services />
+      <Endslider />
     </div>
   );
 };

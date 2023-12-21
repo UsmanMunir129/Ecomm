@@ -65,6 +65,14 @@ h3 {
   font-size: 2.5rem;
   font-weight: 500;
 }
+h4 {
+  font-size: clamp(15.8px, 1.4vw, 23px);
+  
+}
+span {
+  font-size: clamp(10px, 1.2vw, 20px) ;
+  
+}
 
 p, button {
   color: ${({ theme }) => theme.colors.text};

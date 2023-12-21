@@ -29,6 +29,7 @@ import CIRS022 from "../screens/ProductSection/AutoSection/ShoesSection/CIRS022"
 import CIRS012 from "../screens/ProductSection/AutoSection/ShoesSection/CIRS012";
 import CIRS023 from "../screens/ProductSection/AutoSection/ShoesSection/CIRS023";
 import CIRG41 from "../screens/ProductSection/AutoSection/GlovesSection/CIRG41";
+import SampleProgram from "../screens/components/SampleProgram";
 
 const Routees = () => {
   return (
@@ -42,6 +43,8 @@ const Routees = () => {
         <Route path="/Contactus" element={<ContactUs />} />
         <Route path="/motorsport" element={<Motorsport />} />
         <Route path="/motorsp" element={<Motorsp />} />
+        <Route path="/Sample-program" element={<SampleProgram />} />
+
         {/* MotorSport/Auto Screen Section */}
         {/* Auto Suits Route */}
         <Route path="/Suits" element={<SuitsScreen />} />
@@ -66,6 +69,7 @@ const Routees = () => {
         <Route path="/Shoes/RS023" element={<CIRS023 />} />
         {/*Auto Accessories Routes */}
         <Route path="/Accessories" element={<UnderGar />} />
+        {/* Motorsport Routes End */}
       </Routes>
       <Contact />
     </BrowserRouter>

@@ -6,22 +6,22 @@
     }
    .kartbannerimg {
      height: 120px;
-     
+     width: 100%;
    }
-
   }
 
   .kartprodcards{
      background-color: #fff;
      -webkit-transition: all .2s ease-out;
    }
+
   .kartprodcards:hover{
     box-shadow: 0 4px 10px rgba(0,0,0,0.16), 0 4px 10px rgba(0,0,0,0.23); 
        -webkit-transform: translateY(-2px);
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-  
   }
+
 .kartproimg{
   justify-content: center;
 }

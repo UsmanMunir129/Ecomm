@@ -37,17 +37,17 @@ const contactSec1 = [
   {
     id: 2,
     name: "Fabric Info",
-    link: "/Fabric",
+    link: [require("../../FabricInfo.pdf")],
   },
   {
     id: 3,
     name: "Colors",
-    link: "/Colors",
+    link: [require("../../FabricInfo.pdf")],
   },
   {
     id: 4,
-    name: "Made in USA",
-    link: "/Made",
+    name: "Sample Program",
+    link: "/Sample-program",
   },
 ];
 const contactSec2 = [

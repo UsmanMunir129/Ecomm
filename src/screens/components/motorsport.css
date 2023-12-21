@@ -18,20 +18,26 @@ body{
     border-radius: 20px;
     font-size: 50px;
   }
-.textmotorsport{
-    font-size: clamp(11px, 1.2vw, 25px) 
-}
-.detailtext{
-    font-size: clamp(14.2px, 1.2vw, 26px)  
-}
-/* .imagescnd{
-    width: 100%;
-    float:'right'
+  .ecoscndbanner{
+    font-size: clamp(14.8px, 1.2vw, 23px);
+  }
+/* .textmotorsport{
+    font-size: clamp(10px, 1vw, 18px) 
 } */
 
-.dashboardimg{
-    width:  900px;
-    object-fit: contain;
+.headingeco{
+ color: #fff;
+ border-bottom: 2px solid red; 
+ width: fit-content;
+ 
+}
+
+
+.ecofriendlyimg{
+    height:  400px;
+    width: 100%;
+    /* object-fit: cover; */
+    
     /* height: clamp(360px, 22vw, 400px)  */
 }
 /* @media only screen and (max-width: 768px){

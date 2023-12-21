@@ -16,14 +16,14 @@ const Motorsport = () => {
         className="parallax"
         blur={{ min: -5, max: 5 }}
         strength={100}
-        bgImage={require("../../assets/bannermotorsp.jpg")}
+        bgImage={require("../../assets/ecobanner.jpg")}
         bgImageAlt="Banner image"
       >
         <div className="content1 ">
           <div className="text-content1">
-            <h1 className="headingcontent text-white" data-aos="fade-right">
+            <h2 className="headingcontent text-white" data-aos="fade-right">
               Welcome to Cuircon International
-            </h1>
+            </h2>
             <p
               className="headingscndcontent text-white"
               data-aos="fade-right"
@@ -43,7 +43,7 @@ const Motorsport = () => {
               data-aos="fade-right"
               style={{ borderLeft: "3px solid red", paddingLeft: "20px" }}
             >
-              <span className="text-light textmotorsport ">
+              <span className="ecoscndbanner">
                 At Cuircon International, we take pride in revolutionizing the
                 racewear industry by seamlessly blending performance with
                 sustainability. As avid enthusiasts of motorsports, we
@@ -55,148 +55,122 @@ const Motorsport = () => {
             </div>
           </div>
         </div>
-        <div className="col-12  col-md-6 col-lg-6 " data-aos="fade-up">
+        <div className="col-12 col-md-6 col-lg-6 p-0" data-aos="fade-up">
           <img
             src={require("../../assets/Fabric.jpg")}
             alt="hero-section"
-            className="img-fluid dashboardimg"
+            className="img-fluid ecofriendlyimg"
           />
         </div>
       </div>
       {/* First Image Desc */}
       <div className="row  ">
-        <div className="col-12 col-md-6 col-lg-6 " data-aos="fade-up">
+        <div className="col-12 col-md-6 col-lg-6 p-0" data-aos="fade-up">
           <img
-            src={require("../../assets/Fabric.jpg")}
+            src={require("../../assets/eco.jpg")}
             alt="hero-section"
-            className="img-fluid dashboardimg"
+            className="img-fluid ecofriendlyimg"
           />
         </div>
         <div className="col-12  col-md-6 col-lg-6 align-self-center ">
           <div>
-            <div
-              className="text-light ms-5"
-              data-aos="fade-right"
-              style={{ borderLeft: "3px solid red", paddingLeft: "20px" }}
-            >
+            <div className="text-light ms-5" data-aos="fade-left">
+              <h3 className="text-light">Our Commitment to Sustainability</h3>
+              <h4 className="headingeco ">Ethical Materials</h4>
               <span className="text-light textmotorsport ">
-                At Cuircon International, we take pride in revolutionizing the
-                racewear industry by seamlessly blending performance with
-                sustainability. As avid enthusiasts of motorsports, we
-                understand the importance of not only excelling on the track but
-                also leaving a positive impact on the environment. Our
-                commitment to eco-friendly practices and sustainable
-                manufacturing sets us apart as leaders in the racewear industry.
+                We prioritize the use of eco-friendly materials in the
+                production of our racewear products. From cutting-edge recycled
+                fabrics to sustainable alternatives, every material is carefully
+                selected to minimize environmental impact without compromising
+                on performance or quality.
+              </span>
+              <h4 className="headingeco ">
+                Innovative Manufacturing Processes
+              </h4>
+              <span className="text-light textmotorsport">
+                Our manufacturing processes are designed to be as sustainable as
+                possible. We employ state-of-the-art technologies that reduce
+                energy consumption, water usage, and waste generation. By
+                embracing innovation, we aim to set new standards for
+                environmentally conscious manufacturing within the racewear
+                industry.
               </span>
             </div>
           </div>
         </div>
       </div>
       {/* Second image nd Desc */}
-      <div className="row ">
-        <div
-          className="col-sm-12 col-md-12 col-lg-6 align-self-center  p-5"
-          data-aos="fade-right"
-        >
-          <h2 className="text-light">AUTO GLOVES</h2>
-
-          <div className="">
-            <p className="detailtext text-light">
-              Accelerate your brand's performance with our elite B2B racing
-              gloves, meticulously crafted for motorsports excellence. Unleash
-              precision and control on the track with our high-performance
-              gloves designed for professionals. Engineered for maximum grip,
-              durability, and comfort, our customizable racing gloves set a new
-              standard in B2B motorsports apparel. Elevate your team's
-              experience with cutting-edge technology and superior
-              craftsmanship. Partner with us for a seamless production journey,
-              ensuring your brand races ahead with confidence and style.
-              Discover the perfect blend of innovation and reliability – choose
-              our B2B racing gloves for a competitive edge in the fast-paced
-              world of motorsports
-            </p>
+      <div className="row  ">
+        <div className="col-12  col-md-6 col-lg-6 align-self-center ">
+          <div>
+            <div className="text-light ms-5" data-aos="fade-right">
+              <h3 className="text-light">Eco-Friendly Product Line</h3>
+              <h4 className="headingeco ">Recycled Race Suits</h4>
+              <span className="text-light textmotorsport ">
+                Discover our range of race suits crafted from recycled
+                materials, offering uncompromised protection on the track while
+                reducing the environmental footprint. These suits are a
+                testament to our dedication to sustainability without
+                compromising on the high-performance standards expected in
+                motorsports.
+              </span>
+              <h4 className="headingeco ">Biodegradable Accessories</h4>
+              <span className="text-light textmotorsport ">
+                From gloves to balaclavas, our accessories are crafted with
+                biodegradable materials, ensuring that every piece of gear
+                serves its purpose on the track while being gentle on the
+                planet.
+              </span>
+            </div>
           </div>
         </div>
-        <div className="col-sm-12 col-md-12 col-lg-6 bg-primary px-0 imagecont">
+        <div className="col-12 col-md-6 col-lg-6 p-0" data-aos="fade-up">
           <img
-            src={require("../../assets/a4.jpg")}
+            src={require("../../assets/ecobanner3.jpg")}
             alt="hero-section"
-            className="dashboardimg  img-fluid "
+            className="img-fluid ecofriendlyimg"
           />
         </div>
       </div>
       {/* Third image nd Desc */}
 
-      <div className="row">
-        {/* For Small and Wider Screens */}
-        <div className="col-sm-12 col-md-12 col-lg-6 d-none d-sm-block px-0 imagecont">
+      <div className="row  ">
+        <div className="col-12 col-md-6 col-lg-6 p-0" data-aos="fade-up">
           <img
-            src={require("../../assets/a2.jpg")}
+            src={require("../../assets/ecobanner4.jpg")}
             alt="hero-section"
-            className="dashboardimg  img-fluid"
+            className="img-fluid ecofriendlyimg"
           />
         </div>
-        <div
-          className="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center p-5"
-          data-aos="fade-left"
-        >
-          <h2 className="text-light">Masks</h2>
-
-          <div className="">
-            <p className="detailtext text-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              iure delectus eveniet ipsam debitis earum consequuntur possimus
-              blanditiis, dolorem voluptate atque nulla magnam omnis et corporis
-              officia repudiandae quaerat. Laudantium rem quo tempora. Quam rem
-              quis sunt, ipsa et deleniti, harum veniam, sit voluptates nulla
-              aperiam nobis nihil sed fuga. Error, laboriosam recusandae
-              voluptatibus numquam sed itaque praesentium, ut aperiam
-              consectetur incidunt perferendis quis a voluptates. Porro
-              dignissimos officiis iure dolorum perspiciatis expedita id,
-              quisquam architecto, deleniti quia repellat consequuntur.
-            </p>
+        <div className="col-12  col-md-6 col-lg-6 align-self-center ">
+          <div>
+            <div className="text-light ms-5" data-aos="fade-left">
+              <h3 className="text-light">Transparency and Accountability</h3>
+              <h4 className="headingeco ">Traceable Supply Chain</h4>
+              <span className="text-light textmotorsport ">
+                We believe in transparency, and that starts with our supply
+                chain. We meticulously trace the origin of every material used
+                in our products, ensuring that they meet the highest ethical and
+                environmental standards.
+              </span>
+              <h4 className="headingeco ">Certifications</h4>
+              <span className="text-light textmotorsport ">
+                Our commitment to sustainability is further solidified by
+                certifications from reputable environmental organizations. These
+                certifications validate our efforts and showcase our dedication
+                to making a positive impact.
+              </span>
+              <h4 className="headingeco ">Join The Movement</h4>
+              <span className="text-light textmotorsport ">
+                By choosing [Your Company Name], you are not just selecting
+                high-quality racewear; you are becoming a part of a movement
+                towards a more sustainable and eco-friendly future for
+                motorsports. Together, let's drive change on and off the track.
+              </span>
+            </div>
           </div>
-        </div>
-        <div className="col-12 d-block d-sm-none  px-0 imagecont">
-          <img
-            src={require("../../assets/a2.jpg")}
-            alt="hero-section"
-            className="dashboardimg  img-fluid"
-          />
         </div>
       </div>
-      {/* Forth image nd Desc */}
-
-      {/* <div className="row">
-        <div
-          className="col-12 col-sm-12 col-md-12 col-lg-6 align-self-center p-5"
-          data-aos="fade-right"
-        >
-          <h2 className="text-light">SEAT</h2>
-
-          <div className="">
-            <p className="detailtext text-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-              iure delectus eveniet ipsam debitis earum consequuntur possimus
-              blanditiis, dolorem voluptate atque nulla magnam omnis et corporis
-              officia repudiandae quaerat. Laudantium rem quo tempora. Quam rem
-              quis sunt, ipsa et deleniti, harum veniam, sit voluptates nulla
-              aperiam nobis nihil sed fuga. Error, laboriosam recusandae
-              voluptatibus numquam sed itaque praesentium, ut aperiam
-              consectetur incidunt perferendis quis a voluptates. Porro
-              dignissimos officiis iure dolorum perspiciatis expedita id,
-              quisquam architecto, deleniti quia repellat consequuntur.
-            </p>
-          </div>
-        </div>
-        <div className="col-12 col-sm-12 col-md-12 col-lg-6 bg-primary px-0 imagecont">
-          <img
-            src={require("../../assets/a3.jpg")}
-            alt="hero-section"
-            className="dashboardimg  img-fluid "
-          />
-        </div>
-      </div> */}
     </div>
   );
 };

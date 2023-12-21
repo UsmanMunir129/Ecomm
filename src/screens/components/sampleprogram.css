@@ -1,0 +1,18 @@
+@media only screen and (max-width: 768px) {
+    .kartbanner {
+      height: 120px;
+      
+    }
+   .kartbannerimg {
+     height: 120px;
+     width: 100%;
+   }
+  }
+  .headsample1{
+    color: #000;
+    font-weight: 600;
+    margin-top: 15px;
+   }
+   .sampleparagrapgh1{
+    font-weight: 600;
+   }
