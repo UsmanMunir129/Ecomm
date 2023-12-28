@@ -1,16 +1,8 @@
-// import React from "react";
-
-import React, { useState } from "react";
-import { Button } from "reactstrap";
-import OrderModal from "../../OrderModal";
+import React from "react";
 import "../../suitrs002.css";
-// import OrderModal from "./OrderModal";
-const CIRG001 = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
+import OrderButton from "../../../../constants/OrderButton";
 
-  const toggleModal = () => {
-    setModalOpen(!isModalOpen);
-  };
+const CIRG001 = () => {
   return (
     <div className="container p-0  my-5">
       <div className="row m-0 px-3">
@@ -78,13 +70,7 @@ const CIRG001 = () => {
               </tbody>
             </table>
           </div>
-          <div className="mt-5">
-            <Button color="dark" size="lg" onClick={toggleModal}>
-              Open Order Form
-            </Button>
-
-            <OrderModal isOpen={isModalOpen} toggleModal={toggleModal} />
-          </div>
+          <OrderButton />
         </div>
       </div>
     </div>

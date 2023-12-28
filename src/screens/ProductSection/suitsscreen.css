@@ -1,18 +1,21 @@
 /* Banner img Styling */
 @media only screen and (max-width: 768px) {
     .kartbanner {
-      height: 120px;
-      
+      height: 160px !important;
     }
    .kartbannerimg {
-     height: 120px;
+     height: 160px !important;
      width: 100%;
    }
   }
+.kartbanner{
+  margin: 15px 0px;
+}
 
   .kartprodcards{
      background-color: #fff;
      -webkit-transition: all .2s ease-out;
+     padding: 10px;
    }
 
   .kartprodcards:hover{
@@ -29,6 +32,7 @@
 .kartlink{
 text-decoration: none;
 }
+
 .kartlink:hover{
   text-decoration: underline;
   color: #000;
@@ -60,6 +64,11 @@ text-decoration: none;
   color: #fff;
 }
  
+
+
+
+
+
 /* NavAuto Styling */
 .categoryhead{
   color: #000;
@@ -87,7 +96,7 @@ text-decoration: none;
   font-size: clamp(20px, 1.8vw, 32px);
   padding-left: 9px;
   border-left: 3px solid #DC3545;
-  
+
   }
   .categorylinktext:hover{
       text-decoration: underline;

@@ -6,8 +6,8 @@ import "./endslider.css";
 const images = [
   {
     id: 1,
-    link: "San Francisco – Oakland Bay Bridge, United States",
-    imgPath: [require("../../../assets/meeting.png")],
+    link: "http://cuirconintl.com/qq/form.php",
+    imgPath: [require("../../../assets/aa meeting.jpg")],
   },
   {
     id: 2,
@@ -16,8 +16,8 @@ const images = [
   },
   {
     id: 3,
-    link: "Bali, Indonesia",
-    imgPath: [require("../../../assets/custom 2 (1).jpg")],
+    link: "/CustomInfo",
+    imgPath: [require("../../../assets/CUSTOM.jpg")],
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const images = [
   {
     id: 6,
     link: [require("../../FabricInfo.pdf")],
-    imgPath: [require("../../../assets/fabric info.jpg")],
+    imgPath: [require("../../../assets/FABRIC PG.jpg")],
   },
   // {
   //   id: 7,
@@ -86,7 +86,11 @@ const Endslider = () => {
         {images.map((step, index) => (
           <div key={index} className="item">
             <a href={step.link}>
-              <img className="img " src={step.imgPath} alt="Cuircon" />
+              <img
+                className="sliderendimg img-fluid "
+                src={step.imgPath}
+                alt="Cuircon"
+              />
             </a>
           </div>
         ))}

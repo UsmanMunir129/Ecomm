@@ -50,7 +50,7 @@ h4 {
 
 h1 {
   color: ${({ theme }) => theme.colors.heading};
-  font-size: 5rem;
+  font-size: clamp(25.8px, 1.4vw, 33px)
   font-weight: 900;
 }
 

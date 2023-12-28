@@ -24,8 +24,8 @@ const contactSec = [
   },
   {
     id: 4,
-    name: "Go Green",
-    link: "/Go",
+    name: "ECO",
+    link: "/motorsport",
   },
 ];
 const contactSec1 = [

@@ -5,11 +5,11 @@ import { NavLink } from "react-router-dom";
 const images1 = [
   {
     link: "/Suits",
-    imgPath: [require("../../../assets/motorsport.jpg")],
+    imgPath: [require("../../../assets/pngegg.png")],
     head: "MotorSport",
   },
   {
-    link: "/motorsp",
+    link: "/KartSuit",
     imgPath: [require("../../../assets/kartrac.png")],
     head: "Kart",
   },

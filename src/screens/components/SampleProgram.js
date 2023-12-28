@@ -26,8 +26,7 @@ const SampleProgram = () => {
         <h3 className="fw-bold my-3 mx-3">How It Works:</h3>
         <div className="my-3 mx-5 w-75">
           <h4 className="headsample1">
-            1.{" "}
-            <b style={{ borderBottom: "2px solid red" }}>Fill up the Form:</b>
+            1. <b className="borderheading">Fill up the Form:</b>
           </h4>
           <span className="sampleparagrapgh1">
             Dive into a seamless experience by completing our user-friendly
@@ -36,10 +35,7 @@ const SampleProgram = () => {
             navigating through paperwork.
           </span>
           <h4 className="headsample1">
-            2.{" "}
-            <b style={{ borderBottom: "2px solid red" }}>
-              Select Your Samples:
-            </b>
+            2. <b className="borderheading">Select Your Samples:</b>
           </h4>
           <span className="sampleparagrapgh1">
             Choose up to 2 exquisite products from our diverse range, each
@@ -47,8 +43,7 @@ const SampleProgram = () => {
             explore the magic that our offerings bring into your life.
           </span>
           <h4 className="headsample1">
-            3.{" "}
-            <b style={{ borderBottom: "2px solid red" }}>Enjoy 40% Discount:</b>
+            3. <b className="borderheading">Enjoy 40% Discount:</b>
           </h4>
           <span className="sampleparagrapgh1">
             As a token of our appreciation for your loyalty, approved customers
@@ -57,10 +52,7 @@ const SampleProgram = () => {
             experience luxury without breaking the bank.
           </span>
           <h4 className="headsample1">
-            4.{" "}
-            <b style={{ borderBottom: "2px solid red" }}>
-              Limitless Potential:
-            </b>
+            4. <b className="borderheading">Limitless Potential:</b>
           </h4>
           <span className="sampleparagrapgh1">
             While the year unfolds, you can revel in the excitement of ordering
@@ -73,7 +65,7 @@ const SampleProgram = () => {
         <div className="my-3 mx-5 w-75">
           <h4 className="headsample1">
             {/* 1.{" "} */}
-            <b style={{ borderBottom: "2px solid red" }}>Curated Selection:</b>
+            <b className="borderheading">Curated Selection:</b>
           </h4>
           <span className="sampleparagrapgh1">
             Immerse yourself in a carefully curated selection of our finest
@@ -82,7 +74,7 @@ const SampleProgram = () => {
           </span>
           <h4 className="headsample1">
             {/* 2.{" "} */}
-            <b style={{ borderBottom: "2px solid red" }}>Discounted Delight:</b>
+            <b className="borderheading">Discounted Delight:</b>
           </h4>
           <span className="sampleparagrapgh1">
             Embrace the thrill of exploring our products with an exclusive 40%
@@ -90,9 +82,7 @@ const SampleProgram = () => {
           </span>
           <h4 className="headsample1">
             {/* 3.{" "} */}
-            <b style={{ borderBottom: "2px solid red" }}>
-              Customer-Centric Experience:
-            </b>
+            <b className="borderheading">Customer-Centric Experience:</b>
           </h4>
           <span className="sampleparagrapgh1">
             We prioritize your satisfaction and aim to elevate your shopping

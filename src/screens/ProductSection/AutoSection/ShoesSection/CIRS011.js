@@ -1,16 +1,9 @@
 // import React from "react";
-
-import React, { useState } from "react";
-import { Button } from "reactstrap";
-import OrderModal from "../../OrderModal";
+import React from "react";
 import "../../suitrs002.css";
+import OrderButton from "../../../../constants/OrderButton";
 // import OrderModal from "./OrderModal";
 const CIRS011 = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
-
-  const toggleModal = () => {
-    setModalOpen(!isModalOpen);
-  };
   return (
     <div className=" p-0  my-5">
       <div className="row m-0 px-3">
@@ -75,13 +68,15 @@ const CIRS011 = () => {
               </tbody>
             </table>
           </div>
-          <div className="mt-5">
-            <Button color="dark" size="lg" onClick={toggleModal}>
-              Open Order Form
-            </Button>
-
-            <OrderModal isOpen={isModalOpen} toggleModal={toggleModal} />
-          </div>
+          {/* <div className="mt-5">
+            <NavLink
+              to="http://cuirconintl.com/form/quotation.php"
+              className="katelastbtn btn mx-3"
+            >
+              Order Form
+            </NavLink>
+          </div> */}
+          <OrderButton />
         </div>
       </div>
     </div>

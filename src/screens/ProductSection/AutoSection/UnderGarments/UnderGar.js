@@ -2,6 +2,7 @@ import React from "react";
 import "../../suitsscreen.css";
 import { NavLink } from "react-router-dom";
 import NavAuto from "../NavAuto";
+import OrderButton from "../../../../constants/OrderButton";
 
 const images = [
   {
@@ -19,7 +20,7 @@ const images = [
   {
     // link: "/Mask-CiBlava",
     code: "CI-HMBG",
-    detail: "Outer in Ployster Inside Cotton Towel",
+    detail: "Outer Ployster Inside Cotton Towel",
     imgPath: [require("../../../../assets/CI-RA0023.jpg")],
   },
   {
@@ -49,21 +50,23 @@ const UnderGar = () => {
         {/* Top Banner img */}
         <div className=" container-fluid kartbanner">
           <img
-            className="img-fluid object-fit-cover kartbannerimg"
-            src={require("../../../../assets/carsl1.jpg")}
+            className="img-fluid kartbannerimg"
+            src={require("../../../../assets/ACCESSORIES.jpg")}
             alt="Bannerimage"
           />
         </div>
         {/* Left Bar and Product Section */}
         <div className="kartprodcont row mt-5">
-          <NavAuto />
+          <div className="col-lg-3">
+            <NavAuto />
+          </div>
 
           {/* Product Section */}
           <div className="row col-sm-12 col-md-9 col-lg-9 col-xl-9  d-flex justify-content-center ">
             {images.map((items, index) => (
               <div
                 key={index}
-                className="kartprodcards col-6 col-sm-6 col-md-4 col-lg-4 my-2"
+                className="kartprodcards col-6 col-sm-6 col-md-4 col-lg-4 "
               >
                 {/* <NavLink to={items.link} className="kartlink"> */}
                 <div className="kartproimg ">
@@ -83,9 +86,7 @@ const UnderGar = () => {
                 </div>
                 {/* </NavLink> */}
 
-                <NavLink to={items.link} className="katelastbtn btn mx-3">
-                  View Details
-                </NavLink>
+                <OrderButton />
               </div>
             ))}
           </div>

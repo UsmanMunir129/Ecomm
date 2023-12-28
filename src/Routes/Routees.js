@@ -30,6 +30,11 @@ import CIRS012 from "../screens/ProductSection/AutoSection/ShoesSection/CIRS012"
 import CIRS023 from "../screens/ProductSection/AutoSection/ShoesSection/CIRS023";
 import CIRG41 from "../screens/ProductSection/AutoSection/GlovesSection/CIRG41";
 import SampleProgram from "../screens/components/SampleProgram";
+import CustomOrder from "../screens/components/CustomOrder";
+import KartSuitScreen from "../screens/ProductSection/KartSection/SuitSection/KartSuitScreen";
+import KartGloveScreen from "../screens/ProductSection/KartSection/GloveSection/KartGloveScreen";
+import KShoesScreen from "../screens/ProductSection/KartSection/ShoesSection/KShoesScreen";
+import KaccessoriesScreen from "../screens/ProductSection/KartSection/AccessoriesSec/KaccessoriesScreen";
 
 const Routees = () => {
   return (
@@ -44,6 +49,7 @@ const Routees = () => {
         <Route path="/motorsport" element={<Motorsport />} />
         <Route path="/motorsp" element={<Motorsp />} />
         <Route path="/Sample-program" element={<SampleProgram />} />
+        <Route path="/CustomInfo" element={<CustomOrder />} />
 
         {/* MotorSport/Auto Screen Section */}
         {/* Auto Suits Route */}
@@ -70,6 +76,17 @@ const Routees = () => {
         {/*Auto Accessories Routes */}
         <Route path="/Accessories" element={<UnderGar />} />
         {/* Motorsport Routes End */}
+        {/* Kart Routes Start */}
+        {/* Kart Suits */}
+        <Route path="/KartSuit" element={<KartSuitScreen />} />
+        {/* Kart gloves */}
+        <Route path="/KartGloves" element={<KartGloveScreen />} />
+        {/* Kart Shoes */}
+        <Route path="/Kart-Shoes" element={<KShoesScreen />} />
+        {/* Kart Accessories */}
+        <Route path="/Kart-Accessories" element={<KaccessoriesScreen />} />
+
+        {/* Kart Routes End */}
       </Routes>
       <Contact />
     </BrowserRouter>
