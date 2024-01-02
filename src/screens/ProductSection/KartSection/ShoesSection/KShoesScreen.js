@@ -1,6 +1,6 @@
 import React from "react";
 import NavKart from "../NavKart";
-import KartComp from "../KartComp";
+import KartComp from "../../../components/ProductComponent/KartComp";
 const kShoes = [
   {
     link: "/Shoes/RS011",

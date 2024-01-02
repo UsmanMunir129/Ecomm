@@ -4,29 +4,7 @@ import React from "react";
 import DropNavigation from "./DropNavigation";
 import "./topnav.css";
 import { NavLink } from "react-router-dom";
-
-const navCate = [
-  {
-    id: 1,
-    name: "Suits",
-    link: "/Suits",
-  },
-  {
-    id: 2,
-    name: "Gloves",
-    link: "/Gloves",
-  },
-  {
-    id: 3,
-    name: "Shoes",
-    link: "/Shoes",
-  },
-  {
-    id: 4,
-    name: "Accessories",
-    link: "/Accessories",
-  },
-];
+import MobDropNav from "./MobDropNav";
 const navbarTop = [
   {
     id: 1,
@@ -54,6 +32,7 @@ const navbarTop = [
     link: "/",
   },
 ];
+
 const TopNavigation = () => {
   return (
     <>
@@ -78,7 +57,7 @@ const TopNavigation = () => {
           >
             <NavLink to="./">
               <img
-                src="https://images.crunchbase.com/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nipimluadtvolo3jvrlr"
+                src={require("../../../assets/cuircon.webp")}
                 alt="Cuircon Intl"
                 style={{
                   maxWidth: "90px",
@@ -160,139 +139,7 @@ const TopNavigation = () => {
               </div>
             </div> */}
             {/* DropNavigation For Mobile Screen */}
-            <div className="maindropcont d-md-none  d-flex">
-              {/* First Link */}
-              <a
-                className="nav-link "
-                href="/"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
-              >
-                <h6 className="dropnavtitle text-white">Motorsport</h6>
-              </a>
-              <div className="dropdown-menu  border-0 ">
-                <div className="row justify-content-between py-3 px-5">
-                  <div className="catecont col-12 col-sm-4 col-md-2 ">
-                    {navCate.map((items, index) => (
-                      <a
-                        key={index}
-                        href={items.link}
-                        style={{ textDecoration: "none" }}
-                      >
-                        <h4 className="catetext fs-4">{items.name}</h4>
-                      </a>
-                    ))}
-                  </div>
-
-                  <div className="col-12 col-sm-12 col-md-4  align-self-center">
-                    <NavLink to={"/Suits"}>
-                      <img
-                        src={require("../../../assets/AutoSuitBanner.jpg")}
-                        className="img-fluid"
-                        alt="Cuircon intl"
-                      />
-                    </NavLink>
-                  </div>
-                </div>
-              </div>
-              {/* Second Link */}
-              <a
-                className="nav-link "
-                href="/"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
-              >
-                <h6 className="dropnavtitle text-white">Kart</h6>
-              </a>
-              <div className="dropdown-menu  border-0 ">
-                <div className="row justify-content-between py-3 px-5">
-                  <div className="catecont col-12 col-sm-4 col-md-2 ">
-                    {navCate.map((items, index) => (
-                      <a
-                        key={index}
-                        href={items.link}
-                        style={{ textDecoration: "none" }}
-                      >
-                        <h4 className="catetext fs-4">{items.name}</h4>
-                      </a>
-                    ))}
-                  </div>
-
-                  <div className="col-12 col-sm-12 col-md-4 align-self-center">
-                    <img
-                      src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
-                      className="img-fluid"
-                      alt="Cuircon"
-                    />
-                  </div>
-                </div>
-              </div>
-              {/* Third Link */}
-
-              {/* <a
-                className="nav-link"
-                href="/"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
-              >
-                <h6 className="dropnavtitle text-white">Rental</h6>
-              </a>
-              <div className="dropdown-menu  border-0 ">
-                <div className="row justify-content-between py-3 px-5">
-                  <div className="catecont col-12 col-sm-4 col-md-2 ">
-                    {navCate.map((items, index) => (
-                      <a
-                        key={index}
-                        href={items.link}
-                        style={{ textDecoration: "none" }}
-                      >
-                        <h4 className="catetext">{items.name}</h4>
-                      </a>
-                    ))}
-                  </div>
-
-                  <div className="col-12 col-sm-12 col-md-4  align-self-center">
-                    <img
-                      src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
-                      className="img-fluid"
-                      alt="Cuircon"
-                    />
-                  </div>
-                </div>
-              </div> */}
-              {/* Forth Link */}
-              <a
-                className="nav-link "
-                href="/"
-                data-bs-toggle="dropdown"
-                data-bs-auto-close="outside"
-              >
-                <h6 className="dropnavtitle text-white">Mechanic</h6>
-              </a>
-              <div className="dropdown-menu  border-0 ">
-                <div className="row justify-content-between py-3 px-5">
-                  <div className="catecont col-12 col-sm-4 col-md-2 ">
-                    {navCate.map((items, index) => (
-                      <a
-                        key={index}
-                        href={items.link}
-                        style={{ textDecoration: "none" }}
-                      >
-                        <h4 className="catetext">{items.name}</h4>
-                      </a>
-                    ))}
-                  </div>
-
-                  <div className="col-12 col-sm-12 col-md-4  align-self-center">
-                    <img
-                      src="https://www.royalapparel.net/img/dropdowns/CAT_DDBanner_Wmn920.jpg"
-                      className="img-fluid"
-                      alt="Cuircon"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+            <MobDropNav />
           </div>
         </div>
       </nav>
@@ -302,8 +149,8 @@ const TopNavigation = () => {
           <div className="col-3 col-lg-4 col-xl-3 col-md-6">
             <NavLink to="/">
               <img
-                src="https://images.crunchbase.com/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/nipimluadtvolo3jvrlr"
-                alt="fdm4"
+                src={require("../../../assets/cuircon.webp")}
+                alt="Cuircon"
                 style={{ maxWidth: "290px" }}
               />
             </NavLink>

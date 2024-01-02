@@ -72,8 +72,18 @@ text-decoration: none;
 /* NavAuto Styling */
 .categoryhead{
   color: #000;
-  font-size: clamp(30px, 1.9vw, 35px);
+  justify-content: center;
+  display: flex;
+  font-size: clamp(18px, 2.1vw, 45px);
   }
+  .categorylinktext{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: clamp(10px, 1.7vw, 35px);
+    padding-left: 9px;
+    border-left: 2px solid #DC3545;
+  
+    }
   .catecontainer{
       margin-left: 10px;
       width: fit-content;
@@ -90,14 +100,7 @@ text-decoration: none;
     text-decoration: underline;
   }
   
-  .categorylinktext{
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: clamp(20px, 1.8vw, 32px);
-  padding-left: 9px;
-  border-left: 3px solid #DC3545;
-
-  }
+  
   .categorylinktext:hover{
       text-decoration: underline;
       color: #DC3545;

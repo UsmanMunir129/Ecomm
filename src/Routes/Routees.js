@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TopNavigation from "../screens/components/navigation/TopNavigation";
 import Contact from "../screens/components/footer/Contact";
 import { GlobalStyle } from "../screens/GlobalStyle";
-import About from "../screens/components/About";
 import ContactUs from "../screens/components/ContactUs";
 
 import Motorsport from "../screens/components/Motorsport";
@@ -35,6 +34,10 @@ import KartSuitScreen from "../screens/ProductSection/KartSection/SuitSection/Ka
 import KartGloveScreen from "../screens/ProductSection/KartSection/GloveSection/KartGloveScreen";
 import KShoesScreen from "../screens/ProductSection/KartSection/ShoesSection/KShoesScreen";
 import KaccessoriesScreen from "../screens/ProductSection/KartSection/AccessoriesSec/KaccessoriesScreen";
+import MGloves from "../screens/ProductSection/MechanicSection/GlovesSection/Mgloves";
+
+import MSuitSection from "../screens/ProductSection/MechanicSection/SuitSection/MSuitSection";
+import Aboutus from "../screens/components/About";
 
 const Routees = () => {
   return (
@@ -44,7 +47,7 @@ const Routees = () => {
 
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/AboutUs" element={<Aboutus />} />
         <Route path="/Contactus" element={<ContactUs />} />
         <Route path="/motorsport" element={<Motorsport />} />
         <Route path="/motorsp" element={<Motorsp />} />
@@ -87,6 +90,13 @@ const Routees = () => {
         <Route path="/Kart-Accessories" element={<KaccessoriesScreen />} />
 
         {/* Kart Routes End */}
+        {/*Mechanic Routes Start */}
+        {/*Mechanic Suits */}
+        <Route path="/M-Suits" element={<MSuitSection />} />
+        {/*Mechanic Gloves */}
+        <Route path="/M-Gloves" element={<MGloves />} />
+
+        {/*Mechanic Routes End */}
       </Routes>
       <Contact />
     </BrowserRouter>

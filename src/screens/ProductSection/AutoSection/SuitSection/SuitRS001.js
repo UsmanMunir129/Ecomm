@@ -8,13 +8,13 @@ const SuitRS001 = () => {
       <div className="row  px-5">
         <div className="col-12  col-md-12 col-sm-12 col-lg-5 col-xl-5 col-xxl-4 text-center">
           <img
-            className="imagedetail"
+            className="imagedetail hover-zoom"
             src={require("../../../../assets/RS001.jpg")}
             alt="suits"
           />
         </div>
         <div className="col-12 col-md-12 col-sm-12 col-lg-7 col-xl-7 col-xxl-8 mt-3">
-          <h2 className="table-title">2 Layer Gabardine Nomex Suit</h2>
+          <h2 className="table-title">2 Layer Gabardine Nomex Suitrr</h2>
           <div className="table-responsive rounded ">
             <table className="table table-striped table-hover table-lg  table-bordered ">
               <tbody>

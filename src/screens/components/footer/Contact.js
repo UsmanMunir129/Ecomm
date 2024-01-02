@@ -10,7 +10,7 @@ const contactSec = [
   {
     id: 1,
     name: "About Us",
-    link: "/About",
+    link: "/AboutUs",
   },
   {
     id: 2,

@@ -1,10 +1,8 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "./style/Button";
-import Trusted from "./Dashboard/Trusted";
-import Services from "./Dashboard/Services";
 
-const About = () => {
+const Aboutus = () => {
   return (
     <Wrapper>
       <div className="mx-5">
@@ -62,7 +60,7 @@ const About = () => {
           <div className="hero-section-image">
             <figure>
               <img
-                src="https://finegarment.com/wp-content/uploads/2020/08/car-racing-mobile.png"
+                src={require("../../assets/about.png")}
                 alt="hero-section"
                 className="img-style"
               />
@@ -70,8 +68,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Trusted />
-      <Services />
+      {/* <Trusted />
+      <Services /> */}
     </Wrapper>
   );
 };
@@ -145,4 +143,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default About;
+export default Aboutus;

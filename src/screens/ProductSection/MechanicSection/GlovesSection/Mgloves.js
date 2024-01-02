@@ -1,28 +1,34 @@
 import React from "react";
-import NavKart from "../NavKart";
 import KartComp from "../../../components/ProductComponent/KartComp";
+import MecNavbar from "../MecNavbar";
 
 const gloveimages = [
   {
     link: "/Gloves/CI-RG003",
     code: "CI-RG003",
     detail: "2 Layer Nomex Leather Gloves",
-    imgPath: [require("../../../../assets/CI-RG31.JPG")],
+    imgPath: [require("../../../../assets/Mgloves1.jpg")],
   },
   {
     link: "/Gloves/CI-RG001",
     code: "CI-RG001",
     detail: "2 Layer Nomex Leather Gloves",
-    imgPath: [require("../../../../assets/CI-RG001.JPG")],
+    imgPath: [require("../../../../assets/Mgloves2.jpg")],
   },
   {
     link: "/Gloves/CI-RG41",
     code: "CI-RG41",
     detail: "2 Layer Nomex Leather Gloves",
-    imgPath: [require("../../../../assets/CI-RG41.JPG")],
+    imgPath: [require("../../../../assets/Mgloves3.jpg")],
+  },
+  {
+    link: "/Gloves/CI-RG41",
+    code: "CI-RG41",
+    detail: "2 Layer Nomex Leather Gloves",
+    imgPath: [require("../../../../assets/Mgloves4.jpg")],
   },
 ];
-const KartGloveScreen = () => {
+const Mgloves = () => {
   return (
     <div>
       {/* Top Banner img */}
@@ -36,7 +42,8 @@ const KartGloveScreen = () => {
       {/* Left Bar and Product Section */}
       <div className="row ">
         <div className="col-lg-3">
-          <NavKart />
+          <MecNavbar />
+          {/* <NavKart /> */}
         </div>
         <div className="col-12 col-lg-9 ">
           <KartComp images={gloveimages} />
@@ -46,4 +53,4 @@ const KartGloveScreen = () => {
   );
 };
 
-export default KartGloveScreen;
+export default Mgloves;

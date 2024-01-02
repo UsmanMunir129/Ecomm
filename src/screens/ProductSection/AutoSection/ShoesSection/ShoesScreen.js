@@ -1,7 +1,7 @@
 import React from "react";
 import "../../suitsscreen.css";
 import NavAuto from "../NavAuto";
-import KartComp from "../../KartSection/KartComp";
+import KartComp from "../../../components/ProductComponent/KartComp";
 
 const shoes = [
   {
@@ -36,7 +36,7 @@ const ShoesScreen = () => {
         {/* Top Banner img */}
         <div className=" container-fluid kartbanner">
           <img
-            className="img-fluid object-fit-cover kartbannerimg"
+            className="img-fluid kartbannerimg"
             src={require("../../../../assets/MotorsportShoes.jpg")}
             alt="Bannerimage"
           />

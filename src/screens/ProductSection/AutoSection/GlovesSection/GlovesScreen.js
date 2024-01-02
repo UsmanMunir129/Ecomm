@@ -1,8 +1,7 @@
 import React from "react";
 import "../../suitsscreen.css";
 import NavAuto from "../NavAuto";
-import KartComp from "../../KartSection/KartComp";
-
+import KartComp from "../../../components/ProductComponent/KartComp";
 const gloves = [
   {
     link: "/Gloves/CI-RG20",

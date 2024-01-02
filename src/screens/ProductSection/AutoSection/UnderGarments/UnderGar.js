@@ -1,6 +1,5 @@
 import React from "react";
 import "../../suitsscreen.css";
-import { NavLink } from "react-router-dom";
 import NavAuto from "../NavAuto";
 import OrderButton from "../../../../constants/OrderButton";
 
@@ -62,13 +61,12 @@ const UnderGar = () => {
           </div>
 
           {/* Product Section */}
-          <div className="row col-sm-12 col-md-9 col-lg-9 col-xl-9  d-flex justify-content-center ">
+          <div className="row col-sm-12 col-md-9   d-flex justify-content-center ">
             {images.map((items, index) => (
               <div
                 key={index}
-                className="kartprodcards col-6 col-sm-6 col-md-4 col-lg-4 "
+                className="kartprodcards col-6 col-sm-6 col-md-4"
               >
-                {/* <NavLink to={items.link} className="kartlink"> */}
                 <div className="kartproimg ">
                   <img
                     src={items.imgPath}
@@ -84,7 +82,6 @@ const UnderGar = () => {
                   <h5 className=" protext ">{items.code}</h5>
                   <h5 className=" protext ">{items.detail}</h5>
                 </div>
-                {/* </NavLink> */}
 
                 <OrderButton />
               </div>

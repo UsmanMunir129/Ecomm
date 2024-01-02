@@ -1,34 +1,26 @@
 import React from "react";
 import "../suitsscreen.css";
 import { NavLink } from "react-router-dom";
-const navCate = [
+
+const mechanic = [
   {
     id: 1,
     name: "KartSuits",
-    link: "/KartSuit",
+    link: "/M-Suits",
   },
   {
     id: 2,
     name: "Gloves",
-    link: "/KartGloves",
-  },
-  {
-    id: 3,
-    name: "Shoes",
-    link: "/Kart-Shoes",
-  },
-  {
-    id: 4,
-    name: "Accessories",
-    link: "/Kart-Accessories",
+    link: "/M-Gloves",
   },
 ];
-const NavKart = () => {
+
+const MecNavbar = () => {
   return (
     <div className="col-12 px-5 d-none d-lg-block">
       <div className="catecontainer ">
-        <h2 className="categoryhead">Kart</h2>
-        {navCate.map((items, index) => (
+        <h2 className="categoryhead">Mechanic</h2>
+        {mechanic.map((items, index) => (
           <NavLink key={index} to={items.link} className="catglinkbtn">
             <h3 className="categorylinktext">{items.name}</h3>
           </NavLink>
@@ -38,4 +30,4 @@ const NavKart = () => {
   );
 };
 
-export default NavKart;
+export default MecNavbar;

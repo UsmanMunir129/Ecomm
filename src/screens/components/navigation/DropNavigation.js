@@ -58,22 +58,12 @@ const mechanic = [
   {
     id: 1,
     name: "Suits",
-    link: "/Mechanic-Suit",
+    link: "/M-Suits",
   },
   {
     id: 2,
     name: "Gloves",
-    link: "/Mechanic-Gloves",
-  },
-  {
-    id: 3,
-    name: "Shoes",
-    link: "/Mechanic-Shoes",
-  },
-  {
-    id: 4,
-    name: "Accessories",
-    link: "/Mechanic-Accessories",
+    link: "/M-Gloves",
   },
 ];
 
@@ -81,7 +71,7 @@ const DropNavigation = () => {
   return (
     <>
       {/* For Wider Screen  */}
-      <div className="d-none d-md-block ">
+      <div className="d-none d-md-block">
         <div className="Headcont ">
           {/* First Link */}
           <a
@@ -174,7 +164,7 @@ const DropNavigation = () => {
           </a>
           <div id="dropnav" className="dropdown-menu  ">
             <div className="row px-5 ">
-              <div className="row col-md-6 col-lg-6 p-2 col-xl-5 ">
+              <div className="col-md-6 col-lg-6 p-2 col-xl-5 ">
                 <div className="col col-md-6 col-lg-6 col-xl-6 px-5 ">
                   <h2>Men/Women</h2>
                   {mechanic.map((items, index) => (
