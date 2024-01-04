@@ -30,14 +30,6 @@ const MSuitSection = () => {
           <KartComp images={mSuits} />
         </div>
       </div>
-      {/* <div className="row ">
-        <div className="col-lg-3">
-          <MecNavbar />
-        </div>
-        <div className="col-12 col-lg-9 ">
-          <KartComp images={mSuits} />
-        </div>
-      </div> */}
     </div>
   );
 };

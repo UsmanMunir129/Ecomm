@@ -1,9 +1,9 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 // Importing Screen
 import DropNavigation from "./DropNavigation";
 import "./topnav.css";
-import { NavLink } from "react-router-dom";
+
 import MobDropNav from "./MobDropNav";
 const navbarTop = [
   {
@@ -112,7 +112,7 @@ const TopNavigation = () => {
                     color: "white",
                     textTransform: "uppercase",
                     fontSize: "14px",
-                    fontFamily: "sans-serif",
+                    fontFamily: "Roboto,sans-serif",
                     letterSpacing: -0.5,
                   }}
                 >
@@ -167,7 +167,7 @@ const TopNavigation = () => {
               </h2>
             </span>
           </div>
-          <div className="col col-lg-4 col-xl-4 col-md-6 align-self-center d-flex justify-content-center ">
+          <div className="col  col-md-6 col-lg-4  align-self-center d-flex justify-content-center ">
             <div
               className="input-group w-50 "
               style={{ height: "38px", fontSize: "20px" }}

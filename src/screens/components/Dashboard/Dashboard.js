@@ -75,9 +75,7 @@ const Dashboard = () => {
           <div className="col-12 col-sm-12 col-md-6 col-lg-6">
             <NavLink to="/motorsp">
               <div className="imgcont px-5">
-                <h2 className="">
-                  Choose from 341+ premium merchandise pieces
-                </h2>
+                <h2 className="">DISCOVER, CONNECT, THRIVE TOGETHER</h2>
               </div>
             </NavLink>
           </div>

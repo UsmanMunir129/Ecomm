@@ -27,7 +27,7 @@ const NavAuto = () => {
   return (
     <div className="col-12 px-5 d-none d-lg-block">
       <div className="catecontainer ">
-        <h2 className="categoryhead">Category</h2>
+        <h2 className="categoryhead">Motorsport</h2>
         {navCate.map((items, index) => (
           <NavLink key={index} to={items.link} className="catglinkbtn">
             <h3 className="categorylinktext">{items.name}</h3>

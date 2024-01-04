@@ -71,11 +71,11 @@ const MobDropNav = () => {
           data-bs-toggle="dropdown"
           data-bs-auto-close="outside"
         >
-          <h6 className="dropnavtitle text-white">Motorsport</h6>
+          <h5 className="dropnavtitle">Motorsport</h5>
         </a>
         <div className="dropdown-menu  border-0 ">
           <div className="row justify-content-between py-3 px-5">
-            <div className="catecont col-12 col-sm-4 col-md-2 ">
+            <div className="catecont col-6 col-sm-4 col-md-2 ">
               {motorsport.map((items, index) => (
                 <a
                   key={index}
@@ -87,11 +87,11 @@ const MobDropNav = () => {
               ))}
             </div>
 
-            <div className="col-12  col-md-4  align-self-center">
+            <div className="col-6 align-self-center">
               <NavLink to={"/Suits"}>
                 <img
-                  src={require("../../../assets/AutoSuitBanner.jpg")}
-                  className="img-fluid"
+                  src={require("../../../assets/RS004.jpg")}
+                  className="img-fluid w-75"
                   alt="Cuircon intl"
                 />
               </NavLink>
@@ -105,11 +105,11 @@ const MobDropNav = () => {
           data-bs-toggle="dropdown"
           data-bs-auto-close="outside"
         >
-          <h6 className="dropnavtitle text-white">Kart</h6>
+          <h5 className="dropnavtitle">Kart</h5>
         </a>
         <div className="dropdown-menu  border-0 ">
           <div className="row justify-content-between py-3 px-5">
-            <div className="catecont col-12 col-sm-4 col-md-2 ">
+            <div className="catecont col-6 col-sm-4 col-md-2 ">
               {kart.map((items, index) => (
                 <a
                   key={index}
@@ -121,12 +121,14 @@ const MobDropNav = () => {
               ))}
             </div>
 
-            <div className="col-12 col-sm-12 col-md-4 align-self-center">
-              <img
-                src={require("../../../assets/AutoSuitBanner.jpg")}
-                className="img-fluid"
-                alt="Cuircon"
-              />
+            <div className="col-6 align-self-center">
+              <NavLink to={"/KartSuit"}>
+                <img
+                  src={require("../../../assets/kart1.jpg")}
+                  className="img-fluid w-75"
+                  alt="Cuircon intl"
+                />
+              </NavLink>
             </div>
           </div>
         </div>
@@ -138,11 +140,11 @@ const MobDropNav = () => {
           data-bs-toggle="dropdown"
           data-bs-auto-close="outside"
         >
-          <h6 className="dropnavtitle text-white">Mechanic</h6>
+          <h5 className="dropnavtitle">Mechanic</h5>
         </a>
         <div className="dropdown-menu  border-0 ">
           <div className="row justify-content-between py-3 px-5">
-            <div className="catecont col-12 col-sm-4 col-md-2 ">
+            <div className="catecont col-6 col-sm-4 col-md-2 ">
               {mechanic.map((items, index) => (
                 <a
                   key={index}
@@ -154,12 +156,14 @@ const MobDropNav = () => {
               ))}
             </div>
 
-            <div className="col-12  col-md-4  align-self-center">
-              <img
-                src={require("../../../assets/AutoSuitBanner.jpg")}
-                className="img-fluid"
-                alt="Cuircon"
-              />
+            <div className="col-6 align-self-center">
+              <NavLink to={"/M-Suits"}>
+                <img
+                  src={require("../../../assets/M-suit.webp")}
+                  className="img-fluid w-75"
+                  alt="Cuircon intl"
+                />
+              </NavLink>
             </div>
           </div>
         </div>

@@ -10,6 +10,16 @@ const images = [
     imgPath: [require("../../../assets/RS005.jpg")],
   },
 ];
+const kartimages = [
+  {
+    link: "/KartSuit",
+    imgPath: [require("../../../assets/kart1.jpg")],
+  },
+  {
+    link: "/KartSuit",
+    imgPath: [require("../../../assets/kart2.jpg")],
+  },
+];
 const motorsport = [
   {
     id: 1,
@@ -88,11 +98,7 @@ const DropNavigation = () => {
                 <div className="col col-md-6 col-lg-6 col-xl-6 px-5 ">
                   <h2>Men/Women</h2>
                   {motorsport.map((items, index) => (
-                    <a
-                      key={index}
-                      href={items.link}
-                      style={{ textDecoration: "none" }}
-                    >
+                    <a key={index} href={items.link}>
                       <h3 className="catetext ">{items.name}</h3>
                     </a>
                   ))}
@@ -128,11 +134,7 @@ const DropNavigation = () => {
                 <div className="col col-md-6 col-lg-6 col-xl-6 px-5 ">
                   <h2>Men/Women</h2>
                   {kart.map((items, index) => (
-                    <a
-                      key={index}
-                      href={items.link}
-                      style={{ textDecoration: "none" }}
-                    >
+                    <a key={index} href={items.link}>
                       <h3 className="catetext ">{items.name}</h3>
                     </a>
                   ))}
@@ -140,7 +142,7 @@ const DropNavigation = () => {
               </div>
               <div className="col col-md-6 col-lg-6 p-2 col-xl-6 ">
                 <div className="d-flex justify-content-between  ">
-                  {images.map((items, index) => (
+                  {kartimages.map((items, index) => (
                     <a key={index} href={items.link}>
                       <img
                         src={items.imgPath}
@@ -168,11 +170,7 @@ const DropNavigation = () => {
                 <div className="col col-md-6 col-lg-6 col-xl-6 px-5 ">
                   <h2>Men/Women</h2>
                   {mechanic.map((items, index) => (
-                    <a
-                      key={index}
-                      href={items.link}
-                      style={{ textDecoration: "none" }}
-                    >
+                    <a key={index} href={items.link}>
                       <h3 className="catetext ">{items.name}</h3>
                     </a>
                   ))}

@@ -1,20 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "../../suitrs002.css";
 import OrderButton from "../../../../constants/OrderButton";
+
 const SuitRS001 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openFullScreen = () => {
+    setIsOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeFullScreen = () => {
+    setIsOpen(false);
+    document.body.style.overflow = "";
+  };
   return (
     <div className=" p-0  my-5">
       <div className="row  px-5">
         <div className="col-12  col-md-12 col-sm-12 col-lg-5 col-xl-5 col-xxl-4 text-center">
           <img
-            className="imagedetail hover-zoom"
+            className="imagedetail"
             src={require("../../../../assets/RS001.jpg")}
             alt="suits"
+            onClick={openFullScreen}
           />
+          {isOpen && (
+            <div className="fullscreen-overlay" onClick={closeFullScreen}>
+              <div className="fullscreen-image-container">
+                <img
+                  src={require("../../../../assets/RS001.jpg")}
+                  alt="Product Full Screen"
+                />
+              </div>
+            </div>
+          )}
         </div>
         <div className="col-12 col-md-12 col-sm-12 col-lg-7 col-xl-7 col-xxl-8 mt-3">
-          <h2 className="table-title">2 Layer Gabardine Nomex Suitrr</h2>
+          <h2 className="table-title">2 Layer Gabardine Nomex Suit</h2>
           <div className="table-responsive rounded ">
             <table className="table table-striped table-hover table-lg  table-bordered ">
               <tbody>
