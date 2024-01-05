@@ -25,6 +25,7 @@ const SuitRS001 = () => {
             alt="suits"
             onClick={openFullScreen}
           />
+          {/* For image section */}
           {isOpen && (
             <div className="fullscreen-overlay" onClick={closeFullScreen}>
               <div className="fullscreen-image-container">

@@ -110,6 +110,8 @@ export default function Contact() {
   };
   const textboxStyles = { py: 0.5, width: "fit-content" };
   return (
+    // Contact Section
+
     <>
       <ThemeProvider theme={theme}>
         <Box

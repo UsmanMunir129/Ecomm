@@ -80,7 +80,7 @@ const mechanic = [
 const DropNavigation = () => {
   return (
     <>
-      {/* For Wider Screen  */}
+      {/* For Wider Screens  */}
       <div className="d-none d-md-block">
         <div className="Headcont ">
           {/* First Link */}

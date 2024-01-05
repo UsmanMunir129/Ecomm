@@ -56,7 +56,7 @@ const Aboutus = () => {
               <Button>Shop Now</Button>
             </NavLink>
           </div>
-          {/* our homepage image  */}
+          {/* our About image  */}
           <div className="hero-section-image">
             <figure>
               <img
