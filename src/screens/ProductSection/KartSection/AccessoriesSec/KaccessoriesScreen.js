@@ -2,6 +2,8 @@ import React from "react";
 import "../../suitsscreen.css";
 import OrderButton from "../../../../constants/OrderButton";
 import NavKart from "../NavKart";
+import Accessories from "../../../components/ProductComponent/Accessories";
+import KartComp from "../../../components/ProductComponent/KartComp";
 
 const images = [
   {
@@ -43,33 +45,8 @@ const KaccessoriesScreen = () => {
           </div>
 
           {/* Product Section */}
-          <div className="row col-sm-12 col-md-9   ">
-            {images.map((items, index) => (
-              <div
-                key={index}
-                className="kartprodcards col-6 col-sm-6 col-md-4 col-lg-4"
-              >
-                {/* <NavLink to={items.link} className="kartlink"> */}
-                <div className="kartproimg ">
-                  <img
-                    src={items.imgPath}
-                    className="img-fluid "
-                    alt="Suits"
-                    style={{
-                      height: "365px",
-                      width: "100%",
-                    }}
-                  />
-                </div>
-                <div className="kartbodytext">
-                  <h5 className=" protext ">{items.code}</h5>
-                  <h5 className=" protext ">{items.detail}</h5>
-                </div>
-                {/* </NavLink> */}
-
-                <OrderButton />
-              </div>
-            ))}
+          <div className="col-12 col-lg-9 ">
+            <KartComp images={images} />
           </div>
         </div>
       </div>

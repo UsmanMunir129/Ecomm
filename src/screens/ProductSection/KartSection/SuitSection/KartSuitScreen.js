@@ -1,6 +1,7 @@
 import React from "react";
 import NavKart from "../NavKart";
 import KartComp from "../../../components/ProductComponent/KartComp";
+import Accessories from "../../../components/ProductComponent/Accessories";
 
 const images = [
   {
@@ -33,7 +34,7 @@ const KartSuitScreen = () => {
           <NavKart />
         </div>
         <div className="col-12 col-lg-9 ">
-          <KartComp images={images} />
+          <Accessories data={images} />
         </div>
       </div>
     </div>

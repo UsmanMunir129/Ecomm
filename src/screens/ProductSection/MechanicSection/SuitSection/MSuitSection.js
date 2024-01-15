@@ -1,6 +1,7 @@
 import React from "react";
 import KartComp from "../../../components/ProductComponent/KartComp";
 import MecNavbar from "../MecNavbar";
+import Accessories from "../../../components/ProductComponent/Accessories";
 
 const mSuits = [
   {
@@ -27,7 +28,7 @@ const MSuitSection = () => {
           <MecNavbar />
         </div>
         <div className="col-12 col-lg-9 ">
-          <KartComp images={mSuits} />
+          <Accessories data={mSuits} />
         </div>
       </div>
     </div>

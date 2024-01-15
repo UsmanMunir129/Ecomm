@@ -1,6 +1,7 @@
 import React from "react";
 import NavKart from "../NavKart";
 import KartComp from "../../../components/ProductComponent/KartComp";
+import Accessories from "../../../components/ProductComponent/Accessories";
 const kShoes = [
   {
     link: "/Shoes/RS011",
@@ -32,7 +33,7 @@ const KShoesScreen = () => {
           <NavKart />
         </div>
         <div className="col-12 col-lg-9 ">
-          <KartComp images={kShoes} />
+          <Accessories data={kShoes} />
         </div>
       </div>
     </div>

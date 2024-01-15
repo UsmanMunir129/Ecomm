@@ -4,7 +4,6 @@ import CarouselTop from "./CarouselTop";
 import Social from "./Social";
 import Endslider from "./Endslider";
 import ProductCarousel from "./ProductCarousel";
-import Slider2 from "./Slider2";
 
 const Homepage = () => {
   return (
@@ -12,7 +11,6 @@ const Homepage = () => {
       <CarouselTop />
       <Dashboard />
       <ProductCarousel />
-      <Slider2 />
       <Social />
       {/* <Trusted />
       <Services /> */}

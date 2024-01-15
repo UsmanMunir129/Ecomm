@@ -144,7 +144,10 @@ const TopNavigation = () => {
         </div>
       </nav>
       {/*Starting Header for wider Screen */}
-      <div className="container-fluid d-none d-md-block my-3 ">
+      <div
+        className="container-fluid d-none d-md-block my-3 "
+        style={{ marginTop: "40px" }}
+      >
         <div className="row">
           <div className="col-3 col-lg-4 col-xl-3 col-md-6">
             <NavLink to="/">

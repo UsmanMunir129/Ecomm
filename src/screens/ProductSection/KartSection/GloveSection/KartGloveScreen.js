@@ -1,21 +1,25 @@
 import React from "react";
 import NavKart from "../NavKart";
 import KartComp from "../../../components/ProductComponent/KartComp";
+import Accessories from "../../../components/ProductComponent/Accessories";
 
 const gloveimages = [
   {
+    id: "1",
     link: "/Gloves/CI-RG003",
     code: "CI-RG003",
     detail: "2 Layer Nomex Leather Gloves",
     imgPath: [require("../../../../assets/CI-RG31.JPG")],
   },
   {
+    id: "2",
     link: "/Gloves/CI-RG001",
     code: "CI-RG001",
     detail: "2 Layer Nomex Leather Gloves",
     imgPath: [require("../../../../assets/CI-RG001.JPG")],
   },
   {
+    id: "3",
     link: "/Gloves/CI-RG41",
     code: "CI-RG41",
     detail: "2 Layer Nomex Leather Gloves",
@@ -39,7 +43,7 @@ const KartGloveScreen = () => {
           <NavKart />
         </div>
         <div className="col-12 col-lg-9 ">
-          <KartComp images={gloveimages} />
+          <Accessories data={gloveimages} />
         </div>
       </div>
     </div>

@@ -60,7 +60,7 @@ const Aboutus = () => {
           <div className="hero-section-image">
             <figure>
               <img
-                src={require("../../assets/about.png")}
+                src={require("../../assets/instagram link.jpg")}
                 alt="hero-section"
                 className="img-style"
               />

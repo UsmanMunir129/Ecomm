@@ -1,6 +1,7 @@
 import React from "react";
 import KartComp from "../../../components/ProductComponent/KartComp";
 import MecNavbar from "../MecNavbar";
+import Accessories from "../../../components/ProductComponent/Accessories";
 
 const gloveimages = [
   {
@@ -10,7 +11,7 @@ const gloveimages = [
     imgPath: [require("../../../../assets/Mgloves1.jpg")],
   },
   {
-    link: "/Gloves/CI-RG001",
+    // link: "/Gloves/CI-RG001",
     code: "CI-RG001",
     detail: "2 Layer Nomex Leather Gloves",
     imgPath: [require("../../../../assets/Mgloves2.jpg")],
@@ -46,7 +47,7 @@ const Mgloves = () => {
           {/* <NavKart /> */}
         </div>
         <div className="col-12 col-lg-9 ">
-          <KartComp images={gloveimages} />
+          <Accessories data={gloveimages} />
         </div>
       </div>
     </div>

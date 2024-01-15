@@ -1,23 +1,44 @@
-// import React from "react";
-import React from "react";
+import React, { useState } from "react";
 import "../../suitrs002.css";
 import OrderButton from "../../../../constants/OrderButton";
+import { useParams } from "react-router-dom";
+import { shoes } from "./AShoesData";
 // import OrderModal from "./OrderModal";
 const CIRS011 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openFullScreen = () => {
+    setIsOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeFullScreen = () => {
+    setIsOpen(false);
+    document.body.style.overflow = "";
+  };
+  const { productId } = useParams();
+  const thisProduct = shoes.find((prod) => prod.id === productId);
   return (
     <div className=" p-0  my-5">
       <div className="row m-0 px-3">
         <div className="col-12  col-md-12 col-sm-12 col-lg-5 col-xl-5 col-xxl-5 text-center my-2">
-          <div id="contimagdetail">
-            <img
-              className="imagedetail"
-              src={require("../../../../assets/RS011.JPG")}
-              alt="suits"
-            />
-          </div>
+          <img
+            className="imagedetail"
+            src={thisProduct.imgPath}
+            alt="suits"
+            onClick={openFullScreen}
+          />
+          {/* For image section */}
+          {isOpen && (
+            <div className="fullscreen-overlay" onClick={closeFullScreen}>
+              <div className="fullscreen-image-container">
+                <img src={thisProduct.imgPath} alt="Product Full Screen" />
+              </div>
+            </div>
+          )}
         </div>
         <div className="col-12 col-md-12 col-sm-12 col-lg-7 col-xl-7 col-xxl-7 mt-1">
-          <h2 className="table-title">Double Layer Nomex Shoes</h2>
+          <h2 className="table-title">{thisProduct.detail}</h2>
           <div className="table-responsive rounded mt-1">
             <table className="table table-striped table-hover table-lg  table-bordered ">
               <tbody>
@@ -25,45 +46,43 @@ const CIRS011 = () => {
                   <td>
                     <strong>Item:</strong>
                   </td>
-                  <td className="col-11">CI-RSO11</td>
+                  <td className="col-11">{thisProduct.code}</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>Material:</strong>
                   </td>
-                  <td className="col-11">Double Layer Nomex Shoes</td>
+                  <td className="col-11">{thisProduct.material}</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>Leather:</strong>
                   </td>
-                  <td className="col-11">
-                    Made of Leather Cow Hide and Suede Leather
-                  </td>
+                  <td className="col-11">{thisProduct.leather}</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>Inside Layer:</strong>
                   </td>
-                  <td className="col-11">Inside Single Layer Nomex Lining</td>
+                  <td className="col-11">{thisProduct.insidelayer}</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>Laces:</strong>
                   </td>
-                  <td className="col-11">Nomex Laces</td>
+                  <td className="col-11">{thisProduct.laces}</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>Velcro:</strong>
                   </td>
-                  <td className="col-11">Double Velcro Strap</td>
+                  <td className="col-11">{thisProduct.strap}</td>
                 </tr>
                 <tr>
                   <td>
                     <strong>Sole:</strong>
                   </td>
-                  <td className="col-11">Moulded Rubber Sole</td>
+                  <td className="col-11">{thisProduct.sole}</td>
                 </tr>
               </tbody>
             </table>

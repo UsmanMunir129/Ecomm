@@ -1,25 +1,43 @@
-// import React from "react";
-
-import React from "react";
-
+import React, { useState } from "react";
 import "../../suitrs002.css";
 import OrderButton from "../../../../constants/OrderButton";
-// import OrderModal from "./OrderModal";
+import { useParams } from "react-router-dom";
+import { gloves } from "./AGlovesData";
 const CIRG20 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const openFullScreen = () => {
+    setIsOpen(true);
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeFullScreen = () => {
+    setIsOpen(false);
+    document.body.style.overflow = "";
+  };
+  const { productId } = useParams();
+  const thisProduct = gloves.find((prod) => prod.id === productId);
   return (
     <div className="container p-0  my-5">
       <div className="row m-0 px-3">
         <div className="col-12  col-md-12 col-sm-12 col-lg-5 col-xl-5 col-xxl-5 text-center my-2">
-          <div id="contimagdetail">
-            <img
-              className="imagedetail"
-              src={require("../../../../assets/CI-RG20.jpg")}
-              alt="suits"
-            />
-          </div>
+          <img
+            className="imagedetail"
+            src={thisProduct.imgPath}
+            alt="suits"
+            onClick={openFullScreen}
+          />
+          {/* For image section */}
+          {isOpen && (
+            <div className="fullscreen-overlay" onClick={closeFullScreen}>
+              <div className="fullscreen-image-container">
+                <img src={thisProduct.imgPath} alt="Product Full Screen" />
+              </div>
+            </div>
+          )}{" "}
         </div>
         <div className="col-12 col-md-12 col-sm-12 col-lg-7 col-xl-7 col-xxl-7 mt-1">
-          <h2 className="table-title">Skeleton Gloves SFI 3.3/5</h2>
+          <h2 className="table-title">{thisProduct.detail}</h2>
           <div className="table-responsive rounded mt-3">
             <table className="table table-striped table-hover table-lg  table-bordered ">
               <tbody>

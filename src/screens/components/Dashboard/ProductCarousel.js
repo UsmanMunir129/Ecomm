@@ -23,6 +23,12 @@ const responsive = {
 const sliderImageUrl = [
   //First image url
   {
+    imgPath: [require("../../../assets/carouselimgs/33.jpg")],
+  },
+  {
+    imgPath: [require("../../../assets/carouselimgs/44 (1).jpg")],
+  },
+  {
     imgPath: [require("../../../assets/carouselimgs/11-1.png")],
   },
   //Second image url

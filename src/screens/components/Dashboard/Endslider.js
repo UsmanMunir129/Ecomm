@@ -11,7 +11,7 @@ const images = [
   },
   {
     id: 2,
-    link: "Bird",
+    link: "http://cuirconintl.com/Blogs/",
     imgPath: [require("../../../assets/Our Story.jpg")],
   },
   {
@@ -21,29 +21,16 @@ const images = [
   },
   {
     id: 4,
-    link: "Goč, Serbia",
+    link: "https://www.instagram.com/cuircon_international/",
     imgPath: [require("../../../assets/instagram link.jpg")],
   },
-  // {
-  //   id: 5,
-  //   link: "/Sample-program",
-  //   imgPath: [require("../../../assets/sample.png")],
-  // },
+
   {
-    id: 6,
+    id: 5,
     link: [require("../../FabricInfo.pdf")],
     imgPath: [require("../../../assets/FABRIC PG.jpg")],
   },
-  // {
-  //   id: 7,
-  //   link: "/motorsport",
-  //   imgPath: [require("../../../assets/ecoooo.jpg")],
-  // },
-  // {
-  //   id: 8,
-  //   link: "Goč, Serbia",
-  //   imgPath: [require("../../../assets/customform.jpg")],
-  // },
+  ,
 ];
 
 //Owl Carousel Package Styling Properties
