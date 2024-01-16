@@ -12,7 +12,7 @@ const images = [
   {
     id: 2,
     link: "http://cuirconintl.com/Blogs/",
-    imgPath: [require("../../../assets/Our Story.jpg")],
+    imgPath: [require("../../../assets/blog.jpg")],
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const images = [
   {
     id: 4,
     link: "https://www.instagram.com/cuircon_international/",
-    imgPath: [require("../../../assets/instagram link.jpg")],
+    imgPath: [require("../../../assets/followus.jpg")],
   },
 
   {
@@ -30,7 +30,6 @@ const images = [
     link: [require("../../FabricInfo.pdf")],
     imgPath: [require("../../../assets/FABRIC PG.jpg")],
   },
-  ,
 ];
 
 //Owl Carousel Package Styling Properties

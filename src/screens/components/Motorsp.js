@@ -62,7 +62,7 @@ const Motorsp = () => {
         </div>
         {/* Text heading section */}
         <div className="px-3  m-5">
-          <h2>Get new unique ecommerce solutions for your brand</h2>
+          <h2>Get new unique RaceWear solutions for your brand</h2>
           <p className="text-black mt-4">
             With Snow Commerce as part of our team, we’re making ecommerce
             management and fandom engagement even easier and more powerful for

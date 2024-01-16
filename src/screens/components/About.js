@@ -53,7 +53,7 @@ const Aboutus = () => {
               innovation.
             </p>
             <NavLink to="/Suits">
-              <Button>Shop Now</Button>
+              <Button>Explore Products</Button>
             </NavLink>
           </div>
           {/* our About image  */}
@@ -63,6 +63,7 @@ const Aboutus = () => {
                 src={require("../../assets/instagram link.jpg")}
                 alt="hero-section"
                 className="img-style"
+                style={{ height: "30% !important", borderRadius: "80px" }}
               />
             </figure>
           </div>
@@ -73,14 +74,12 @@ const Aboutus = () => {
     </Wrapper>
   );
 };
-
+// img {
+//   min-width: 8rem;
+//   height: 9rem;
+// }
 const Wrapper = styled.section`
   padding: 5rem 0;
-
-  img {
-    min-width: 8rem;
-    height: 9rem;
-  }
 
   .hero-section-data {
     p {
@@ -120,10 +119,6 @@ const Wrapper = styled.section`
       top: -5rem;
       z-index: -1;
     }
-  }
-  .img-style {
-    width: 100%;
-    height: auto;
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {

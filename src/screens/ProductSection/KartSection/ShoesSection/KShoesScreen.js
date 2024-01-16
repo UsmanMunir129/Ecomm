@@ -1,6 +1,5 @@
 import React from "react";
 import NavKart from "../NavKart";
-import KartComp from "../../../components/ProductComponent/KartComp";
 import Accessories from "../../../components/ProductComponent/Accessories";
 const kShoes = [
   {

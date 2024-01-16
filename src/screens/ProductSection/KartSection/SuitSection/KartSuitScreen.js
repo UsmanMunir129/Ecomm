@@ -1,6 +1,5 @@
 import React from "react";
 import NavKart from "../NavKart";
-import KartComp from "../../../components/ProductComponent/KartComp";
 import Accessories from "../../../components/ProductComponent/Accessories";
 
 const images = [
@@ -15,6 +14,12 @@ const images = [
     code: "CI-KS002",
     detail: "2 Layer Karting Suit",
     imgPath: [require("../../../../assets/kart2.jpg")],
+  },
+  {
+    link: "/Suits/RS002",
+    code: "CI-KS004",
+    detail: "Rain Suit",
+    imgPath: [require("../../../../assets/Rainsuit.jpg")],
   },
 ];
 const KartSuitScreen = () => {

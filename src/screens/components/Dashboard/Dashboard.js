@@ -14,12 +14,12 @@ const images1 = [
     head: "Kart",
   },
   {
-    link: "/e",
+    link: "/M-Suits",
     imgPath: [require("../../../assets/mechanic-icon.png")],
     head: "Mechanic",
   },
   {
-    link: "/motorsport",
+    link: "/ECO-Friendly",
     imgPath: [require("../../../assets/earth.png")],
     head: "ECO",
   },
@@ -32,7 +32,7 @@ const Dashboard = () => {
         <div className="row px-5">
           {images1.map((step, index) => (
             <div key={index} className="col-6 col-sm-6 col-md-3 col-lg-3 mb-3">
-              <NavLink to={step.link}>
+              <NavLink to={step.link} exact={true}>
                 <div className="imgcont">
                   <img
                     className="img-fluid object-fit-cover image1"
@@ -49,7 +49,7 @@ const Dashboard = () => {
           <div className="col-12 col-sm-12 col-md-6 col-lg-6 mb-3">
             <div className="row">
               <div className="col-6 col-sm-6 col-md-6 col-lg-6">
-                <a href="/motorsport">
+                <a href="/Sample-program">
                   <div className="imgcont">
                     <img
                       className="img-fluid image1"
@@ -60,7 +60,7 @@ const Dashboard = () => {
                 </a>
               </div>
               <div className="col-6 col-sm-6 col-md-6 col-lg-6">
-                <a href="/">
+                <a href="/AboutUs">
                   <div className="imgcont">
                     <img
                       className="img-fluid image1"

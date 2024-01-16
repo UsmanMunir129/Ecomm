@@ -37,7 +37,7 @@ export default function Endfooter() {
         justifyContent: "center",
       }}
     >
-      <Typography sx={text}>Curicon 2023 </Typography>
+      <Typography sx={text}>Curicon 2024 </Typography>
       <Link href="#" underline="none">
         <Typography sx={buttonStyles}>Privacy Policy </Typography>
       </Link>

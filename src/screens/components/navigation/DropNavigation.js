@@ -178,15 +178,13 @@ const DropNavigation = () => {
               </div>
               <div className="col col-md-6 col-lg-6 p-2 col-xl-6 ">
                 <div className="d-flex justify-content-between  ">
-                  {images.map((items, index) => (
-                    <a key={index} href={items.link}>
-                      <img
-                        src={items.imgPath}
-                        className=" img-fluid dropnavimgs"
-                        alt="Items"
-                      />
-                    </a>
-                  ))}
+                  <a href="/M-Suits">
+                    <img
+                      src={require("../../../assets/M-suit.webp")}
+                      className=" img-fluid dropnavimgs"
+                      alt="Items"
+                    />
+                  </a>
                 </div>
               </div>
             </div>

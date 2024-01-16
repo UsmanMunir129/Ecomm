@@ -1,5 +1,4 @@
 import React from "react";
-import KartComp from "../../../components/ProductComponent/KartComp";
 import MecNavbar from "../MecNavbar";
 import Accessories from "../../../components/ProductComponent/Accessories";
 

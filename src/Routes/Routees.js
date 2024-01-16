@@ -28,8 +28,6 @@ import MGloves from "../screens/ProductSection/MechanicSection/GlovesSection/Mgl
 
 import MSuitSection from "../screens/ProductSection/MechanicSection/SuitSection/MSuitSection";
 import Aboutus from "../screens/components/About";
-import Products from "../screens/ProductSection/Products";
-import ProductDetail from "../screens/ProductSection/ProductDetail";
 
 const Routees = () => {
   return (
@@ -41,53 +39,34 @@ const Routees = () => {
         <Route path="/" element={<Homepage />} />
         <Route path="/AboutUs" element={<Aboutus />} />
         <Route path="/Contactus" element={<ContactUs />} />
-        <Route path="/motorsport" element={<Motorsport />} />
+        <Route path="/ECO-Friendly" element={<Motorsport />} />
         <Route path="/motorsp" element={<Motorsp />} />
         <Route path="/Sample-program" element={<SampleProgram />} />
         <Route path="/CustomInfo" element={<CustomOrder />} />
-
         {/* MotorSport/Auto Screen Section */}
-
         {/* Auto Suits Route */}
         <Route path="/Suits" element={<SuitsScreen />} />
         <Route path="/Suits/:productId" element={<SuitRS001 />} />
-
         {/* Auto Glove Route */}
         <Route path="/Gloves" element={<GlovesScreen />} />
         <Route path="/Gloves/:productId" element={<CIRG20 />} />
-        {/* <Route path="/Gloves/CI-RG30" element={<CIRG30 />} />
-        <Route path="/Gloves/CI-RG003" element={<CIRG003 />} />
-        <Route path="/Gloves/CI-RG001" element={<CIRG001 />} />
-        <Route path="/Gloves/CI-RG41" element={<CIRG41 />} /> */}
         {/*Auto Shoes Routes */}
         <Route path="/Shoes" element={<ShoesScreen />} />
         <Route path="/Shoes/:productId" element={<CIRS011 />} />
-        {/* <Route path="/Shoes/RS022" element={<CIRS022 />} />
-        <Route path="/Shoes/RS012" element={<CIRS012 />} />
-        <Route path="/Shoes/RS023" element={<CIRS023 />} /> */}
         {/*Auto Accessories Routes */}
         <Route path="/Accessories" element={<UnderGar />} />
-        {/* Motorsport Routes End */}
-        {/* Kart Routes Start */}
-        {/* Kart Suits */}
-        <Route path="/KartSuit" element={<KartSuitScreen />} />
-        {/* Kart gloves */}
+        <Route path="/KartSuit" element={<KartSuitScreen />} />{" "}
         <Route path="/KartGloves" element={<KartGloveScreen />} />
         {/* Kart Shoes */}
         <Route path="/Kart-Shoes" element={<KShoesScreen />} />
         {/* Kart Accessories */}
         <Route path="/Kart-Accessories" element={<KaccessoriesScreen />} />
-
         {/* Kart Routes End */}
         {/*Mechanic Routes Start */}
         {/*Mechanic Suits */}
         <Route path="/M-Suits" element={<MSuitSection />} />
         {/*Mechanic Gloves */}
         <Route path="/M-Gloves" element={<MGloves />} />
-
-        {/*Mechanic Routes End */}
-        <Route path="/products" element={<Products />} />
-        <Route path="/products/:productId" element={<ProductDetail />} />
       </Routes>
       <Contact />
     </BrowserRouter>

@@ -1,29 +1,18 @@
 import React from "react";
 import "../../suitsscreen.css";
-import OrderButton from "../../../../constants/OrderButton";
 import NavKart from "../NavKart";
 import Accessories from "../../../components/ProductComponent/Accessories";
-import KartComp from "../../../components/ProductComponent/KartComp";
 
 const images = [
   {
-    // link: "/Mask-CiBlava1",
-    code: "CI-Neck",
-    detail: "Woven FRC Fabric",
-    imgPath: [require("../../../../assets/neck.jpg")],
+    code: "CI-BALA-R",
+    detail: "180 GSM 100% Cotton",
+    imgPath: [require("../../../../assets/blava.jpg")],
   },
   {
-    // link: "/Mask-CiBlava",
-    code: "CI-HMBG",
-    detail: "Outer Ployster Inside Cotton Towel",
-    imgPath: [require("../../../../assets/CI-RA0023.jpg")],
-  },
-
-  {
-    // link: "/Mask-CiBlava",
-    code: "CI-FLAG",
-    detail: "Checkered Flag Made in Polyster",
-    imgPath: [require("../../../../assets/CI-RA0027.jpg")],
+    code: "CI-BALA",
+    detail: "180 GSM 100% Cotton",
+    imgPath: [require("../../../../assets/blavam.jpg")],
   },
 ];
 const KaccessoriesScreen = () => {
@@ -46,7 +35,7 @@ const KaccessoriesScreen = () => {
 
           {/* Product Section */}
           <div className="col-12 col-lg-9 ">
-            <KartComp images={images} />
+            <Accessories data={images} />
           </div>
         </div>
       </div>

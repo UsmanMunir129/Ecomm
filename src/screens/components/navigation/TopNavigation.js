@@ -8,28 +8,28 @@ import MobDropNav from "./MobDropNav";
 const navbarTop = [
   {
     id: 1,
-    itemname: "See details for free shipping",
-    link: "/",
+    itemname: "ECO",
+    link: "/ECO-Friendly",
   },
   {
     id: 2,
-    itemname: "Tracking",
-    link: "/",
+    itemname: "Meeting",
+    link: "http://cuirconintl.com/qq/form.php",
   },
   {
     id: 3,
-    itemname: "Sign in",
-    link: "/",
+    itemname: "Custom",
+    link: "/CustomInfo",
   },
   {
     id: 4,
-    itemname: "Help",
-    link: "/",
+    itemname: "Testimonial",
+    link: "/motorsp",
   },
   {
     id: 5,
-    itemname: "Chat",
-    link: "/",
+    itemname: "About Us",
+    link: "/AboutUs",
   },
 ];
 
@@ -57,10 +57,11 @@ const TopNavigation = () => {
           >
             <NavLink to="./">
               <img
-                src={require("../../../assets/cuircon.webp")}
+                src={require("../../../assets/carouselimgs/favicon.jpg")}
                 alt="Cuircon Intl"
                 style={{
-                  maxWidth: "90px",
+                  maxWidth: "20px",
+                  marginLeft: "10px",
                 }}
               />
             </NavLink>
@@ -111,7 +112,7 @@ const TopNavigation = () => {
                   style={{
                     color: "white",
                     textTransform: "uppercase",
-                    fontSize: "14px",
+                    fontSize: "15px",
                     fontFamily: "Roboto,sans-serif",
                     letterSpacing: -0.5,
                   }}

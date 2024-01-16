@@ -14,18 +14,18 @@ const contactSec = [
   },
   {
     id: 2,
-    name: "Our Team",
-    link: "/Team",
+    name: "Testimonial",
+    link: "/motorsp",
   },
   {
     id: 3,
     name: "Social",
-    link: "/Social",
+    link: "https://www.instagram.com/cuircon_international/",
   },
   {
     id: 4,
     name: "ECO",
-    link: "/motorsport",
+    link: "/ECO-Friendly",
   },
 ];
 const contactSec1 = [
